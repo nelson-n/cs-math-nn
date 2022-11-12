@@ -6,10 +6,11 @@ from first principles, and it will be filled out over time as I self-learn new
 concepts. This is not necessarily a full curriculum, but rather a reflection of
 my interests, needs, and what I feel are gaps in my knowledge of computer science.
 However, my goal is to build a curriculum that covers the whole compute stack
-from transistors and assembly to high level languages, and as such should serve
-as a solid computer science curriculum.
+from transistors and assembly to high level languages, with each lesson building
+off of the last lesson. As such, the sections below should form a solid computer
+science curriculum.
 
-## Preface: Sand to Atoms to Compute
+### Preface: Sand to Atoms to Compute
 
 :white_check_mark: Overview notes on how a computer works the refining of sand 
 into silicon ingots, silicone doping to create an electron imbalance, et cetera. 
@@ -18,54 +19,60 @@ into silicon ingots, silicone doping to create an electron imbalance, et cetera.
 of transistors in a reliable package. Notes on LUTs (lookup tables). Possibly
 play with Verilator.
 
-## Lesson 1: The Configuration of Hardware.
+### Section 1: The Configuration of Hardware.
 
 :x: Learn some Verilog, build a UART. Build some functional units. 
 
-## Lesson 2: Processors
+### Section 2: Processors
 
 :x: Build an ARM7 CPU in Verilog. Start by building a pipeline with start, decode,
 fetch, execute.
 
-## Lesson 3: Compilers
+### Section 3: Compilers
 
 :x: Build a C compiler in Haskell. Consider the basics of compiler design. Write 
 a parser, output ARM assembly which can then be run through the processor designed
 in lesson 2. 
 
-## Lesson 4: Operating System
+### Section 4: Operating System
 
 :x: Build a UNIX-ish operating system in C or C++ with simple abilities like
 open, read, write, close, init, cat, ls, rm.
 :x: Build a filesystem like FAT in C or C++.
 
-## Lesson 5: Networking
+### Section: Networking
 
+### Section: Data Structures
 
-## Lesson: Data Structures
+:x: Learn the low-level data structures behind the base data types in Python such
+as: list, array, tuple, et cetera. Build versions of these data types in C++ and
+then port to Python with a package such as `pybind11`.
 
-## Lesson: Algorithms
+### Section: Algorithms
 
-## Lesson: Lower Level Languages
+### Section: Lower Level Languages
 
 :x: C, C++, more. 
+:x: Replicate lower level Python functions such as len(), dictionary, hash table, 
+sorting algorithm, slicing, indexing, set inclusion, et cetera in C++ to learn 
+how these functions work. Then port these functions to Python with `pybind11`.
 
+### Section: Higher Level Languages
 
+:x: Python, R, more.
+* Fluent Python - Luciano Ramalho
+* Advanced R - Hadley Wickham
+:x: Overview of OOP.
 
-## Language Specific Study
+### Extra Curricular Study
 
-### Python
+#### Hashing Functions
+:x: Write a hashing function from scratch. Use the hashing function to build a
+hash table function. 
 
-:white_check_mark: Fluent Python - Luciano Ramalho
+#### Git
 
-### R
-
-## Extra Curricular Study
-
-### Git
-
-
-## Acknowledgements / Inspiration
+### Acknowledgements / Inspiration
 
 [Self-learning-Computer-Science - PKUFlyingPig](https://github.com/PKUFlyingPig/Self-learning-Computer-Science/blob/main/README.md)
 [From the Transistor to the Web Browser - George Hotz](https://github.com/geohot/fromthetransistor)
