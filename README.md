@@ -10,6 +10,9 @@ from transistors and assembly to high level languages, with each lesson building
 off of the last lesson. As such, the sections below should form a solid computer
 science curriculum.
 
+### To-do: 
+* Data Structures and Algorithms.
+
 ### Preface: Sand to Atoms to Compute
 
 :white_check_mark: Overview notes on how a computer works the refining of sand 
@@ -28,6 +31,8 @@ play with Verilator.
 :x: Build an ARM7 CPU in Verilog. Start by building a pipeline with start, decode,
 fetch, execute.
 
+:x: Learn some RISC-V architecture.
+
 ### Section 3: Compilers
 
 :x: Build a C compiler in Haskell. Consider the basics of compiler design. Write 
@@ -38,6 +43,7 @@ in lesson 2.
 
 :x: Build a UNIX-ish operating system in C or C++ with simple abilities like
 open, read, write, close, init, cat, ls, rm.
+
 :x: Build a filesystem like FAT in C or C++.
 
 ### Section: Networking
@@ -53,6 +59,7 @@ then port to Python with a package such as `pybind11`.
 ### Section: Lower Level Languages
 
 :x: C, C++, more. 
+
 :x: Replicate lower level Python functions such as len(), dictionary, hash table, 
 sorting algorithm, slicing, indexing, set inclusion, et cetera in C++ to learn 
 how these functions work. Then port these functions to Python with `pybind11`.
@@ -62,7 +69,20 @@ how these functions work. Then port these functions to Python with `pybind11`.
 :x: Python, R, more.
 * Fluent Python - Luciano Ramalho
 * Advanced R - Hadley Wickham
+
 :x: Overview of OOP.
+
+### Section: Parallel Computing 
+
+### Section: Databases.
+
+### Section: Machine Learning / AI
+
+Port in work from scientia.
+
+Go through Karpathy lectures. Build ResNet from scratch, build Transformer from
+scratch (verify the correct order of models feedforward -> X -> Y) so that all
+paradigmatic models are built from scratch.
 
 ### Extra Curricular Study
 
@@ -70,10 +90,26 @@ how these functions work. Then port these functions to Python with `pybind11`.
 :x: Write a hashing function from scratch. Use the hashing function to build a
 hash table function. 
 
+#### Statistics
+
+Port in work from scientia.
+
+Do some statistical work in Julia.
+
+#### Mathematics
+
+Port in work from scientia.
+
+Learn differential equations.
+
+#### Information Theory and Entropy
+
 #### Git
+* Add Git notes here, link to useful Git book.
 
 ### Acknowledgements / Inspiration
 
 [Self-learning-Computer-Science - PKUFlyingPig](https://github.com/PKUFlyingPig/Self-learning-Computer-Science/blob/main/README.md)
+
 [From the Transistor to the Web Browser - George Hotz](https://github.com/geohot/fromthetransistor)
 
