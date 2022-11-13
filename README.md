@@ -10,17 +10,22 @@ from transistors and assembly to high level languages, with each lesson building
 off of the last lesson. As such, the sections below should form a solid computer
 science curriculum.
 
-### Preface: Atoms to Bits
+### Sections
+
+[Preface: Atoms to Bits](#preface:-atome-to-bits)
+[The Configuration of Hardware](#the-configuration-of-hardware)
+
+## Preface: Atoms to Bits
 
 The preface givens an overview of the complete compute stack: the refining of
 sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build a transistor, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. This gives an overview of concepts that will be covered in detail in later sections, and also builds knowledge about concepts that cannot be covered in this curriculum such as building a transistor or building a solid-state-drive (SSD). 
 
-#### /preface
+### /preface
 **atoms2bits.pdf** 
-* Notes covering: 1 Silicon, 2 Transistors, 3 CPU Production, 4 Logic Gate, 5 CPU Architecture and Operation, 6 GPU Architecture, 7 CPU Components, 8 Binary Code, 9 Instruction Set Architecture, 10 Memory and Motherboard, 11 BIOS, 12 Operating System, 13 Higher Level Languages.
-* :heavy_multiplication_x: Add notes on FPGAs, how FPGAs are built from transistors, notes on how ICs are a collection of transistors in a reliable package, notes on LUTs (lookup tables).
+* :green_square: Notes covering: 1 Silicon, 2 Transistors, 3 CPU Production, 4 Logic Gate, 5 CPU Architecture and Operation, 6 GPU Architecture, 7 CPU Components, 8 Binary Code, 9 Instruction Set Architecture, 10 Memory and Motherboard, 11 BIOS, 12 Operating System, 13 Higher Level Languages.
+* :red_square: Add notes on FPGAs, how FPGAs are built from transistors, notes on how ICs are a collection of transistors in a reliable package, notes on LUTs (lookup tables).
 
-### Section 1: The Configuration of Hardware.
+## Section: The Configuration of Hardware.
 
 :x: Learn some Verilog, build a UART. Build some functional units. 
 
