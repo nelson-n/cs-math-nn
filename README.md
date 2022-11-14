@@ -12,9 +12,11 @@ science curriculum.
 
 ### Sections
 
-[Preface: Atoms to Bits](#preface:-atome-to-bits)
+[Preface: Atoms to Bits](#preface:-atoms-to-bits)
 
 [The Configuration of Hardware](#the-configuration-of-hardware)
+
+[Processors](#processors)
 
 ## Preface: Atoms to Bits 
 
@@ -24,30 +26,22 @@ The preface givens an overview of the complete compute stack: the refining of
 sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build a transistor, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. This gives an overview of concepts that will be covered in detail in later sections, and also builds knowledge about concepts that cannot be covered in this curriculum such as building a transistor or building a solid-state-drive (SSD). 
 
 **atoms2bits.pdf** 
-* :green_circle: Notes covering: 1 Silicon, 2 Transistors, 3 CPU Production, 4 Logic Gate, 5 CPU Architecture and Operation, 6 GPU Architecture, 7 CPU Components, 8 Binary Code, 9 Instruction Set Architecture, 10 Memory and Motherboard, 11 BIOS, 12 Operating System, 13 Higher Level Languages.
-* :red_circle: Add notes on FPGAs, how FPGAs are built from transistors, notes on how ICs are a collection of transistors in a reliable package, notes on LUTs (lookup tables).
+* :heavy_check_mark: Notes covering: 1 Silicon, 2 Transistors, 3 CPU Production, 4 Logic Gate, 5 CPU Architecture and Operation, 6 GPU Architecture, 7 CPU Components, 8 Binary Code, 9 Instruction Set Architecture, 10 Memory and Motherboard, 11 BIOS, 12 Operating System, 13 Higher Level Languages.
+* :heavy_multiplication_x: Add notes on FPGAs, how FPGAs are built from transistors, notes on how ICs are a collection of transistors in a reliable package, notes on LUTs (lookup tables).
 
-## Section: The Configuration of Hardware.
+## The Configuration of Hardware
 
-* :red_circle: Learn Verilog, build a UART. Implement AND, NAND, other logic gates from scratch, use these logic gates to build functional units such as a 1-bit adder, multiplexer, sequential logic, SRAM, etc. Use logic gates to create simple implementations of various memory units: L1 cache, DRAM, etc. The functional units built in this section will be later when building a toy process and instruction set.
+* :heavy_multiplication_x: Implement AND, NAND, other logic gates from scratch, use these logic gates to build functional units such as a 1-bit adder, multiplexer, sequential logic, SRAM, etc. Use logic gates to create simple implementations of various memory units: L1 cache, DRAM, etc. The functional units built in this section will be later when building a toy process and instruction set.
 
-### Section 2: Processors
+* :heavy_multiplication_x: Additional: Learn Verilog, build a UART.
 
-:x: Build an ARM7 CPU in Verilog. Start by building a pipeline with start, decode,
-fetch, execute.
+## Processors
 
-* Write basic arithmetic instructions, branch instructions, and memory instructions.
-Allow for instruction out-of-order, basic parallelism, dependency graphs for 
-instructions.
+* :heavy_multiplication_x: Build a simple ARM7 CPU in Verilog or with another infrastructure.
+*   Start by building a pipeline with simple start, decode, fetch, and exectute commands. Then build a simple register/memory unit to push and pull data, a simple ALU (arithmetic logic unit) that can perform basic arithmetic and logic operations, and a simple CU (control unit) for finding instructions and directing operations. These should be built on top of the functional units constructed in the hardware lesson. 
+*   Additional: Write basic arithmetic instructions, branch instructions, and memory instructions. Allow for instruction out-of-order, basic parallelism, dependency graphs for instructions. Set up memory hierarchy with Registers, L1 cache, L2 cache, L3 cache, DRAM.
 
-* Set up memory hierarchy with Registers, L1 cache, L2 cache, L3 cache, DRAM.
-
-* Build out branch instructions and a set of algorithms for simple branch prediction.
-
-* Build a simple register/memory unit to push and pull data. A simple ALU (arithmetic logic unit) that can perform basic arithmetic and logic operations. Build
-a simple CU (control unit) for finding instructions and directing operations.
-
-* Extra-curricular: GPU basics.
+* :heavy_multiplication_x: Extra-curricular: GPU basics.
 
 ### Section 3: Compilers
 
