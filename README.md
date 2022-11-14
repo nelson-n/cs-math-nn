@@ -153,7 +153,7 @@ sand into silicon ingots, the doping of silicon to create differences in valence
 ### Mathematics
 
 * :heavy_multiplication_x: Learn: differential equations, partial differential equations.
-    * Work on maths courses in Julia.
+    * Work on math courses in Julia.
 
 * :heavy_multiplication_x: Review multivariable calculus, gradient descent, formalize pre-existing notes and upload them.
 
