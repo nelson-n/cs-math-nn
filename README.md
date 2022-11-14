@@ -10,13 +10,63 @@ from transistors and assembly to high level languages, with each lesson building
 off of the last lesson. As such, the sections below should form a solid computer
 science curriculum.
 
+### To-Do List
+List 1:
+* **Acknowledgements** Explain what each item in the awknowledgments section is and how it helped.
+* **Higher Level Languages** Review and upload notes on Advanced R.
+* **The Internet** Port in pre-existing notes on the internet.
+* **Machine Learning / AI** Port in pre-existing work from scientia.
+* **Statistics / Mathematics** Port in pre-existing work from scientia.
+
+List 2:
+* **Higher Level Languages** Finish Fluent Python.
+* **Data Structures** Learn data structures.
+* **Algorithms** Learn algorithms.
+* **Data Structures** Replicate low-level data structures behind base Python types such as list, array, tuple. Built in C++ and then port to Python.
+* **Lower Level Languages** Learn C++ basics.
+* **Lower Level Languages** Replicate lower level Python functions such as len() in C++, then port to Python and interface with low-level data structures that were already built from scratch.
+
+List 3:
+* **Machine Learning / AI** Work on karpathy lectures, tinygrad tutorial, building paradigmatic models in order from scratch until Transformer model is understood.
+
 ### Sections
 
-[Preface: Atoms to Bits](#preface:-atoms-to-bits)
+[Preface: Atoms to Bits](#preface-atoms-to-bits)
 
 [The Configuration of Hardware](#the-configuration-of-hardware)
 
 [Processors](#processors)
+
+[Compilers](#compilers)
+
+[Operating Systems](#operating-systems)
+
+[Networking](#networking)
+
+[Data Structures](#data-structures)
+
+[Algorithms](#algorithms)
+
+[Lower Level Languages](#lower-level-languages)
+
+[Higher Level Languages](#higher-level-languages)
+
+[Parallel Computing](#parallel-computing)
+
+[Databases](#databases)
+
+[The Internet](#the-internet)
+
+[Machine Learning / AI](#machine-learning--ai)
+
+[Extra Curricular Study](#extra-curricular-study)
+* [Hashing Functions / Cryptography](#hashing-functions--cryptography) 
+* [Statistics](#statistics)
+* [Mathematics](#mathematics)
+* [Information Theory and Entropy](#information-theory-and-entropy)
+* [Git](#git)
+
+[Acknowledgments / Inspiration](#acknowledgements--inspiration)
 
 ## Preface: Atoms to Bits 
 
@@ -38,93 +88,81 @@ sand into silicon ingots, the doping of silicon to create differences in valence
 ## Processors
 
 * :heavy_multiplication_x: Build a simple ARM7 CPU in Verilog or with another infrastructure.
-*   Start by building a pipeline with simple start, decode, fetch, and exectute commands. Then build a simple register/memory unit to push and pull data, a simple ALU (arithmetic logic unit) that can perform basic arithmetic and logic operations, and a simple CU (control unit) for finding instructions and directing operations. These should be built on top of the functional units constructed in the hardware lesson. 
-*   Additional: Write basic arithmetic instructions, branch instructions, and memory instructions. Allow for instruction out-of-order, basic parallelism, dependency graphs for instructions. Set up memory hierarchy with Registers, L1 cache, L2 cache, L3 cache, DRAM.
+    * Start by building a pipeline with simple start, decode, fetch, and exectute commands. Then build a simple register/memory unit to push and pull data, a simple ALU (arithmetic logic unit) that can perform basic arithmetic and logic operations, and a simple CU (control unit) for finding instructions and directing operations. These should be built on top of the functional units constructed in the hardware lesson. 
+    * Additional: Write basic arithmetic instructions, branch instructions, and memory instructions. Allow for instruction out-of-order, basic parallelism, dependency graphs for instructions. Set up memory hierarchy with Registers, L1 cache, L2 cache, L3 cache, DRAM.
 
 * :heavy_multiplication_x: Extra-curricular: GPU basics.
 
-### Section 3: Compilers
+## Compilers
 
-* Learn RISC-V architecture, contrast with x86, ARM, and other instruction set
-architectures.
+* :heavy_multiplication_x: Build a C compiler in Haskell. Consider the basics of compiler design, write a parser, output ARM assembly which can then be run through the simple processor designed in the processors lesson.
+    * Build functions for converting binary to numbers and ASCII characters.
 
-:x: Build a C compiler in Haskell. Consider the basics of compiler design. Write 
-a parser, output ARM assembly which can then be run through the processor designed
-in lesson 2. 
+* :heavy_multiplication_x: Learn RISC-V architecture, contrast with x86, ARM, and other instruction set architectures.
 
-* Build functions for converting binary to numbers and ASCII characters.
+## Operating Systems
 
-### Section 4: Operating System
+* :heavy_multiplication_x: Build a UNIX-ish operating system in C or C++ with simple abilities like open, read, write, close, init, cat, ls, rm.
 
-:x: Build a UNIX-ish operating system in C or C++ with simple abilities like
-open, read, write, close, init, cat, ls, rm.
+* :heavy_multiplication_x: Build a filesystem like FAT in C or C++.
 
-:x: Build a filesystem like FAT in C or C++.
+## Networking
 
-### Section: Networking
+## Data Structures
 
-### Section: Data Structures
+* :heavy_multiplication_x: Learn the low-level data structures behind the base data types in Python such as: list, array, tuple, et cetera. Build versions of these data types in C++ and then port to Python with a package such as `pybind11`.
 
-:x: Learn the low-level data structures behind the base data types in Python such
-as: list, array, tuple, et cetera. Build versions of these data types in C++ and
-then port to Python with a package such as `pybind11`.
+## Algorithms
 
-### Section: Algorithms
+## Lower Level Languages
 
-### Section: Lower Level Languages
+* :heavy_multiplication_x: Notes on C, C++, potentially Go or Rust.
 
-:x: C, C++, more. 
+* :heavy_multiplication_x: Replicate lower level Python functions such as len(), dictionary, hash table, sorting algorithm, slicing, indexing, set inclusion, et cetera in C++ to learn how these functions work. Then port these functions to Python with `pybind11`. Interface these functions with the data structures built from scratch in the data structures lesson.
 
-:x: Replicate lower level Python functions such as len(), dictionary, hash table, 
-sorting algorithm, slicing, indexing, set inclusion, et cetera in C++ to learn 
-how these functions work. Then port these functions to Python with `pybind11`.
+## Higher Level Languages
 
-### Section: Higher Level Languages
+* :heavy_multiplication_x: Notes on Python, R, Julia.
 
-:x: Python, R, more.
-* Fluent Python - Luciano Ramalho
-* Advanced R - Hadley Wickham
+* :heavy_check_mark: Advanced R - Hadley Wickham
+    * Upload notes and a link to the book here.
 
-:x: Overview of OOP.
+* :heavy_multiplication_x: Overview of object-oriented-programming (OOP).
 
-### Section: Parallel Computing 
+## Parallel Computing 
 
-### Section: Databases.
+## Databases
 
-### Section: The Internet
+## The Internet
 
-### Section: Machine Learning / AI
+## Machine Learning / AI
 
-Port in work from scientia.
+* :heavy_multiplication_x: Feedforward neural network -> recurrent neural network -> convolution neural network -> ResNet -> Transformer, all from scratch. 
+    * Verify the correct order of the models so that all paradigmatic neural network models are built in-order.
 
-Go through Karpathy lectures. Build ResNet from scratch, build Transformer from
-scratch (verify the correct order of models feedforward -> X -> Y) so that all
-paradigmatic models are built from scratch.
+## Extra Curricular Study
 
-### Extra Curricular Study
+### Hashing Functions / Cryptography
 
-#### Hashing Functions
-:x: Write a hashing function from scratch. Use the hashing function to build a
-hash table function. 
+* :heavy_multiplication_x: Write a hashing function from scratch. Use the hashing function to build a hash table function. 
 
-#### Statistics
+### Statistics
 
-Port in work from scientia.
+* :heavy_multiplication_x: Do some statistics work in Julia.
 
-Do some statistical work in Julia.
+### Mathematics
 
-#### Mathematics
+* :heavy_multiplication_x: Learn: differential equations, partial differential equations.
+    * Work on maths courses in Julia.
 
-Port in work from scientia.
+* :heavy_multiplication_x: Review multivariable calculus, gradient descent, formalize pre-existing notes and upload them.
 
-Learn differential equations.
+### Information Theory and Entropy
 
-#### Information Theory and Entropy
-
-#### Git
+### Git
 * Add Git notes here, link to useful Git book.
 
-### Acknowledgements / Inspiration
+## Acknowledgements / Inspiration
 
 [Self-learning-Computer-Science - PKUFlyingPig](https://github.com/PKUFlyingPig/Self-learning-Computer-Science/blob/main/README.md)
 
