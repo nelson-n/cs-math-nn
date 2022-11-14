@@ -11,14 +11,14 @@ off of the last lesson. As such, the sections below should form a solid computer
 science curriculum.
 
 ### To-Do List
-List 1:
+List 1, Porting in Pre-Existing Work:
 * **Acknowledgements** Explain what each item in the awknowledgments section is and how it helped.
 * **Higher Level Languages** Review and upload notes on Advanced R.
 * **The Internet** Port in pre-existing notes on the internet.
 * **Machine Learning / AI** Port in pre-existing work from scientia.
 * **Statistics / Mathematics** Port in pre-existing work from scientia.
 
-List 2:
+List 2, DSA + C++ + Low Level Python:
 * **Higher Level Languages** Finish Fluent Python.
 * **Data Structures** Learn data structures.
 * **Algorithms** Learn algorithms.
@@ -26,7 +26,7 @@ List 2:
 * **Lower Level Languages** Learn C++ basics.
 * **Lower Level Languages** Replicate lower level Python functions such as len() in C++, then port to Python and interface with low-level data structures that were already built from scratch.
 
-List 3:
+List 3, Neural Network Work:
 * **Machine Learning / AI** Work on karpathy lectures, tinygrad tutorial, building paradigmatic models in order from scratch until Transformer model is understood.
 
 ### Sections
