@@ -13,7 +13,6 @@ science curriculum.
 ### To-Do List
 List 1, Porting in Pre-Existing Work:
 * **Acknowledgements** Explain what each item in the awknowledgments section is and how it helped.
-* **Higher Level Languages** Review and upload notes on Advanced R.
 * **Higher Level Languages** Review and upload Python cheatsheets.
 * **The Internet** Port in pre-existing notes on the internet.
 * **Machine Learning / AI** Port in pre-existing work from scientia.
