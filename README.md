@@ -14,6 +14,7 @@ science curriculum.
 List 1, Porting in Pre-Existing Work:
 * **Acknowledgements** Explain what each item in the awknowledgments section is and how it helped.
 * **Higher Level Languages** Review and upload notes on Advanced R.
+* **Higher Level Languages** Review and upload Python cheatsheets.
 * **The Internet** Port in pre-existing notes on the internet.
 * **Machine Learning / AI** Port in pre-existing work from scientia.
 * **Statistics / Mathematics** Port in pre-existing work from scientia.
@@ -22,7 +23,7 @@ List 2, DSA + C++ + Low Level Python:
 * **Higher Level Languages** Finish Fluent Python.
 * **Data Structures** Learn data structures.
 * **Algorithms** Learn algorithms.
-* **Data Structures** Replicate low-level data structures behind base Python types such as list, array, tuple. Built in C++ and then port to Python.
+* **Data Structures** Replicate low-level data structures behind base Python types such as list, array, tuple, dictionary, set. For example, build a low-level hash table function and then use this to build a dictionary type in Python (before being able to do this, a hashing function must be built from scratch). Build in C++ and then port to Python. Use `timeit` to compare the speed of lookup using the standard python dictionary/set type to lookup using my custom built data type.
 * **Lower Level Languages** Learn C++ basics.
 * **Lower Level Languages** Replicate lower level Python functions such as len() in C++, then port to Python and interface with low-level data structures that were already built from scratch.
 
@@ -70,7 +71,7 @@ List 3, Neural Network Work:
 
 ## Preface: Atoms to Bits 
 
-**/preface**
+**/Preface**
 
 The preface givens an overview of the complete compute stack: the refining of
 sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build a transistor, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. This gives an overview of concepts that will be covered in detail in later sections, and also builds knowledge about concepts that cannot be covered in this curriculum such as building a transistor or building a solid-state-drive (SSD). 
@@ -128,6 +129,15 @@ sand into silicon ingots, the doping of silicon to create differences in valence
     * Upload notes and a link to the book here.
 
 * :heavy_multiplication_x: Overview of object-oriented-programming (OOP).
+
+**/HigherLevelLanguages**
+
+This section contains notes and exercises for learning multiple high level programming languages. This knowledge is derived mainly from a few excellent books.
+
+**/Python**
+
+**FluentPython.py** 
+* :heavy_check_mark: Notes on the book *Fluent Python* by Luciano Ramalho. This 700 page book provides an in-depth understanding of Python 3 that covers all of the fundamental Python data types, the methods and OOP system that underpins Python, and the programming tradeoffs presented by the Python language. These notes follow the text of the book closely. A pdf copy of *Fluent Python* may be found [here](https://github.com/hiddenJuliet/pythondocument/blob/master/Fluent%20Python.pdf).
 
 ## Parallel Computing 
 
