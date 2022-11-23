@@ -888,9 +888,9 @@ heapq
 # Chapter 3: Dictionaries and Sets
 #==============================================================================
 
-"Any running Python program has many dictionaries active at the same time, 
-even if the user’s program code doesn’t explicitly use a dictionary."
-- A.M. Kuchling
+# "Any running Python program has many dictionaries active at the same time, 
+# even if the user’s program code doesn’t explicitly use a dictionary.""
+# - A.M. Kuchling
 
 # The dict type is a fundamental part of the Python language. The built in 
 # dict functions are stored in __builtins__.__dict__. Dicts in Python are
