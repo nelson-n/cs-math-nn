@@ -5,11 +5,11 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 ### Sections
 
-[Hardware / Processors](#hardware-processors)
+[Hardware / Processors](#hardware-/-processors)
 
-[Compilers / Operating Systems](#compilers-operating-systems)
+[Compilers / Operating Systems](#compilers-/-operating-systems)
 
-[Data Structures / Algorithms](#data-structures-algorithms)
+[Data Structures / Algorithms](#data-structures-/-algorithms)
 
 [Computer Languages](#computer-languages)
 
@@ -19,12 +19,12 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 [Neural Networks](#neural-networks)
 
-[Extra Curricular](#extra-curricular-study)
-* [Networking / The Internet](#networking-internet)
+[Extra Curricular](#extra-curricular)
+* [Networking / The Internet](#networking-/-the-internet)
 * [Parallel Computing](#parallel-computing)
 * [Databases](#databases)
-* [Hashing Functions / Cryptography](#hashing-functions-cryptography) 
-* [Information Theory / Entropy](#information-theory-entropy)
+* [Hashing Functions / Cryptography](#hashing-functions-/-cryptography) 
+* [Information Theory / Entropy](#information-theory-/-entropy)
 * [Assorted](#assorted)
 
 ## Preface: Atoms to Bits 
@@ -49,6 +49,7 @@ The preface gives an overview of the complete compute stack: the refining of san
 ## Compilers / Operating Systems
 
 #### :bangbang: to-do
+* Add notes on basic linux filesystem format from [here](https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained).
 * Build a C compiler in Haskell. Consider the basics of compiler design, write a parser, output ARM assembly which can then be run through the simple processor designed in the processors lesson.
     * Build functions for converting binary to numbers and ASCII characters.
 * Learn RISC-V architecture, contrast with x86, ARM, and other instruction set architectures.
@@ -79,9 +80,8 @@ Languages currently covered:
 
 #### :bangbang: to-do
 * Upload pre-existing statistics exercises.
-
-#### :bangbang: to-do
 * Do some statistics work in Julia.
+
 ## Mathematics
 
 #### :bangbang: to-do
@@ -116,7 +116,7 @@ Languages currently covered:
 #### :bangbang: to-do
 * Add Git notes here, link to useful Git book.
 
-## Acknowledgements / Inspiration
+## Acknowledgements
 
 [Self-learning-Computer-Science - PKUFlyingPig](https://github.com/PKUFlyingPig/Self-learning-Computer-Science/blob/main/README.md)
 * Open-source CS curriculum that inspired the structure and content of this curriculum.
