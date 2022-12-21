@@ -33,7 +33,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 The preface gives an overview of the complete compute stack: the refining of sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build a transistor, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. This gives an overview of concepts that will be covered in detail in later sections.
 
-### ToDo :heavy_multiplication_x:
+#### :x: to-do
 * Add notes on FPGAs, how FPGAs are built from transistors, notes on how ICs are a collection of transistors in a reliable package, notes on LUTs (lookup tables).
 
 ## Hardware / Processors
@@ -64,10 +64,11 @@ The preface gives an overview of the complete compute stack: the refining of san
 
 ## Computer Languages
 
-`/ComputerLanguage`
+`/ComputerLanguages`
+
 This section contains notes and exercises on both high level and low level programming languages.
 
-#### ToDo
+#### :x: to-do
 * Notes on C, C++, potentially Go or Rust.
 * Replicate lower level Python functions such as len(), dictionary, hash table, sorting algorithm, slicing, indexing, set inclusion, et cetera in C++ to learn how these functions work. Then port these functions to Python with `pybind11`. Interface these functions with the data structures built from scratch in the data structures lesson.
 * Overview of object-oriented-programming (OOP).
