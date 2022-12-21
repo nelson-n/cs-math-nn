@@ -66,7 +66,7 @@ The preface gives an overview of the complete compute stack: the refining of san
 
 `/ComputerLanguages`
 
-This section contains notes and exercises on both high level and low level programming languages.
+This section contains notes and exercises on both high level and low level programming languages. MORE HERE!
 
 #### :x: to-do
 * Notes on C, C++, potentially Go or Rust.
@@ -78,7 +78,7 @@ This section contains notes and exercises on both high level and low level progr
 * :heavy_multiplication_x: Do some statistics work in Julia.
 ## Mathematics
 
-* :heavy_multiplication_x: Learn: differential equations, partial differential equations.
+* :bangbang: Learn: differential equations, partial differential equations.
     * Work on math courses in Julia.
 
 * :heavy_multiplication_x: Review multivariable calculus, gradient descent, formalize pre-existing notes and upload them.
