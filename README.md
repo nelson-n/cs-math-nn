@@ -1,13 +1,7 @@
 
-## computer science - math - neural networks
+# computer science - math - neural networks
 
-This curriculum is my personal approach to learning topics in computer science, 
-mathematics, and neural networks from first principles. This repository is not 
-necessarily a full curriculum, but rather a reflection of my interests, needs, and
-gaps in my knowledge. However, my goal is to build a curriculum that covers the
-whole compute stack from transistors and assembly to the math underpinning neural networks. 
-As such, the lessons I compile below should form a solid computer science, math, 
-and deep learning curriculum.
+This curriculum is my personal approach to learning topics in computer science, mathematics, and neural networks from first principles. This repository is not necessarily a full curriculum, but rather a reflection of my interests, needs, and gaps in my knowledge. However, my goal is to build a curriculum that covers the whole compute stack from transistors and assembly to the math underpinning neural networks. As such, the lessons I compile below should form a solid computer science, math, and deep learning curriculum.
 
 ### Sections
 
@@ -35,14 +29,9 @@ and deep learning curriculum.
 
 ## Preface: Atoms to Bits 
 
-**/Preface**
+`/Preface/atoms2bits.pdf`
 
-The preface gives an overview of the complete compute stack: the refining of
-sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build a transistor, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. This gives an overview of concepts that will be covered in detail in later sections, and also builds knowledge about concepts that cannot be covered in this curriculum such as building a transistor or building a solid-state-drive (SSD). 
-
-**atoms2bits.pdf** 
-* :heavy_check_mark: Notes covering: 1 Silicon, 2 Transistors, 3 CPU Production, 4 Logic Gate, 5 CPU Architecture and Operation, 6 GPU Architecture, 7 CPU Components, 8 Binary Code, 9 Instruction Set Architecture, 10 Memory and Motherboard, 11 BIOS, 12 Operating System, 13 Higher Level Languages.
-* :heavy_multiplication_x: Add notes on FPGAs, how FPGAs are built from transistors, notes on how ICs are a collection of transistors in a reliable package, notes on LUTs (lookup tables).
+The preface gives an overview of the complete compute stack: the refining of sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build a transistor, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. This gives an overview of concepts that will be covered in detail in later sections.
 
 ## Hardware / Processors
 * :heavy_multiplication_x: Implement AND, NAND, other logic gates from scratch, use these logic gates to build functional units such as a 1-bit adder, multiplexer, sequential logic, SRAM, etc. Use logic gates to create simple implementations of various memory units: L1 cache, DRAM, etc. The functional units built in this section will be later when building a toy process and instruction set.
@@ -72,29 +61,9 @@ sand into silicon ingots, the doping of silicon to create differences in valence
 
 ## Computer Languages
 
-* :heavy_multiplication_x: Notes on C, C++, potentially Go or Rust.
-
-* :heavy_multiplication_x: Replicate lower level Python functions such as len(), dictionary, hash table, sorting algorithm, slicing, indexing, set inclusion, et cetera in C++ to learn how these functions work. Then port these functions to Python with `pybind11`. Interface these functions with the data structures built from scratch in the data structures lesson.
-
-* :heavy_multiplication_x: Notes on Julia.
-
-* :heavy_multiplication_x: Overview of object-oriented-programming (OOP).
-
 **/HigherLevelLanguages**
 
-This section contains notes and exercises for learning multiple high level programming languages. This knowledge is derived mainly from a few excellent books.
-
-**/Python/PythonCheatsheet.py**
-* :heavy_check_mark: Cheatsheet containing notes on important functionality available in base Python.
-
-**/Python/FluentPython.py** 
-* :heavy_check_mark: Notes on the book *Fluent Python* by Luciano Ramalho. This 700 page book provides an in-depth understanding of Python 3 that covers all of the fundamental Python data types, the methods and OOP system that underpins Python, and the programming tradeoffs present in the Python language. These notes follow the text of the book closely. A pdf copy of *Fluent Python* may be found at [Fluent Python](https://github.com/hiddenJuliet/pythondocument/blob/master/Fluent%20Python.pdf).
-
-**/Python/TimeComparison.py**
-* :heavy_check_mark: General script for comparing the speed of various Python functions and methods. Used to explore how and why certain implementations are faster than others.
-
-**/R/AdvancedR.R**
-* :heavy_check_mark: Notes on the book *Advanced R* by Hadley Wickham. This book focuses on advanced topics in the R language as well as how the R language works under the surface. Topics covered in the book include memory use, functional programming, the multiple OOP systems in R, and metaprogramming. After reading this book, one will have an advanced understanding of how code actually executes in R with knowledge of method dispatch, memory allocation, multithreading, and when the R language calls code written in C. The full book may be found at [Advanced R](https://adv-r.hadley.nz/). 
+This section contains notes and exercises on both high level and low level programming languages.
 
 ## Statistics
 
