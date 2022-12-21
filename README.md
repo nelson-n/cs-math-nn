@@ -1,5 +1,5 @@
 
-# self-taught-CS
+# cs-math-nn
 
 This curriculum is my personal approach to learning computer science
 from first principles, and it will be filled out over time as I self-learn new
