@@ -5,7 +5,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 ### Sections
 
-[Hardware / Processors](#hardware-/-processors)
+[Hardware / Processors](#hardware--processors)
 
 [Compilers / Operating Systems](#compilers-/-operating-systems)
 
