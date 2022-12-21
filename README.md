@@ -1,31 +1,13 @@
 
-# computer science - math - neural networks
+## computer science - math - neural networks
 
 This curriculum is my personal approach to learning topics in computer science, 
 mathematics, and neural networks from first principles. This repository is not 
 necessarily a full curriculum, but rather a reflection of my interests, needs, and
 gaps in my knowledge. However, my goal is to build a curriculum that covers the
-whole compute stack from transistors and assembly to the math underpinning gradient
-descent and the implementation of neural networks. As such, the lessons I compile
-below should form a solid curriculum on computer science, mathematics, and neural networks.
-
-### To-Do List
-List 1, Porting in Pre-Existing Work:
-* **The Internet** Port in pre-existing notes on the internet.
-* **Machine Learning / AI** Port in pre-existing work from scientia.
-* **Statistics / Mathematics** Port in pre-existing work from scientia.
-
-List 2, DSA + C++ + Low Level Python:
-* **Higher Level Languages** Finish Fluent Python.
-* **Data Structures** Learn data structures.
-* **Algorithms** Learn algorithms.
-* **Data Structures** Replicate low-level data structures behind base Python types such as list, array, tuple, dictionary, set. For example, build a low-level hash table function and then use this to build a dictionary type in Python (before being able to do this, a hashing function must be built from scratch). Build in C++ and then port to Python. Use `timeit` to compare the speed of lookup using the standard python dictionary/set type to lookup using my custom built data type.
-* **Lower Level Languages** Learn C++ basics.
-* **Lower Level Languages** Replicate lower level Python functions such as len() in C++, then port to Python and interface with low-level data structures that were already built from scratch.
-* Build a dictionary method using C++ and an R dictionary interface. Then publish an R dictionary class to CRAN.
-
-List 3, Neural Network Work:
-* **Machine Learning / AI** Work on karpathy lectures, tinygrad tutorial, building paradigmatic models in order from scratch until Transformer model is understood.
+whole compute stack from transistors and assembly to the math underpinning neural networks. 
+As such, the lessons I compile below should form a solid computer science, math, 
+and deep learning curriculum.
 
 ### Sections
 
@@ -35,9 +17,7 @@ List 3, Neural Network Work:
 
 [Data Structures / Algorithms](#data-structures-algorithms)
 
-[Lower Level Languages](#lower-level-languages)
-
-[Higher Level Languages](#higher-level-languages)
+[Computer Languages](#computer-languages)
 
 [Statistics](#statistics)
 
@@ -90,13 +70,11 @@ sand into silicon ingots, the doping of silicon to create differences in valence
 
 * :heavy_multiplication_x: Learn the low-level data structures behind the base data types in Python such as: list, array, tuple, et cetera. Build versions of these data types in C++ and then port to Python with a package such as `pybind11`.
 
-## Lower Level Languages
+## Computer Languages
 
 * :heavy_multiplication_x: Notes on C, C++, potentially Go or Rust.
 
 * :heavy_multiplication_x: Replicate lower level Python functions such as len(), dictionary, hash table, sorting algorithm, slicing, indexing, set inclusion, et cetera in C++ to learn how these functions work. Then port these functions to Python with `pybind11`. Interface these functions with the data structures built from scratch in the data structures lesson.
-
-## Higher Level Languages
 
 * :heavy_multiplication_x: Notes on Julia.
 
@@ -157,3 +135,23 @@ This section contains notes and exercises for learning multiple high level progr
 
 [From the Transistor to the Web Browser - George Hotz](https://github.com/geohot/fromthetransistor)
 - Proposed CS curriculum that inspired many of the low-level CS lessons on computer hardware, chips, and compilers that are in this curriculum.
+
+
+
+### To-Do List
+List 1, Porting in Pre-Existing Work:
+* **The Internet** Port in pre-existing notes on the internet.
+* **Machine Learning / AI** Port in pre-existing work from scientia.
+* **Statistics / Mathematics** Port in pre-existing work from scientia.
+
+List 2, DSA + C++ + Low Level Python:
+* **Higher Level Languages** Finish Fluent Python.
+* **Data Structures** Learn data structures.
+* **Algorithms** Learn algorithms.
+* **Data Structures** Replicate low-level data structures behind base Python types such as list, array, tuple, dictionary, set. For example, build a low-level hash table function and then use this to build a dictionary type in Python (before being able to do this, a hashing function must be built from scratch). Build in C++ and then port to Python. Use `timeit` to compare the speed of lookup using the standard python dictionary/set type to lookup using my custom built data type.
+* **Lower Level Languages** Learn C++ basics.
+* **Lower Level Languages** Replicate lower level Python functions such as len() in C++, then port to Python and interface with low-level data structures that were already built from scratch.
+* Build a dictionary method using C++ and an R dictionary interface. Then publish an R dictionary class to CRAN.
+
+List 3, Neural Network Work:
+* **Machine Learning / AI** Work on karpathy lectures, tinygrad tutorial, building paradigmatic models in order from scratch until Transformer model is understood.
