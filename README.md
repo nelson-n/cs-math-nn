@@ -1,5 +1,6 @@
 
-# computer science - math - neural networks
+# computer science - mathematics - neural networks 
+<a href='https://github.com/nelson-n/cs-math-nn/blob/main/Preface/Assets/RepoLogo.png'><img src='/Preface/Assets/RepoLogo.png' align="right" height="200" /></a>
 
 This curriculum is my personal approach to learning topics in computer science, mathematics, and neural networks from first principles. This repository is not necessarily a full curriculum, but rather a reflection of my interests, needs, and gaps in my knowledge. However, my goal is to build a curriculum that covers the whole compute stack from transistors and assembly to the math underpinning neural networks. As such, the lessons I compile below should form a solid computer science, math, and deep learning curriculum.
 
@@ -7,9 +8,9 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 [Hardware / Processors](#hardware--processors)
 
-[Compilers / Operating Systems](#compilers-/-operating-systems)
+[Compilers / Operating Systems](#compilers--operating-systems)
 
-[Data Structures / Algorithms](#data-structures-/-algorithms)
+[Data Structures / Algorithms](#data-structures--algorithms)
 
 [Computer Languages](#computer-languages)
 
@@ -20,11 +21,11 @@ This curriculum is my personal approach to learning topics in computer science, 
 [Neural Networks](#neural-networks)
 
 [Extra Curricular](#extra-curricular)
-* [Networking / The Internet](#networking-/-the-internet)
+* [Networking / The Internet](#networking--the-internet)
 * [Parallel Computing](#parallel-computing)
 * [Databases](#databases)
-* [Hashing Functions / Cryptography](#hashing-functions-/-cryptography) 
-* [Information Theory / Entropy](#information-theory-/-entropy)
+* [Hashing Functions / Cryptography](#hashing-functions--cryptography) 
+* [Information Theory / Entropy](#information-theory--entropy)
 * [Assorted](#assorted)
 
 ## Preface: Atoms to Bits 
