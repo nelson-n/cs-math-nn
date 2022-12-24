@@ -1,4 +1,5 @@
-# CS-MATH-NN <a href='https://github.com/nelson-n/cs-math-nn/blob/main/Preface/Assets/RepoLogo.png'><img src='/Preface/Assets/RepoLogo.png' align="right" height="200 /></a>
+# Computer Science - Math - Neural Networks 
+<a href='https://github.com/nelson-n/cs-math-nn/blob/main/Preface/Assets/RepoLogo.png'><img src='/Preface/Assets/RepoLogo.png' align="right" height="160" /></a>
 
 This curriculum is my personal approach to learning topics in computer science, mathematics, and neural networks from first principles. This repository is not necessarily a full curriculum, but rather a reflection of my interests, needs, and gaps in my knowledge. However, my goal is to build a curriculum that covers the whole compute stack from transistors and assembly to the math underpinning neural networks. As such, the lessons I compile below should form a solid computer science, math, and deep learning curriculum.
 
