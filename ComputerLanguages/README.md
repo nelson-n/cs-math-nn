@@ -7,7 +7,7 @@ Cheatsheet containing notes on loops, regex, data structures, and useful functio
 
 `/TimeComparison.py`
 
-General script for comparing the speed of various Python functions and methods. Used to explore how and why certain implementations are faster than others.
+General script for comparing the speed of various Python functions and methods. This script is used to explore how and why certain implementations are faster than others.
 
 `/FluentPython.py`
 
