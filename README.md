@@ -60,6 +60,7 @@ The preface gives an overview of the complete compute stack: the refining of san
 #### :bangbang: to-do
 * Learn the low-level data structures behind the base data types in Python such as: list, array, tuple, et cetera. Build versions of these data types in C++ and then port to Python with a package like `pybind11`.
 * Add a lesson on optimal algorithms.
+* Add a lesson on the properties of different number systems: hexadecimal system, 32-bit numbers, 128-bit numbers, how with a 32-bit number system you can generate the numbers 0-65535, etc.
 
 ## Computer Languages
 
@@ -133,7 +134,6 @@ Proposed CS curriculum that inspired many of the low-level CS lessons on compute
 
 ### To-Do List
 List 1, Porting in Pre-Existing Work:
-* **The Internet** Port in pre-existing notes on the internet.
 * Add notes on UNIX that I already have.
 * **Machine Learning / AI** Port in pre-existing work from scientia.
 * **Statistics / Mathematics** Port in pre-existing work from scientia.
