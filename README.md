@@ -32,7 +32,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/Preface/atoms2bits.pdf`
 
-The preface gives an overview of the complete compute stack: the refining of sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build transistors, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. This preface gives an overview of concepts that will be covered in detail in later sections.
+* The preface gives an overview of the complete compute stack: the refining of sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build transistors, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. This preface gives an overview of concepts that will be covered in detail in later sections.
 
 #### :bangbang: to-do
 * Add notes on FPGAs, how FPGAs are built from transistors, notes on how ICs are a collection of transistors in a reliable package, notes on LUTs (lookup tables).
@@ -48,8 +48,12 @@ The preface gives an overview of the complete compute stack: the refining of san
 
 ## Compilers / Operating Systems
 
+`/CompilersOperatingSystems`
+
+* Notes on Unix/Linux and a [Unix Cheatsheet]() of useful commands.
+
 #### :bangbang: to-do
-* Create a set of general notes on operating systems (linux in particular). Add notes on the basic linux filesystem format from [here](https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained).
+* Create a set of general notes on linux/unix, combine with notes in unix.pdf in local. Add notes on the basic linux filesystem format from [here](https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained).
 * Build a C compiler in Haskell. Consider the basics of compiler design, write a parser, output ARM assembly which can then be run through the simple processor designed in the processors lesson.
     * Build functions for converting binary to numbers and ASCII characters.
 * Learn RISC-V architecture, contrast with x86, ARM, and other instruction set architectures.
@@ -67,7 +71,8 @@ The preface gives an overview of the complete compute stack: the refining of san
 
 `/ComputerLanguages`
 
-This section contains notes and exercises on both high level and low level programming languages. Includes notes from popular books such as [Fluent Python](https://github.com/hiddenJuliet/pythondocument/blob/master/Fluent%20Python.pdf) and [Advanced R](https://adv-r.hadley.nz/), cheatsheets with useful base commands, and scripts for benchmarking.
+* Notes, exercises, and cheatsheets on both high level and low level programming languages.
+* Notes from popular books such as [Fluent Python](https://github.com/hiddenJuliet/pythondocument/blob/master/Fluent%20Python.pdf) and [Advanced R](https://adv-r.hadley.nz/).
 
 Languages currently covered:
 * Python
@@ -100,12 +105,13 @@ Languages currently covered:
 
 ### Networking / Internet
 
-Contains notes on computer networking and how the internet protocol stack works.
+`/NetworkingInternet`
+
+* Notes on computer networking and how the internet protocol stack works.
 
 #### :bangbang: to-do
-* Manually create and send TCP/IP packets: [tutorial](https://inc0x0.com/tcp-ip-packets-introduction/tcp-ip-packets-3-manually-create-and-send-raw-tcp-ip-packets/).
+* Manually create and send TCP/IP packets: [tutorial](https://inc0x0.com/tcp-ip-packets-introduction/tcp-ip-packets-3-manually-create-and-send-raw-tcp-ip-packets/)
 
-`/NetworkingInternet`
 ### Parallel Computing 
 
 ### Databases
@@ -125,7 +131,7 @@ Contains notes on computer networking and how the internet protocol stack works.
 
 `/Assorted/Git`
 
-Contains a cheatsheet of useful git commands: [git cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Git/GitCheatsheet.md)
+* [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Git/GitCheatsheet.md) of commands useful for working with Git and GitHub.
 
 ## Acknowledgements
 
@@ -134,6 +140,12 @@ Open-source CS curriculum that inspired the structure and content of this curric
 
 [From the Transistor to the Web Browser - George Hotz](https://github.com/geohot/fromthetransistor)
 Proposed CS curriculum that inspired many of the low-level CS lessons on computer hardware, chips, and compilers that are in this curriculum.
+
+## Quick Access Links
+* [Unix Cheatsheet]
+* [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Git/GitCheatsheet.md)
+* [Python Cheatsheet]
+
 
 ### To-Do List
 List 1, Porting in Pre-Existing Work:
