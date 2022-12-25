@@ -136,7 +136,7 @@ Proposed CS curriculum that inspired many of the low-level CS lessons on compute
 List 1, Porting in Pre-Existing Work:
 * Add notes on UNIX that I already have.
 * **Machine Learning / AI** Port in pre-existing work from scientia.
-* **Statistics / Mathematics** Port in pre-existing work from scientia..
+* **Statistics / Mathematics** Port in pre-existing work from scientia.
 
 List 2, DSA + C++ + Low Level Python:
 * **Higher Level Languages** Finish Fluent Python.
