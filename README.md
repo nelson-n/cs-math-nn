@@ -19,13 +19,14 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 [Neural Networks](#neural-networks)
 
-[Extra Curricular](#extra-curricular)
+[Additional Topics](#additional-topics)
 * [Networking / Internet](#networking--internet)
 * [Parallel Computing](#parallel-computing)
 * [Databases](#databases)
 * [Hashing Functions / Cryptography](#hashing-functions--cryptography) 
 * [Information Theory / Entropy](#information-theory--entropy)
-* [Assorted](#assorted)
+
+[Assorted](#assorted)
 
 ## Preface: Atoms to Bits 
 
@@ -95,7 +96,7 @@ Languages currently covered:
 * Build the following models from scratch in NumPy: Feedforward neural network -> recurrent neural network -> convolution neural network -> ResNet -> Transformer, all from scratch. 
     * Verify the correct order of the models so that all paradigmatic neural network models are built in-order.
 
-## Extra Curricular
+## Additional Topics
 
 ### Networking / Internet
 
@@ -114,12 +115,15 @@ Contains notes on computer networking and how the internet protocol stack works.
 #### :bangbang: to-do
 * Write a hashing function from scratch. Use the hashing function to build a hash table function. 
 * Upload pre-existing crptography notes.
+* Write a script to generate public/private key pairs using SHA256 or another hashing function.
 
 ### Information Theory / Entropy
 
-### Assorted
+## Assorted
 
-#### Git
+### Git
+
+`/Assorted/Git`
 
 #### :bangbang: to-do
 * Add Git notes here, link to useful Git book.
