@@ -125,8 +125,7 @@ Contains notes on computer networking and how the internet protocol stack works.
 
 `/Assorted/Git`
 
-#### :bangbang: to-do
-* Add Git notes here, link to useful Git book.
+Contains a cheatsheet of useful git commands: [git cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Git/GitCheatsheet.md)
 
 ## Acknowledgements
 
