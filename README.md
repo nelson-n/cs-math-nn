@@ -23,7 +23,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Networking / Internet](#networking--internet)
 * [Parallel Computing](#parallel-computing)
 * [Databases](#databases)
-* [Hashing Functions / Cryptography](#hashing-functions--cryptography) 
+* [Cryptography](#cryptography) 
 * [Information Theory / Entropy](#information-theory--entropy)
 
 [Assorted](#assorted)
@@ -82,6 +82,7 @@ Languages currently covered:
 * Add notes on C, C++, potentially Go or Rust.
 * Replicate lower level Python functions such as len(), dictionary, hash table, a sorting algorithm, slicing, indexing, set inclusion, et cetera in C++ to learn how these functions work. Then port these functions to Python with `pybind11`. Interface these functions with the data structures built from scratch in the data structures lesson.
 * Overview of object-oriented-programming (OOP).
+* Build a dictionary method using C++ and an R dictionary interface. Then publish an R dictionary class to CRAN.
 
 ## Statistics
 
@@ -89,10 +90,9 @@ Languages currently covered:
 
 * Implements Maximum Likelihood Estimation (MLE) from scratch, then benchmarks against a canonical optimization function.
 * Implements the Metropolis-Hastings method from scratch.
-* Estimated Ordinary Least Squares (OLS) regression coefficients using Stochastic Gradient Descent (SGD) and tests the accuracy of estimated coefficients out-of-sample.
+* Estimates Ordinary Least Squares (OLS) regression coefficients using Stochastic Gradient Descent (SGD) and tests the accuracy of estimated coefficients out-of-sample.
 
 #### :bangbang: to-do
-* Upload pre-existing statistics exercises.
 * Do some statistics work in Julia.
 
 ## Mathematics
@@ -137,7 +137,7 @@ Languages currently covered:
 
 #### :bangbang: to-do
 
-### Hashing Functions / Cryptography
+### Cryptography
 
 #### :bangbang: to-do
 * Write a hashing function from scratch. Use the hashing function to build a hash table function. 
@@ -148,11 +148,13 @@ Languages currently covered:
 
 ## Assorted
 
-### Git
-
 `/Assorted/Git`
 
 * [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Git/GitCheatsheet.md) of useful commands for working with Git and GitHub.
+
+`/Assorted/EquationsCheetsheet.md` 
+
+* [Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md) of math, stats, and neural network equations implemented in LaTeX.
 
 ## Acknowledgements
 
@@ -167,21 +169,15 @@ Proposed CS curriculum that inspired many of the low-level CS lessons on compute
 * [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Git/GitCheatsheet.md)
 * [Python Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/PythonCheatsheet.py)
 
+## to-do List
 
-### To-Do List
-List 1, Porting in Pre-Existing Work:
-* Add notes on UNIX that I already have.
-* **Machine Learning / AI** Port in pre-existing work from scientia.
-* **Statistics / Mathematics** Port in pre-existing work from scientia..
-
-List 2, DSA + C++ + Low Level Python:
-* **Higher Level Languages** Finish Fluent Python.
-* **Data Structures** Learn data structures.
-* **Algorithms** Learn algorithms.
-* **Data Structures** Replicate low-level data structures behind base Python types such as list, array, tuple, dictionary, set. For example, build a low-level hash table function and then use this to build a dictionary type in Python (before being able to do this, a hashing function must be built from scratch). Build in C++ and then port to Python. Use `timeit` to compare the speed of lookup using the standard python dictionary/set type to lookup using my custom built data type.
-* **Lower Level Languages** Learn C++ basics.
-* **Lower Level Languages** Replicate lower level Python functions such as len() in C++, then port to Python and interface with low-level data structures that were already built from scratch.
-* Build a dictionary method using C++ and an R dictionary interface. Then publish an R dictionary class to CRAN.
-
-List 3, Neural Network Work:
-* **Machine Learning / AI** Work on karpathy lectures, tinygrad tutorial, building paradigmatic models in order from scratch until Transformer model is understood.
+* Learn Data Structures and Algorithms foundation.
+* Neural Network work.
+    * Look at Karpathy lectures.
+    * Look at tinygrad tutorial, play with tinygrad.
+    * Build paradigmatic models in sequential order until Transformer model is reached.
+    * Read "Attention Is All You Need" paper.
+* Finish Fluent Python.
+* Learn C++ basics (**Computer Languages**), write/replicate a hashing function from scratch in C++ (**Cryptography**), build a low-level hash table function and then use this to build a dictionary type in Python (**Data Structures**), use `timeit` to compare the speed of lookup using the standard Python dictionary implementation versus the dictionary implementation you just wrote.
+* Replicate lower level Python functions such as len() in C++, then port to Python and compare speed.
+* Add LaTeX equations to pre-existing math/stats/neural network exercises and `/Assorted/EquationsCheetsheet.md` based off of this [tutorial](https://blmoistawinde.github.io/ml_equations_latex/#negative-loglikelihood).
