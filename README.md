@@ -50,7 +50,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/CompilersOperatingSystems`
 
-* Notes on Unix/Linux and a [Unix Cheatsheet]() of useful commands.
+* Notes on Unix/Linux and a [Unix Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/CompilersOperatingSystems/Unix/UnixCheatsheet.md) of useful commands.
 
 #### :bangbang: to-do
 * Create a set of general notes on linux/unix, combine with notes in unix.pdf in local. Add notes on the basic linux filesystem format from [here](https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained).
@@ -85,17 +85,30 @@ Languages currently covered:
 
 ## Statistics
 
+`/Statistics`
+
 #### :bangbang: to-do
 * Upload pre-existing statistics exercises.
 * Do some statistics work in Julia.
 
 ## Mathematics
 
+`/Math`
+
+* Implements Singular Value Decomposition (SVD) and Principal Component Analysis (PCA) from theory. Uses SVD and PCA to compress images and find the properties of transformed Gaussian data.
+
 #### :bangbang: to-do
 * Learn: differential equations, partial differential equations. Work on these problems in Julia or Python.
 * Review multivariable calculus, gradient descent, formalize pre-existing notes and upload them.
 
 ## Neural Networks
+
+`/NeuralNetworks`
+
+* Implements the following neural network architectures from scratch using NumPy and then trains and tests the neural networks out-of-sample.
+    * Feedforward Neural Network
+    * Recurrent Neural Network
+* Solves simple neural network problems relating to finding optimas, gradient descent, et cetera.
 
 #### :bangbang: to-do
 * Build the following models from scratch in NumPy: Feedforward neural network -> recurrent neural network -> convolution neural network -> ResNet -> Transformer, all from scratch. 
@@ -114,7 +127,11 @@ Languages currently covered:
 
 ### Parallel Computing 
 
+#### :bangbang: to-do
+
 ### Databases
+
+#### :bangbang: to-do
 
 ### Hashing Functions / Cryptography
 
@@ -131,7 +148,7 @@ Languages currently covered:
 
 `/Assorted/Git`
 
-* [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Git/GitCheatsheet.md) of commands useful for working with Git and GitHub.
+* [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Git/GitCheatsheet.md) of useful commands for working with Git and GitHub.
 
 ## Acknowledgements
 
@@ -142,9 +159,9 @@ Open-source CS curriculum that inspired the structure and content of this curric
 Proposed CS curriculum that inspired many of the low-level CS lessons on computer hardware, chips, and compilers that are in this curriculum.
 
 ## Quick Access Links
-* [Unix Cheatsheet]
+* [Unix Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/CompilersOperatingSystems/Unix/UnixCheatsheet.md)
 * [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Git/GitCheatsheet.md)
-* [Python Cheatsheet]
+* [Python Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/PythonCheatsheet.py)
 
 
 ### To-Do List
