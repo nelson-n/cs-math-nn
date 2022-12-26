@@ -93,6 +93,7 @@ Languages currently covered:
 * Estimates Ordinary Least Squares (OLS) regression coefficients using Stochastic Gradient Descent (SGD) and tests the accuracy of estimated coefficients out-of-sample.
 
 #### :bangbang: to-do
+* Poker exercises: implement a card deck class with operations such as draw X cards, calculate probabilites of different hands given different stages of a game, implement riffle shuffle, et cetera.
 * Do some statistics work in Julia.
 
 ## Mathematics
@@ -177,7 +178,9 @@ Proposed CS curriculum that inspired many of the low-level CS lessons on compute
     * Look at tinygrad tutorial, play with tinygrad.
     * Build paradigmatic models in sequential order until Transformer model is reached.
     * Read "Attention Is All You Need" paper.
+* Create LeetCode / Google CodeJam practice schedule. 
 * Finish Fluent Python.
 * Learn C++ basics (**Computer Languages**), write/replicate a hashing function from scratch in C++ (**Cryptography**), build a low-level hash table function and then use this to build a dictionary type in Python (**Data Structures**), use `timeit` to compare the speed of lookup using the standard Python dictionary implementation versus the dictionary implementation you just wrote.
 * Replicate lower level Python functions such as len() in C++, then port to Python and compare speed.
 * Add LaTeX equations to pre-existing math/stats/neural network exercises and `/Assorted/EquationsCheetsheet.md` based off of this [tutorial](https://blmoistawinde.github.io/ml_equations_latex/#negative-loglikelihood).
+* Work on poker exercises.
