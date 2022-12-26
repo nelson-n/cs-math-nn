@@ -87,6 +87,10 @@ Languages currently covered:
 
 `/Statistics`
 
+* Implements Maximum Likelihood Estimation (MLE) from scratch, then benchmarks against a canonical optimization function.
+* Implements the Metropolis-Hastings method from scratch.
+* Estimated Ordinary Least Squares (OLS) regression coefficients using Stochastic Gradient Descent (SGD) and tests the accuracy of estimated coefficients out-of-sample.
+
 #### :bangbang: to-do
 * Upload pre-existing statistics exercises.
 * Do some statistics work in Julia.
