@@ -73,10 +73,3 @@ def dict_lookup():
     sum([needle in floats_dict for needle in needles])
 
 timer(dict_lookup)
-
-
-
-
-
-
-

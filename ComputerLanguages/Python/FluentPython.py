@@ -1210,7 +1210,41 @@ for codec in ['latin_1', 'utf_8', 'utf_16']:
 # compatible with ASCII. utf-8 is widely deployed on GNU/Linux and OSX 
 # operating systems. 
 
-# LEFT OFF PAGE 105
+city = 'New York'
+city.encode('utf_8')
+
+# When handling text files, the best practice is to decode from bytes to 
+# strings as early as possible (i.e. when opening a file for reading), process 
+# the text exclusively using strings, then encode strings to bytes on output.
+
+# The .read() and .write() methods in Python take care of this workflow.
+
+# The most important encoding setting is that returned by locale.getpreferredencoding():
+# it is the default for opening text files and for sys.stdout/stdin/ stderr when 
+# they are redirected to files.
+
+# In general the world is adopting Unicode, 80% of websites already use UTF-8.
+# UTF-8 encodes Unicode characters into a sequence of 8-bit bytes.
+
+# Find the default encoding of your Python instance.
+import sys
+sys.getdefaultencoding() 
+
+# ASCII is the standard for representing text in computers, but it only contains
+# 95 printable characters.
+
+# How strings are represented in RAM: in memory Python 3 stores each string as 
+# a sequence of code points using a fixed number of bytes per code point to allow
+# efficient direct access to any character or slice. If a string contains only 
+# characters that are in the latin1 range (a, b, c, d, etc) then that string 
+# will use just one byte of memory per code point (character). Otherwise, 2 or
+# 4 bytes per code point may be used.
+
+#==============================================================================
+# Chapter 5: First Class Functions
+#==============================================================================
+
+# LEFT OFF PAGE 139
 
 
 
