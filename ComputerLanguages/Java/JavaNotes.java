@@ -78,8 +78,70 @@ public class Main {
 // Basic Java Program Structure
 //------------------------------------------------------------------------------
 
+// All programs begin with a class assertion:
+class Main {}
+
+// The class is Java's basic unit of encapsulation. The elements between the 
+// two {} of the class are the members of the class.
+
+// This line begins the "main" method. All Java applications begin execution by
+// calling main()
+public static void main(String[] args) {}
+
+// The public keyword is an access specifier, the specifier identifies how other
+// parts of the program can access members of the class. When a class member is
+// preceded by public, then that member can be accessed by code outside of the 
+// class in which it is declared.
+
+// main() must be declared as public since it must be called by code outside of
+// its class when the program starts.
+
+// The keyword static allows main() to be called before an object of the class
+// has been created.
+
+// The keyword void tells the compiler that main() does not return a value.
+
+// System is a pre-defined class that provides access to the system and System.out
+// is an object that encapsulates console output.
+System.out.println("Hello, World!"); 
+
+// All statements in Java end with ; and lines that do not end with ; are 
+// technically not statements.
+
+//------------------------------------------------------------------------------
+// Assigning Variables
+//------------------------------------------------------------------------------
+
+class Example2 {
+    public static void main(String args[]) {
+        int var1; // this declares a variable
+        int var2; // this declares another variable
+        var1 = 1024; // this assigns 1024 to var1
+        System.out.println("var1 contains " + var1);
+        var2 = var1 / 2;
+        System.out.print("var2 contains var1 / 2: ");
+        System.out.println(var2);
+    }
+}
+
+// In Java, all variables must be declared before they and typed before they
+// are used.
+
+// Java defines two floating-point types: float and double.
+// These represent single and double precision numbers respectively, with double
+// being the most commonly used. For single precision 32 bits are used to represent
+// the number, for double precision 64 bits are used.
+
+class Example3 {
+    public static void main(String args[]) {
+        float var1;
+        double var2;
+
+        var1 = 10.2;
+        var2 = 22.4652;
+    }
+}
 
 
 
-
-
+ 

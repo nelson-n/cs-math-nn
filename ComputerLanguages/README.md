@@ -28,3 +28,11 @@ Contains demo Java scripts used for practicing with the language.
 `/AdvancedR.R`
 
 Notes on the book *Advanced R* by Hadley Wickham. This book focuses on advanced topics in the R language as well as how the R language works under the surface. Topics covered in the book include memory use, functional programming, the multiple OOP systems in R, and metaprogramming. After reading this book, one will have an advanced understanding of how code actually executes in R with knowledge of method dispatch, memory allocation, multithreading, and when the R language calls code written in C. The full book may be found at [Advanced R](https://adv-r.hadley.nz/). 
+
+## /Julia
+
+Julia Links:
+- https://julialang.org/learning/tutorials/
+- https://sje30.github.io/catam-julia/
+- https://sje30.github.io/catam-julia/casestudies/Permutations/permutationsnotebook.html
+- https://sje30.github.io/catam-julia/intro/julia-manual.html
