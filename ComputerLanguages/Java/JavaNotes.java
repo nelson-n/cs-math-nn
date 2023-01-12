@@ -142,6 +142,45 @@ class Example3 {
     }
 }
 
+// Simple program converting gallons to liters.
+class GalToLit {
+    public static void main(String args[]) {
+        double gallons; // holds the number of gallons
+        double liters; // holds conversion to liters
+        gallons = 10; // start with 10 gallons
+        liters = gallons * 3.7854; // convert to liters
+        System.out.println(gallons + " gallons is " + liters + " liters.");
+    }
+}
+
+//------------------------------------------------------------------------------
+// Control Statements
+//------------------------------------------------------------------------------
+
+// Java operators:
+// <, >, <=, >=, ==, !=
+
+// Sample if statement:
+if(a == b) System.out.println("you won't see this");
+
+// For loop form:
+// for(initialization; condition; iteration) statement;
+
+// The following for loop iterates five times:
+int count;
+for(count = 0; count < 5; count = count + 1)
+    System.out.println("This is count: " + count);
+
+// In Java you will seldom see statements like count = count + 1
+
+// This can be replaced with count++
+for(count = 0, count < 5, count++)
+
+// The negative analog of this operations is count--
+
+
+// Left off on page 54.
+
 
 
  
