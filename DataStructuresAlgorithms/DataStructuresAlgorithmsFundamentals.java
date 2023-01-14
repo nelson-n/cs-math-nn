@@ -69,6 +69,14 @@ Overview of Algorithms
     - Abstraction
     - Reusability
 
+*/
+
+//------------------------------------------------------------------------------
+// Structure of the JVM
+//------------------------------------------------------------------------------
+
+/* 
+
 Structure of the JVM
 - Knowledge of how the JVM runs helps when trying to write efficient code. It is
 useful to know where objects are placed in memory in order to estimate when one
@@ -104,7 +112,7 @@ stored on the heap) are shared across computer threads.
     changing objects on the heap, then other threads will see those objects
     being changed.
     - This is where it is important to write code that is thread safe with 
-    locked objectgs.
+    locked objects.
 
 - Each thread gets its own stack (its own little segment of memory).
     - Each function call pushes a new stack frame onto a thread's stack. 
@@ -119,10 +127,126 @@ stored on the heap) are shared across computer threads.
     will have a copy of this local variable (only objects that are dynamically 
     allocated and placed in the heap are shared across threads).
 
+*\
+
+//------------------------------------------------------------------------------
+// Primitive vs. Reference Types
+//------------------------------------------------------------------------------
+
+/* 
+
 Primitive vs. Reference Data Types
+- Primitive types include boolean, float, double, byte, short, int, long, char.
+- When declared in a function they go directly on to the stack.
+
+- Reference types point to an objece. A reference variable is itself a
+primitive type, but the object it refers to is not.
+
+- Whenever an object is created, the object itself (i.e. new object of the class
+Person) is stored in the heap, but stack memory contains the reference to it.
+
+- You can define a class (reference type) that contains integers (primitives), 
+because the class is a reference type it is placed on the heap, and the integers
+within that class are also placed on the heap.
+    - The ultimate determinate of where an object is placed is the top most 
+    container of the data.
+
+*/
+
+// Primitives vs. Reference Types Example
+
+// Person class.
+public class Person {
+
+    // When Person is inited, it will sit out on the heap and there will be a 
+    // reference to a string (name) that will also be on the heap.
+    private String name; 
+
+    // int which is primitive occurs inline inside of the Person object so it 
+    // is also a reference and is on the heap.
+    private int age;
+
+    // friend field references the Person object, the person referred to will
+    // be stored on heap
+    private Person friend; 
+
+    // Init of the object.
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public Person getFriend() {
+        return friend;
+    }
+
+    // Set a friend by passing a reference to another friend.
+    public void setFriend(Person friend) {
+        this.friend = friend;
+    }
+}
+
+// Example class that calls the person class.
+
+// The class itself gets dispatched to a new stack.
+public class Main {
+    public static void main(String[] args) {
+
+        // String[] args which is an array of strings goes on the heap as arguments
+        // necessary for the function to run always go on the heap.
+
+        // The instantiated objects (sam, rhonda) are reference objects that 
+        // exist on the stack, but they point to a name(string) and age (int)
+        // which are on the heap.
+        Person sam = new Person("Sam", 12);
+        Person rhonda = new Person("Rhonda", 12);
+
+        // This reference to the object rhonda goes on the heap.
+        sam.setFriend(rhonda);
+
+        // int primitive goes on the stack.
+        int tenYears = 10;
+
+        // temporary result of addition stored on stack
+        sam.setAge(sam.getAge() + tenYears);
+    }
+}
+
+// References (sam, rhonda) are pointers to the address of some other object.
+
+//------------------------------------------------------------------------------
+// Function Call Details
+//------------------------------------------------------------------------------
 
 
 
- */
+
+
+
+
+
+
+
+
+
+
+
+
 
 

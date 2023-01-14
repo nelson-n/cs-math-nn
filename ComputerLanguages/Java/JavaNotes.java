@@ -101,6 +101,10 @@ public static void main(String[] args) {}
 
 // The keyword void tells the compiler that main() does not return a value.
 
+// String[] args means an array of sequence of characters (Strings). If this 
+// argument is set as "John Doe" it will pass the array ["John", "Doe"] to the
+// function.
+
 // System is a pre-defined class that provides access to the system and System.out
 // is an object that encapsulates console output.
 System.out.println("Hello, World!"); 
