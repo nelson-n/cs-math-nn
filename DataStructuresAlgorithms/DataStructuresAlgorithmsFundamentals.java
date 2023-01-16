@@ -113,6 +113,7 @@ stored on the heap) are shared across computer threads.
     being changed.
     - This is where it is important to write code that is thread safe with 
     locked objects.
+    - Garbage collection is used to clear out old references and items on the heap.
 
 - Each thread gets its own stack (its own little segment of memory).
     - Each function call pushes a new stack frame onto a thread's stack. 
@@ -234,19 +235,364 @@ public class Main {
 // Function Call Details
 //------------------------------------------------------------------------------
 
+/* 
+
+When a function is called from Main(), a stack frame (also called an activation
+frame) is pushed on to the stack.
+
+This block of memory contains the following features which are necessary for 
+executing the function:
+
+- Incoming parameters: function arguments
+
+- Return value: the value returned by the function
+
+- Temporary expression storage: space for expressions executed in the function
+
+- Activation state: general bookkeeping for the running program
+    - Stack pointer: points to a previous functions stack frame
+    - Instructions pointer: points to a previous function's code where execution
+    should resume when this function finishes operation
+
+- Outgoing parameters: parameters that are passed to the function which called
+this function
+
+This set of information contains everything necessary for a single function call.
+
+*/
+
+//------------------------------------------------------------------------------
+// Heap and Stack Size
+//------------------------------------------------------------------------------
+
+/* 
+
+If you end up calling many functions that require lots of local data, this can
+result in the stack becoming too large.
+- You can control what the max stack size is.
+- You can also control the max heap size.
+
+Heap Size
+java -XX:+PrintFlagsFinal -version | grep HeapSize
+    - HeapSizePerGCThread = 87241520 = 0.8 GB
+    - InitialHeapSize = 268435456 = 0.26 GB
+    - MaxHeapSize = 4294967296 = 4.29 GB
+
+Stack Size
+- The default stack size is much smaller than the heap size since one application
+may be running hundreds of threads.
+
+java -XX:+PrintFlagsFinal -version | grep StackSize
+    - MarkStackSizeMax = 536870912 = 0.53 GB = 530 MB
+
+- You shouldn't need to increase stack size, and if you do it is a sign that
+there is a problem with your program.
+
+- Recursive algorithms that call themselves can consume stack space uncontrollably
+and lead to stack overflows.
+
+*/
+
+//------------------------------------------------------------------------------
+// Recursion
+//------------------------------------------------------------------------------
+
+// Factorial recursive algorithm example.
+
+int fact(int n) {
+    if (n < 0)
+          return 0;
+    else if (n == 0)
+          return 1;
+    else if (n == 1)
+          return 1;
+    else
+        return n * fact(n – 1);
+}
+
+// In the above function with n = 4, the stack starts growing until n = 1 occurs
+// (at this point the stack has 4 frames), and then outgoing parameters start
+// being returned and the stack starts unwinding until fact(4) = 4*6 = 24.
 
 
+// Avoid recursion unless you know that the number of calls will be small.
+// For example, using n = 4 in the function call above creates four different
+// function calls, all of which create an activation frame and eat up memory
+// on the stack.
 
+// Java does not optimize away unused stack frames even if they are no longer 
+// needed (this is called tail-call elimination) and is available in some 
+// languages.
 
+//------------------------------------------------------------------------------
+// Arrays
+//------------------------------------------------------------------------------
 
+// When arrays are created, the size must be specified at the time of creation.
 
+// The size of the array cannot change, you have to copy to a new array to 
+// add or remove values.
 
+// All elements of the array must be of the same type.
 
+// Array has contiguous memory - the array is one long string of bytes in memory.
+// When you go to index the memory, because all elements have the same type, 
+// Java knows how many bytes each element takes up in memory. So if you are
+// storing integers that take up 8 bytes of memory and you are indexing the
+// element at index 5, then Java can quickly look for the element at bytes
+// 40-48 and return the element to you.
 
+public class Main {
+    public static void main(String[] args) {
 
+    // declares an array of integers, this is just a reference that is 
+    // capable of holding an array, this is a local variable that appears
+    // in the stack of main
+    int[] anArray;
 
+    // allocates memory for 10 integers, this is a dynamic object that exists
+    // out on the heap.
+    anArray = new int[10];
 
+    // initialize first element
+    anArray[0] = 100;
 
+    // initialize second element
+    anArray[1] = 200;
 
+    // and so forth
+    anArray[2] = 300;
+    anArray[3] = 400;
+    anArray[4] = 500;
+    anArray[5] = 600;
+    anArray[6] = 700;
+    anArray[7] = 800;
+    anArray[8] = 900;
+    anArray[9] = 1000;
 
+    System.out.println("Element at index 0: " + anArray[0]);
+    System.out.println("Element at index 1: " + anArray[1]);
+    System.out.println("Element at index 2: " + anArray[2]);
+    System.out.println("Element at index 3: " + anArray[3]);
+    System.out.println("Element at index 4: " + anArray[4]);
+    System.out.println("Element at index 5: " + anArray[5]);
+    System.out.println("Element at index 6: " + anArray[6]);
+    System.out.println("Element at index 7: " + anArray[7]);
+    System.out.println("Element at index 8: " + anArray[8]);
+    System.out.println("Element at index 9: " + anArray[9]);
+    }
+}
 
+// Arrays and classes are the building blocks used to create more complex
+// data structures.
+
+// Many containers in the standard library use arrays internally.
+
+//------------------------------------------------------------------------------
+// Generics
+//------------------------------------------------------------------------------
+
+// A generic is a type that takes any other type as a parameter, i.e. any data
+// type can be passed to the generic.
+
+// Arrays are an example of a generic, arrays can hold any element type and 
+// the element type is effectively a parameter to the array.
+
+// The Java standard library includes many additional containers such as:
+// List, Set, Queue, Map
+
+// List of all base Java containers and methods:
+// https://docs.oracle.com/javase/8/docs/technotes/guides/collections/reference.html
+
+// Looking at ArrayList(), a container that has the benefits
+// of arrays and lists with fast random access and the ability to add new
+// elements.
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+
+        // Declare that we are creating an ArrayList of strings (left hand side),
+        // then allocate a new ArrayList on the heap (right hand side).
+        ArrayList<String> list = new ArrayList<String>();
+
+        // Adding items to ArrayList, adds to the end of the ArrayList.
+        list.add("Item1");
+        list.add("Item2");
+
+        // Add Item3 to the third position of array list.
+        list.add(2, "Item3");
+        list.add("Item4");
+
+        // Check index where item 2 appears.
+        int pos = list.indexOf("Item2");
+
+        // Checking if array list is empty.
+        boolean check = list.isEmpty();
+
+        // Getting the size of the list.
+        int size = list.size();
+
+        // Checking if an element is included to the list.
+        boolean element = list.contains("Item5");
+
+        // Getting the element in a specific position.
+        String item = list.get(0);
+
+        // Retrieve elements from the ArrayList with different methods:
+
+        // 1st way: loop using index and size list
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println("Index: " + i + " - Item: " + list.get(i));
+        }
+
+        // 2nd way: using a foreach loop, for each string in list print the item
+        for (String str : list) {
+            System.out.println("Item is: " + str);
+        }
+
+        // 3rd way: using an iterator
+        // hasNext(): returns true if there are more elements
+        // next(): returns the next element
+        System.out.println("Retrieving items using iterator");
+
+        for (Iterator<String> it = list.iterator(); it.hasNext();) {
+            System.out.println("Item is: " + it.next());
+        }
+
+        // Replacing an element
+        list.set(1, "NewItem");
+
+        // Removing items
+
+        // removing the item in index 0
+        list.remove(0);
+
+        // removing the first occurrence of item "Item3"
+        list.remove("Item3");
+
+        // Converting ArrayList to Array
+        String[] simpleArray = list.toArray(new String[list.size()]);
+    }
+}
+
+//------------------------------------------------------------------------------
+// Analysis of Algorithms
+//------------------------------------------------------------------------------
+
+// Two performance metrics to consider are speed and memory usage.
+
+// Performance is measured based on the worst-case performance. 
+
+// - The worst case often occurs, i.e. not finding a value in a list after 
+// searching through the entire list instead of finding it on the first try.
+
+// - The average case is often difficult to determine. However, a few algorithms
+// such as those that have randomized steps rarely exhibit worst-case behavior
+// and for these it is better to use average case.
+
+// - Worst case gives an upper bound on how long a program will take.
+
+// Big O Notation
+// - Describes performance in terms of the size of the input.
+
+// Big O Example 1
+
+public class Main {
+
+private int array[] = { /* Some number of elements */ };
+
+// O(n)
+private int compute1(int array[]) {                 // O(1)
+    int val = 0;                                    // O(1)
+    for (int i = 0; i < array.length; ++i) {        // O(n)
+        val += i - 3;                               // O(1)
+    }
+    return val;                                     // O(1)
+}
+
+// O(n)
+private int compute2(int array[]) {                 // O(1)
+    int val = 0;                                    // O(1)
+    for (int i = array.length - 1; i >= 0; --i) {   // O(n)
+        val += 2 * i;                               // O(1)
+    }
+    return val;                                     // O(1)
+}
+
+// O(n^2)
+private int compute3(int array[]) {                 // O(1)
+    int val = 0;                                    // O(1)
+    for (int i = 0; i < array.length; ++i) {        // O(n)
+        for (int j = 0; j < array.length; ++j) {    // O(n)
+            val += i;                               // O(1)
+        }
+    }
+    return val;                                     // O(1)
+}
+
+// Big O Example 2, binary search algorithm:
+
+public class Main {
+
+    public static int binarySearch(int array[], int value) {    // O(ln n)
+        int lo = 0;                                             // O(1)
+        int hi = array.length - 1;                              // O(1)
+        while (lo <= hi) {                                      // O(ln n)
+            // Key is in a[lo..hi] or not present.
+            int mid = lo + (hi - lo) / 2;                       // O(1)
+            if (value < array[mid]) {                           // O(1)
+                hi = mid - 1;                                   // O(1)
+            }
+            else if (value > array[mid]) {                      // O(1)
+                lo = mid + 1;                                   // O(1)
+            }
+            else return mid;                                    // O(1)
+        }
+        return -1;                                              // O(1)
+    }
+
+    // Running the algorithm.
+    public static void main(String args[]) {
+        int array[] = { /* Some number of elements */ };
+        Arrays.sort(array);
+        binarySearch(array, 7);
+    }
+}
+
+// Binary search has a big O notation of O(log N), this means that the algorithm
+// takes an additional time step each time the data doubles.
+
+//------------------------------------------------------------------------------
+// Profiling
+//------------------------------------------------------------------------------
+
+// Profiling example:
+
+public class Main {
+    public static void doSomeLengthyOperation()
+    {
+        int i;
+        for (i = 0; i < 1000; ++i)
+            try
+            {
+                Thread.sleep(1); // Sleep for 1 millisecond
+            }
+            catch (Exception ex)
+            {
+            }
+    }
+
+    // Outputs:  Operation took 1.26 seconds.
+    public static void main(String args[]) {
+        final double NANO_SECONDS_PER_SECOND = 1000000000;
+
+        long start = System.nanoTime();
+        doSomeLengthyOperation();
+        long stop = System.nanoTime();
+
+        double duration = (double)(stop - start) / NANO_SECONDS_PER_SECOND;
+
+        System.out.println("Operation took " + duration + " seconds.");
+    }
+}
