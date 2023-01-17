@@ -8,5 +8,10 @@ public class JavaHelpers {
         System.out.print("]");
         System.out.println("");
     }
+
+    // Method for generating random integers.
+    public static int GenerateRandomInt(int min, int max) {
+        return (int) ((Math.random() * (max - min)) + min);
+    }
     
 }
