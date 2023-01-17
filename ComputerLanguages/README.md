@@ -23,9 +23,9 @@ Contains notes on the Java language, drawn mainly from the book *Java: A Beginne
 
 Cheatsheet with notes on classes and functions, types and data structures, loops and control flow, and generics. Serves as a useful refresher when writing in Java.
 
-`/DemoCode`
+/`JavaHelpers.java`
 
-Contains demo Java scripts used for practicing with the language.
+Contains useful Java helpers such as methods for printing arrays and generating random integers.
 
 ## /R
 

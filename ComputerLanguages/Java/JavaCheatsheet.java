@@ -13,6 +13,7 @@ static int[] insert(int[] array, int index, int value) {}
 
 public // public members are visible to all other classes
 static // static allows the method to be called before an object of the class has been created
+final // non-access modifier which makes the value non-changeable 
 void // tells the compiler that the method does not return a value
 String[] args // an array of string, "John Doe" passes the array ["John", "Doe"] to the function
 
@@ -35,3 +36,8 @@ for(int i = 0; i < intArray.length; i++) {}
 
 System.out.print("Integer is: " + var1); // print without line break
 System.out.println("Hello, World!"); // print with line break
+
+// Profiling
+long startTime = System.nanoTime();
+long stopTime = System.nanoTime();
+double timePerInsert = (double)(stopTime - startTime) / nanoDivisor;

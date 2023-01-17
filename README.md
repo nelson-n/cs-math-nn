@@ -72,10 +72,11 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/ComputerLanguages`
 
 * Notes, exercises, and cheatsheets on both high level and low level programming languages.
-* Notes from popular books such as [Fluent Python](https://github.com/hiddenJuliet/pythondocument/blob/master/Fluent%20Python.pdf) and [Advanced R](https://adv-r.hadley.nz/).
+* Notes from popular books such as [Fluent Python](https://github.com/hiddenJuliet/pythondocument/blob/master/Fluent%20Python.pdf), [Advanced R](https://adv-r.hadley.nz/), and *Java: A Beginner's Guide*.
 
 Languages currently covered:
 * Python
+* Java
 * R
 
 #### :bangbang: to-do

@@ -13,5 +13,17 @@ public class JavaHelpers {
     public static int GenerateRandomInt(int min, int max) {
         return (int) ((Math.random() * (max - min)) + min);
     }
+
+    // Generate a random array of integers.
+    public static void main(String[] args) {
+        int[] myArray = new int[10];
+        for(int i = 0; i < myArray.length; i++) myArray[i] = GenerateRandomInt(0, 10);
+        PrintArray(myArray);
+    }
+
+
+
+
+
     
 }
