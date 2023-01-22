@@ -117,7 +117,7 @@ Languages currently covered:
 * Solves simple neural network problems relating to finding optimas, gradient descent, et cetera.
 
 #### :bangbang: to-do
-* Build the following models from scratch in NumPy: Feedforward neural network -> recurrent neural network -> convolution neural network -> ResNet -> Transformer, all from scratch. 
+* Build the following models from scratch in NumPy: Feedforward neural network -> recurrent neural network -> convolution neural network -> ResNet -> Transformer -> Diffusion Model, all from scratch. 
     * Verify the correct order of the models so that all paradigmatic neural network models are built in-order.
 
 ## Additional Topics
