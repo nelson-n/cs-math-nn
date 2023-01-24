@@ -17,6 +17,8 @@ final // non-access modifier which makes the value non-changeable
 void // tells the compiler that the method does not return a value
 String[] args // an array of string, "John Doe" passes the array ["John", "Doe"] to the function
 
+@Override // Allow a subclass to implement a method defined in its superclass.
+
 // --- Types and Data Structures ---
 
 int var1 = 4; // define an integer
@@ -24,6 +26,14 @@ float var1 = 10.2; // define a float
 double var1 = 22.4652 // define a double
 
 int[] array = new int[10]; // create a new array of integers of length 10
+
+// Java Generic Type Parameters
+FunctionName <T> {} // Type
+FunctionName <E> {} // Element
+FunctionName <K> {} // Key
+FunctionName <N> {} // Number
+FunctionName <V> {} // Value
+
 
 // --- Loops and Control Flow ---
 

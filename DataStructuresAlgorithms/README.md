@@ -9,3 +9,7 @@ programming language. Topics covered:
 - Primitive types, reference types, heap size, and stack size.
 - Arrays and other generics.
 - Big O notation, profiling.
+
+`LinkedLists.java`
+
+Notes covering ...

@@ -140,7 +140,7 @@ Primitive vs. Reference Data Types
 - Primitive types include boolean, float, double, byte, short, int, long, char.
 - When declared in a function they go directly on to the stack.
 
-- Reference types point to an objece. A reference variable is itself a
+- Reference types point to an object. A reference variable is itself a
 primitive type, but the object it refers to is not.
 
 - Whenever an object is created, the object itself (i.e. new object of the class
