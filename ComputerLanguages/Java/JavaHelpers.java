@@ -1,5 +1,10 @@
 public class JavaHelpers {
 
+    // Hello world method.
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+    }
+
     // Method for printing an array of integers.
     static void PrintArray(int[] intArray) {
         System.out.print("[");
@@ -20,10 +25,6 @@ public class JavaHelpers {
         for(int i = 0; i < myArray.length; i++) myArray[i] = GenerateRandomInt(0, 10);
         PrintArray(myArray);
     }
-
-
-
-
 
     
 }
