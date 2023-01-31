@@ -28,6 +28,14 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 [Assorted](#assorted)
 
+## Quick Access Links
+* [Big O Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BigOCheatsheet.md)
+* [Unix Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/CompilersOperatingSystems/Unix/UnixCheatsheet.md)
+* [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Git/GitCheatsheet.md)
+* [Python Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/PythonCheatsheet.py)
+* [Java Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaCheatsheet.java)
+* [LaTeX Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md)
+
 ## Preface: Atoms to Bits 
 
 `/Preface/atoms2bits.pdf`
@@ -165,14 +173,6 @@ Open-source CS curriculum that inspired the structure and content of this curric
 
 [From the Transistor to the Web Browser - George Hotz](https://github.com/geohot/fromthetransistor)
 Proposed CS curriculum that inspired many of the low-level CS lessons on computer hardware, chips, and compilers that are in this curriculum.
-
-## Quick Access Links
-* [Big O Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BigOCheatsheet.md)
-* [Unix Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/CompilersOperatingSystems/Unix/UnixCheatsheet.md)
-* [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Git/GitCheatsheet.md)
-* [Python Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/PythonCheatsheet.py)
-* [Java Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaCheatsheet.java)
-* [LaTeX Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md)
 
 ## to-do List
 
