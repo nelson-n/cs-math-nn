@@ -609,3 +609,212 @@ public class MergeSort {
 
 // Good when sorting integral types with a small range (small maximum values).
 
+// Implementation: 
+
+public class CountingSort {
+    public static void countingSort(int[] array, int maxElementValue) {
+
+        // Create array to hold the counts (set counts = to 0)
+        int[] counts = new int[maxElementValue + 1];
+        for (int i = 0; i <= maxElementValue; ++i) {
+            counts[i] = 0;
+        }
+
+        // Count the occurrences of each element, increment the index of the count
+        // array by 1 for each occurrence
+        for (int value : array) {
+            ++counts[value];
+        }
+
+        // Sum up the counts by position
+        for (int i = 1; i <= maxElementValue; ++i) {
+            counts[i] = counts[i] + counts[i - 1];
+        }
+
+        // Use the counts to position each element where it belongs
+        int[] sorted = new int[array.length];
+        for (int i = array.length - 1; i >= 0; --i) {
+            sorted[counts[array[i]] - 1] = array[i];
+            --counts[array[i]];
+        }
+
+        // Replace the original array with the sorted array
+        System.arraycopy(sorted, 0, array, 0, array.length);
+    }
+}
+
+//------------------------------------------------------------------------------
+// Radix Sort
+//------------------------------------------------------------------------------
+
+// Linear time sort.
+
+// Sorts data in pieces called digits, from the digit in the least significant
+// position to the digit in the most significant position.
+
+// Example sorting radix-10 numbers:
+// Unsorted: {15, 12, 49, 16, 36, 40}
+// After sorting least significant digit (1s place): {40, 12, 15, 16, 36, 49}
+// After sorting most significant digit (10s place): {12, 15, 16, 36, 40, 49}
+
+// Sort each place, digit-wise.
+
+// The sorting algorithm used in this approach must be stable because when 
+// you are sorting the 10s place for example (10, 12), and you have two 1s,
+// you want to keep the order of the 10s place the same (10, 12) and not
+// reverse the numbers.
+
+// Can only be applied to integers, but most data types such as strings can
+// be converted to integers.
+
+// The Big O is the same as counting sort, but you need to apply counting sort 
+// for each digits (0s place, 10s place, 100s place, etc). 
+
+// Cost: O(pn + pk)
+// p = number of passes (number of digits)
+// n = number of elements
+// k = range of values for each digit (10 for radix-10)
+
+// Radix is the number of digits utilized in a positional number system before
+// "rolling over" to the next digit's place.
+// - For example in a base 10 number system the digits used are 0-9, so the radix is 10.
+
+// Can only be used with arrays.
+
+// Implementation:
+public class RadixSort {
+    public static void radixSort(
+            int[] array,
+            int numPositions,
+            int radix) {
+
+        // Create array to hold the counts
+        int[] counts = new int[radix + 1];
+
+        // Create array to hold the sorted elements
+        int[] sorted = new int[array.length];
+
+        // Sort once for each position from least to most significant
+        for (int position = 0; position < numPositions; ++position) {
+            // Initialize the counts
+            for (int i = 0; i <= radix; ++i) {
+                counts[i] = 0;
+            }
+
+            // Calculate the position's power (e.g. 10^0, 10^1, 10^2)
+            int positionValue = (int)Math.pow(radix, position);
+
+            // Count the occurrences of each digit in that position
+            for (int value : array) {
+                int index = (value / positionValue) % radix;
+                ++counts[index];
+            }
+
+            // Adjust each count to reflect the counts before it
+            for (int i = 1; i <= radix; ++i) {
+                counts[i] = counts[i] + counts[i - 1];
+            }
+
+            // Use the counts to position each element where it belongs
+            for (int i = array.length - 1; i >= 0; --i) {
+                int index = (array[i] / positionValue) % radix;
+                sorted[counts[index] - 1] = array[i];
+                --counts[index];
+            }
+
+            // Replace the original array with the sorted array
+            System.arraycopy(sorted, 0, array, 0, array.length);
+
+            // Move back up to the top of the for loop and sort again.
+
+        }
+    }
+}
+
+//------------------------------------------------------------------------------
+// Searching Introduction
+//------------------------------------------------------------------------------
+
+/*
+- Looking for a target value (key) in a set of data.
+- Generally requires random access or having the data sorted in some way.
+- There are basic searches for all data structures and generalized search algorithms
+for specific data structures.
+
+ */
+
+//------------------------------------------------------------------------------
+// Linear Search
+//------------------------------------------------------------------------------
+
+// Linear Search: O(n)
+//    - Iterate through and array and compare the value you are looking for to each
+//    value until you find the value that you are looking for.
+//    - Slowest possible search.
+
+public class LinearSearch {
+    public static <T> int linearSearch(T[] array, T key) {
+
+        // Scan through all elements of the array
+        for (int i = 0; i < array.length; ++i) {
+            if (array[i].equals(key)) {
+                // Key found
+                return i;
+            }
+        }
+
+        // Key not found
+        return -1;
+    }
+}
+
+// If you need to search unsorted data once, linear search works fine. If you
+// need to repeatedly search then it may be better to sort the data.
+
+//------------------------------------------------------------------------------
+// Binary Search
+//------------------------------------------------------------------------------
+
+// Improvement over linear search: O(log n)
+// Divides the sorted array down the middle, then compares the key to the middle
+// value and depending on whether it is > or <, it then looks at that half of 
+// the array, then divides those values in half and continues until the key is 
+// found.
+
+// As with all repeatedly divide by 2 algorithms, the Big O portion of the 
+// divide by 2 is log n.
+// - Each division reduces the problem size by half.
+// - Repeatedly dividing by two is logarithmic base 2.
+// - i.e. 64 requires log base 2 of 64 = 6 steps to get to 1 element.
+
+// import java.util.Comparator;
+
+public class BinarySearch {
+    public static <T> int binarySearch(
+            T[] sortedArray,
+            T key,
+            Comparator<? super T> comparator) {
+
+        // Continue searching until the left and right indices cross
+        int left = 0;
+        int right = sortedArray.length - 1;
+        while (left <= right) {
+            int middle = (left + right) / 2;
+
+            int compareResult = comparator.compare(key, sortedArray[middle]);
+            if (compareResult > 0) {
+                // Key larger than middle, continue search above middle
+                left = middle + 1;
+            } else if (compareResult < 0) {
+                // Key smaller than middle, continue search below middle
+                right = middle - 1;
+            } else {
+                // Key found at middle, return middle index
+                return middle;
+            }
+        }
+
+        // Key not found
+        return -1;
+    }
+}
