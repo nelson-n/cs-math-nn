@@ -309,8 +309,8 @@ public class InsertionSort {
 
 // Worst case performance is O(n^2) if the median values are chosen poorly.
 
-// If it can be garunteed that good median values will be chosen, then you 
-// can garuntee average case performance which is O(n log n).
+// If it can be guaranteed that good median values will be chosen, then you 
+// can guarantee average case performance which is O(n log n).
 // - The key to average performance is selecting median values that results
 // in a balanced partition.
 
