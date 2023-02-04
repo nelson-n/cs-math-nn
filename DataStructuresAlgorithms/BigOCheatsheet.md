@@ -1,7 +1,7 @@
 
 # Big O Cheatsheet
 
-## Data Structures
+## Data Structures Big O
 - Linked list inserts and deletes: O(1)
 - Linked list random access: O(n)
 - Array inserts and deletes: O(n)
@@ -49,3 +49,13 @@
 ## Computation
 - For loop: O(n)
 - Nested for loop: O(n^2)
+
+## Data Structures Overview
+- Basics: int, double, float, character, etc.
+- Arrays
+- Lists
+- Singly Linked List
+    - Stack
+    - Queue
+    - Set
+- Doubly Linked List
