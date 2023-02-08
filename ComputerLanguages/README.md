@@ -19,11 +19,11 @@ Notes on the book *Fluent Python* by Luciano Ramalho. This 700 page book provide
 
 Contains notes on the Java language, drawn mainly from the book *Java: A Beginner's Guide* by Herbert Schildt. This book covers Java fundamentals, data types, methods, operators, inheritance, packages, I/O, multithreading, and generics.
 
-/`JavaCheatsheet.java`
+`/JavaCheatsheet.java`
 
 Cheatsheet with notes on classes and functions, types and data structures, loops and control flow, and generics. Serves as a useful refresher when writing in Java.
 
-/`JavaHelpers.java`
+`/JavaHelpers.java`
 
 Contains useful Java helpers such as methods for printing arrays and generating random integers.
 

@@ -1,12 +1,12 @@
 # DataStructuresAlgorithms
 
-`BigOCheatsheet.md`
+`/BigOCheatsheet.md`
 
 Cheatsheet containing notes on the Big O notation of commonly used data structures and algorithms.
 
 ## Data Structures and Algorithms Notes
 
-`DataStructuresAlgorithmsFundamentals.java`
+`/DataStructuresAlgorithmsFundamentals.java`
 
 Notes covering the fundamentals of Data Structures and Algorithms using the Java programming language. Topics covered:
 - Overview of basic data structures.
@@ -15,14 +15,14 @@ Notes covering the fundamentals of Data Structures and Algorithms using the Java
 - Arrays and other generics.
 - Big O notation, profiling.
 
-`LinkedLists.java`
+`/LinkedLists.java`
 
 Notes covering linked list architecture, implementation, and applications using the Java programming language. Types of linked lists covered:
 - Singly Linked Lists
 - Doubly Linked Lists
 - Circular Lists
 
-`SortingSearching.java`
+`/SortingSearching.java`
 
 Notes covering the fundamental sorting and searching algorithms using the Java programming language. Includes implementation, characteristics, and use-cases for each algorithm. Covers:
 - Comparable and Comparator interface in Java
@@ -34,7 +34,7 @@ Notes covering the fundamental sorting and searching algorithms using the Java p
 - Linear Search
 - Binary Search
 
-`StacksQueuesSets.java`
+`/StacksQueuesSets.java`
 
 Notes covering stacks, queues, sets, and set operations. Includes notes on the characteristics of each data type and implementations in Java. Covers:
 - Stacks

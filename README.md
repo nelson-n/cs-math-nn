@@ -31,7 +31,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 ## Quick Access Links
 * [Big O Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BigOCheatsheet.md)
 * [Unix Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/CompilersOperatingSystems/Unix/UnixCheatsheet.md)
-* [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Git/GitCheatsheet.md)
+* [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/GitCheatsheet.md)
 * [Python Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/PythonCheatsheet.py)
 * [Java Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaCheatsheet.java)
 * [LaTeX Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md)
@@ -169,9 +169,9 @@ Languages currently covered:
 
 ## Assorted
 
-`/Assorted/Git`
+`/Assorted/GitCheatsheet.md`
 
-* [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Git/GitCheatsheet.md) of useful commands for working with Git and GitHub.
+* [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/GitCheatsheet.md) of useful commands for working with Git and GitHub.
 
 `/Assorted/EquationsCheetsheet.md` 
 
