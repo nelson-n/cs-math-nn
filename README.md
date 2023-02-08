@@ -70,6 +70,17 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 ## Data Structures / Algorithms
 
+`/DataStructuresAlgorithms`
+
+* Notes and exercises on data structures and algorithms fundamental implemented in Java and Python.
+* Formal notes covering:
+    - Linked lists, queues, stacks, and sets.
+    - Sorting and searching algorithms.
+    - Hash tables, trees, heaps, and priority queues.
+    - Graphs and graph algorithms.
+* Exercises include:
+    - Implementing quicksort and binary search from scratch in Python.
+
 #### :bangbang: to-do
 * Learn the low-level data structures behind the base data types in Python such as: list, array, tuple, et cetera. Build versions of these data types in C++ and then port to Python with a package like `pybind11`.
 * Add a lesson on optimal algorithms.

@@ -36,7 +36,7 @@ Notes on the book *Advanced R* by Hadley Wickham. This book focuses on advanced 
 ## /Julia
 
 Julia Links:
-- https://julialang.org/learning/tutorials/
-- https://sje30.github.io/catam-julia/
-- https://sje30.github.io/catam-julia/casestudies/Permutations/permutationsnotebook.html
-- https://sje30.github.io/catam-julia/intro/julia-manual.html
+* https://julialang.org/learning/tutorials/
+* https://sje30.github.io/catam-julia/
+* https://sje30.github.io/catam-julia/casestudies/Permutations/permutationsnotebook.html
+* https://sje30.github.io/catam-julia/intro/julia-manual.html
