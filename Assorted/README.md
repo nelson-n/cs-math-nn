@@ -1,9 +1,8 @@
 # Assorted
 
-`/EquationsCheatsheet`
+`/EquationsCheatsheet.md`
 
 Cheatsheet with useful math, stats, and neural network equations implemented in LaTeX.
-## /Git
 
 `/GitCheatsheet.md`
 
