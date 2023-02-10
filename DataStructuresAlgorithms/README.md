@@ -4,7 +4,9 @@
 
 Cheatsheet containing notes on the Big O notation of commonly used data structures and algorithms.
 
-## Data Structures and Algorithms Notes
+## /DataStructuresAlgorithmsNotes
+
+Notes on the topics in data structures and algorithms.
 
 `/DataStructuresAlgorithmsFundamentals.java`
 
@@ -41,5 +43,11 @@ Notes covering stacks, queues, sets, and set operations. Includes notes on the c
 - Queues
 - Sets 
 
-## Data Structures and Algorithms Exercises
+## DataStructuresAlgorithmsExercises 
+
+Exercises that test various data structures and algorithms concepts.
+
+`/CompareRecursion`
+
+Compares the speed of recursion in various programming languages by implementing a recursive factorial algorithm and calculating the factorials of all numbers 0 to 100. The speed of each language is compared using a shell script. Languages covered are: Python, R, Java
 

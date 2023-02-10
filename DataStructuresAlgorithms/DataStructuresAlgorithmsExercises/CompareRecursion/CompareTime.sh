@@ -1,8 +1,17 @@
 
 #!/bin/bash
 
-# Run the script test.py
+echo
 echo 'Python'
-time python3 test.py
+time python3 pythonFactorial.py
+
+echo
+echo 'R'
+time Rscript RFactorial.R
+
+echo
+echo 'Java'
+time java javaFactorial
 
 
+echo
