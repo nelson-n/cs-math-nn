@@ -79,6 +79,7 @@ This curriculum is my personal approach to learning topics in computer science, 
     - Hash tables, trees, heaps, and priority queues.
     - Graphs and graph algorithms.
 * Exercises include:
+    - Comparing the speed of recursion in Python, R, Java, C, and C++.
     - Implementing quicksort and binary search from scratch in Python.
 
 #### :bangbang: to-do

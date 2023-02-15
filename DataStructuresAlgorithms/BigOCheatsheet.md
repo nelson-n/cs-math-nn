@@ -6,7 +6,7 @@
 - Linked list random access: O(n)
 - Array inserts and deletes: O(n)
 - Array random access: O(1)
-
+- Hash table search, inserts, and deletes: O(1)
 ## Sorting and Searching
 - Search slowest possible time: O(n)
 
@@ -59,3 +59,5 @@
     - Queue
     - Set
 - Doubly Linked List
+- Hash Tables
+    - Very fast inserts, deletes, and searches.

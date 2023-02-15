@@ -1244,17 +1244,188 @@ sys.getdefaultencoding()
 # Chapter 5: First Class Functions
 #==============================================================================
 
-# LEFT OFF PAGE 139
+# Functions in python are first class.
+# - Created at runtime.
+# - Assigned to a variable or element in a data structure.
+# - Passed as an argument to a function.
+# - Returned as the result of a function.
+
+# For example, you can assign functions to variables.
+def printInt(X):
+    print(X)
+
+newFunctionName = printInt
+
+#------------------------------------------------------------------------------
+# Higher-Order Functions
+#------------------------------------------------------------------------------
+
+# One of the hallmarks of functional programming is the use of higher-order
+# functions. A function that takes a function as an argument and returns a 
+# function is a higher order function. 
+
+# Examples of higher order functions are:
+map 
+sorted 
+
+# In functional programming, some of the best known higher order functions are:
+# map, reduce, apply, filter
+
+# The apply functions was deprecated in python 3 because instead of writing:
+apply(fn, args, kwargs)
+
+# You can just write:
+fn(*args, **key, word)
+
+# Map, filter, and reduce higher order functions are still available, but there
+# are better alternatives for most use cases. 
+
+# List comprehension generally does the job of map or filter with a cleaner 
+# syntax. Example, calculating the factorials of 0 to 6.
+list(map(Factorial, range(6)))
+[Factorial(n) for n in range(6)]
+ 
+#------------------------------------------------------------------------------
+# Anonymous Functions
+#------------------------------------------------------------------------------
+
+# The lambda keyword is used to create anonymous functions in python.
+# The syntax of python limits the body of lambda functions to be pure expressions:
+# the body of a lambda statement cannot make any assignments or use any other
+# python statements such as while, or try.
+sorted(fruits, key=lambda, word: word[::-1])
+
+add = lambda x, y: x + y
+
+#------------------------------------------------------------------------------
+# The Seven Flavors of Callable Objects
+#------------------------------------------------------------------------------
+
+# The call object () may be applied to other objects beyond user-defined functions.
+# To determine if an object is callable use the callable() built-in function.
+
+# The Python data model lists 7 callable types:
+
+# User defined functions.
+# - Created with def or lambda statements.
+
+# Built-in functions.
+# - Methods implemented in C like dict.get.
+
+# Methods.
+# - Functions defined in the body of a class.
+
+# Classes
+# - When a class runs its __new__ method is used to create an instance and then
+# __init__ is used to initialize it, finally, the instance is returned to the
+# caller. Because there is no new operator in python, calling a class is like
+# calling a function. 
+
+# Class instances
+# - If a class defines a __call__ method then its instance may be invoked as 
+# a function.
+
+# Generator functions
+# - Functions or methods that use the yield keyword. When called, generator
+# functions return a generator object. 
+
+#------------------------------------------------------------------------------
+# User-defined Callable Types
+#------------------------------------------------------------------------------
+
+# Not only are python functions real objects, but arbitrary python objects can
+# be made to behave like functions by implementing a __call__ instance. 
+
+import random 
+
+class BingoCage:
+
+    def __init__(self, items):
+        self._items = list(items) 
+        random.shuffle(self._items)
+
+    def pick(self): 
+        return self._items.pop() 
+
+    def __call__(self):
+        return self.pick()
+
+# In the above example, running the command bingo() will produce the same result
+# as running the command bingo.pick() because using call we have created a shortcut
+# from self to self.pick().
+
+# A class that implements call() is an easy way to create function-like objects
+# that are able to carry some internal state. An example of this is a decorator,
+# decorators must be functions but it is sometimes convenient to remember things
+# between function calls (memoization).
+
+# In the above example, as items are popped off the list with bingo() the object
+# will remember what has been popped off of the list.
+
+#------------------------------------------------------------------------------
+# Function Introspection
+#------------------------------------------------------------------------------
+
+# Functions have many attributes beyond __doc__ which can be seen with the 
+# command dir(function). However, user-defined functions have some unique
+# attributes.
+__annotations__ # dict, parameter and return annotations
+__call__ # method wrapper, implementation of the () operator, aka the callable object protocol
+__closure__ # tuple, the function binding for free variables (often None)
+__code__ # code, function metadata and function body compiled into bytecode
+__defaults__ # tuple, default values for the formal parameters
+__get__ # method-wrapper, implementation of the read-only descriptor protocol
+__globals__ # dict, global variables of the module where the function is defined
+__kwdefaults__ # dict, default values for the keyword only formal patterns
+__name__ # str, the function name
+__qualname__ # str, the qualified function name
+
+# __defaults__, __code__, and __annotations__ will be described later. 
+
+#------------------------------------------------------------------------------ 
+# Function Annotations
+#------------------------------------------------------------------------------
+
+def clip(text:str, max_len:'int > 0'=80) -> str:
+
+# Each argument in the function may have an annotation expression preceded by :
+# and the return value can be annotated with ->
+
+# No processing is done with the annotations, they are merely stored in 
+# __annotation__ and can be accessed
+
+#------------------------------------------------------------------------------
+# Packages for Functional Programming in Python 
+#------------------------------------------------------------------------------
+
+# Even though Python is not a functional programming language, there is 3rd party
+# support for writing in a functional manner. An example of this the implementation
+# of arithmetic operators in packages like functools and operator which allows
+# for writing in a functional style. 
+
+# For example, say you want to calculate factorials without using recursion:
+from functools import reduce
+from operator import mul
+
+def fact(n):
+    return reduce(mul(range(1, n+1)))
+
+#------------------------------------------------------------------------------
+# Chapter Summary
+#------------------------------------------------------------------------------
+
+# You can assign functions to variables, pass them to other functions, store
+# them in data structures, access function attributes, and allow frameworks
+# and tools to act on that information. 
+
+# Higher order functions, a staple of functioal programming are common in Python.
+# - for example: map, filter, reduce, sum, all any
+
+# Callables come in many flavors and can be created with def, lambda, and __call__.
 
 
 
-
-
-
-
-
-
-
+# left off on soapbox, p163
 
 
 
