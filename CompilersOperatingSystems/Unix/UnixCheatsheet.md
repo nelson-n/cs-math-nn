@@ -42,3 +42,9 @@
 `id -Gn <username>` or `id -G` to find the groups of a user <br/>
 `id -gn <username>` or `id -g` to find the current group of a user <br/>
 `chown <username>:<usergroup> list.html` to change file ownership <br/>
+`free -h` find the amount of memory/memory usage <br/>
+`lscpu` on linux find the number of cores/threads available <br/>
+`sysctl -a | grep machdep.cpu` on macos find the number of cores/threads available </br/>
+`df -h` see storage across the entire filesystem <br/>
+`df -Ph . | tail -1 | awk '{print $4}'` see storage available to the current directory <br/>
+
