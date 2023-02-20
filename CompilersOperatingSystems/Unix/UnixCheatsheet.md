@@ -47,4 +47,3 @@
 `sysctl -a | grep machdep.cpu` on macos find the number of cores/threads available </br/>
 `df -h` see storage across the entire filesystem <br/>
 `df -Ph . | tail -1 | awk '{print $4}'` see storage available to the current directory <br/>
-

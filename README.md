@@ -194,6 +194,8 @@ Proposed CS curriculum that inspired many of the low-level CS lessons on compute
     * Look at tinygrad tutorial, play with tinygrad.
     * Build paradigmatic models in sequential order until Transformer model is reached.
     * Read "Attention Is All You Need" paper.
+    * Download GPT2 or another LLM from Hugging Face and play with it under the hood.
+        * Generate most likely next word, see what happens when you change the temperature? Etc.
 * Create LeetCode / Google CodeJam practice schedule. 
 * Finish Fluent Python.
 * Learn C++ basics (**Computer Languages**), write/replicate a hashing function from scratch in C++ (**Cryptography**), build a low-level hash table function and then use this to build a dictionary type in Python (**Data Structures**), use `timeit` to compare the speed of lookup using the standard Python dictionary implementation versus the dictionary implementation you just wrote.
