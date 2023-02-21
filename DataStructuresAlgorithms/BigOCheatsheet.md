@@ -61,3 +61,14 @@
 - Doubly Linked List
 - Hash Tables
     - Very fast inserts, deletes, and searches.
+- Trees
+    - Good for: sequential access, random access, inserts, and deletes.
+
+
+
+
+- Binary Tree Traversal Methods
+    - Pre-order Traversal (depth-first-search): root, left sub-tree, right sub-tree.
+    - In-order Traversal: left sub-tree, root, right sub-tree.
+    - Post-order Traversal: left sub-tree, right sub-tree, root.
+    - Level-order Traversal (breadth-first-search): root, then proceed downward by level visiting nodes from left to right.

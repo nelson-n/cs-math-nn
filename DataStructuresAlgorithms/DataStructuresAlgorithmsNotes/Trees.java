@@ -214,6 +214,384 @@ public class BinaryTree<E> {
 // Binary Tree Traversal
 //------------------------------------------------------------------------------
 
+// There are four methods for traversing trees:
+// Pre-order, in-order, post-order, and level-order.
+
+// Pre-order Traversal: 
+// - Visit the root node, then recursively traverse the left subtree, then
+// recursively traverse the right subtree.
+// - Starts at the root node.
+// - Also called depth-first search.
+
+// In-order Traversal:
+// - Recursively traverse the left subtree, then visit the root node, then
+// recursively traverse the right subtree.
+// - Starts at the left-most leaf node and then moves up the tree.
+
+// Post-order Traversal:
+// - Recursively traverse the left subtree, then recursively traverse the right
+// subtree, then visit the root node.
+
+// Level-order Traversal:
+// - Visit nodes beginning at the root, then proceed downward visiting the nodes
+// at each level from left to right.
+
+// Implementation.
+
+// Note* that visitor is just a functional interface that can be passed to the
+// function. The visitor algorithm could print out the data in the node, or it
+// could add the data to a sum, or perform any other operation.
+
+public final class TreeAlgorithms {
+
+    // Pre-order traversal
+
+    // Note* that the public function that gets called from the outside works on
+    // trees, but the private function that does the actual work works on nodes.
+    public static <E> void traversePreOrder(
+            BinaryTree<E> tree,
+            Visitor<E> visitor) {
+        doTraversePreOrder(tree.getRoot(), visitor);
+    }
+
+    private static <E> void doTraversePreOrder(
+            BinaryTree<E>.Node node,
+            Visitor<E> visitor) {
+        if (node == null) {
+            return;
+        }
+
+        visitor.visit(node.getData());
+        doTraversePreOrder(node.getLeft(), visitor);
+        doTraversePreOrder(node.getRight(), visitor);
+    }
+
+    // In-order traversal
+    public static <E> void traverseInOrder(
+            BinaryTree<E> tree,
+            Visitor<E> visitor) {
+        doTraverseInOrder(tree.getRoot(), visitor);
+    }
+
+    private static <E> void doTraverseInOrder(
+            BinaryTree<E>.Node node,
+            Visitor<E> visitor) {
+        if (node == null) {
+            return;
+        }
+
+        doTraverseInOrder(node.getLeft(), visitor);
+        visitor.visit(node.getData());
+        doTraverseInOrder(node.getRight(), visitor);
+    }
+
+    // Post-order traversal
+    public static <E> void traversePostOrder(
+            BinaryTree<E> tree,
+            Visitor<E> visitor) {
+        doTraversePostOrder(tree.getRoot(), visitor);
+    }
+
+    private static <E> void doTraversePostOrder(
+            BinaryTree<E>.Node node,
+            Visitor<E> visitor) {
+        if (node == null) {
+            return;
+        }
+
+        doTraversePostOrder(node.getLeft(), visitor);
+        doTraversePostOrder(node.getRight(), visitor);
+        visitor.visit(node.getData());
+    }
+
+    // Level-order traversal
+    public static <E> void traverseLevelOrder(
+            BinaryTree<E> tree,
+            Visitor<E> visitor) {
+        // Queue holds nodes that have been discovered and must be visited
+        Queue<BinaryTree<E>.Node> queue = new Queue<BinaryTree<E>.Node>();
+
+        // Start off with only root in queue
+        if (!tree.isEmpty()) {
+            queue.enqueue(tree.getRoot());
+        }
+
+        // While nodes remain to be visited in the queue
+        while (!queue.isEmpty()) {
+            // Visit the front node
+            BinaryTree<E>.Node node = queue.dequeue();
+            visitor.visit(node.getData());
+
+            // Enqueue front node's children
+            if (node.hasLeft()) {
+                queue.enqueue(node.getLeft());
+            }
+            if (node.hasRight()) {
+                queue.enqueue(node.getRight());
+            }
+        }
+    }
+}
+
+// A note on recursion:
+
+// Because trees fan out, the number of nodes will grow drastically as the
+// number of levels grows slowly. 
+// The number of nodes will grow at a logarithmic rate, while the number of
+// levels will grow at a linear rate (you double the number of nodes at each level).
+// Thus you will only end up with a number of recursive calls on the stack equal to
+// the height of the tree, which is much smaller than the number of nodes in the
+// tree.
+// So if you have a balanced tree, you can store a lot of nodes in a tree without
+// worrying too much about stack overflow.
+
+// However, note that at the extreme, if you have an unbalanced tree you simply
+// have a linked list, and you will have a stack overflow.
+
+//------------------------------------------------------------------------------
+// Binary Tree Example
+//------------------------------------------------------------------------------
+
+// Using a binary tree to evaluate and nicely print a mathematical expression 
+// using an expression tree.
+
+// Operators (+, /, -) are stored in parent nodes and operands (numbers) are
+// stored in leaf nodes.
+
+// Can be used to easily translate any mathematical expression into any of the
+// three common expression representations: prefix, infix, postfix.
+
+// Example prefix: (*(/(- 74 10) 32) + (23 17)
+// - Pre-order traversal yields prefix notation.
+// - A nice benefit of prefix notation is that you do not need parentheses to
+// capture order-of-operations.
+
+// Example postfix: (((74 10 - ) 32 / ) (23 17 + ) *)
+// - Post-order traversal yields postfix notation.
+// - Also does not require parentheses.
+
+// Example infix: ((74 - 10) / 32) * (23 + 17)
+// - In-order traversal yields prefix notation.
+// - Requires parentheses to capture order-of-operations.
+
+// Postfix notation can be easily evaluated by a computer using an abstract 
+// stack machine. 
+// The algorithm for this is as follows:
+// - We are using post-order traversal so go down the left, then down the right,
+// then finally to the node.
+// - Perform post-order traversal, if the visited node is an operand (the leaf of
+// a tree), push it onto the stack.
+// - As you work up, if the visited node is an operator then pop the operands off
+// of the stack, evaluate the operator with the operands, then push the results
+// onto the stack.
+
+/**
+ * Parses prefix expressions into an ExpressionTree.  The supported operators
+ * are +, -, *, and /.
+ */
+
+ // Function for parsing a tree into a binary tree.
+
+public class PrefixExpressionParser {
+    private String[] tokens;
+    private int tokenIndex = 0;
+    private BinaryTree<String> parseTree = new BinaryTree<String>();
+
+    public static ExpressionTree parse(String expression) {
+        PrefixExpressionParser parser = new PrefixExpressionParser(expression);
+        return new ExpressionTree(parser.parseTree);
+    }
+
+    // Build the parse tree
+    private PrefixExpressionParser(String expression) {
+        if (expression.equals("")) {
+            throw new IllegalArgumentException(
+                    "Expression malformed: Empty expression");
+        }
+
+        tokens = expression.split(" ");
+
+        // Insert first token as root
+        String token = getNextToken();
+        BinaryTree<String>.Node tokenNode = parseTree.insertRoot(token);
+
+        // Build rest of tree recursively
+        if (isOperator(token)) {
+            insertLeftOperand(tokenNode);
+            insertRightOperand(tokenNode);
+        }
+
+        if (tokenIndex != tokens.length) {
+            throw new IllegalArgumentException(
+                    "Expression malformed: Too many tokens");
+        }
+    }
+
+    private boolean isOperator(String token) {
+        return token.equals("+")
+                || token.equals("-")
+                || token.equals("*")
+                || token.equals("/");
+    }
+
+    private void insertLeftOperand(BinaryTree<String>.Node operatorNode) {
+        // Insert token as left child
+        String token = getNextToken();
+        BinaryTree<String>.Node tokenNode = operatorNode.insertLeft(token);
+
+        if (isOperator(token)) {
+            insertLeftOperand(tokenNode);
+            insertRightOperand(tokenNode);
+        }
+    }
+
+    private void insertRightOperand(BinaryTree<String>.Node operatorNode) {
+        // Insert token as right child
+        String token = getNextToken();
+        BinaryTree<String>.Node tokenNode = operatorNode.insertRight(token);
+
+        if (isOperator(token)) {
+            insertLeftOperand(tokenNode);
+            insertRightOperand(tokenNode);
+        }
+    }
+
+    private String getNextToken() {
+        if (tokenIndex == tokens.length) {
+            throw new IllegalArgumentException(
+                    "Expression malformed: Not enough tokens");
+        }
+
+        return tokens[tokenIndex++];
+    }
+}
+
+
+// Function for converting a parsed binary tree into a specific notation and then
+// evaluating the expression.
+
+public class ExpressionTree {
+    BinaryTree<String> parseTree;
+
+    public ExpressionTree(BinaryTree<String> parseTree) {
+        this.parseTree = parseTree;
+    }
+
+    public String toPrefixNotation() {
+        StringBuffer buffer = new StringBuffer();
+        doToPrefixNotation(parseTree.getRoot(), buffer);
+        return buffer.toString().trim();
+    }
+
+    private void doToPrefixNotation(
+            BinaryTree<String>.Node node,
+            StringBuffer buffer) {
+        if (node == null) {
+            return;
+        }
+
+        buffer.append(node.getData()).append(' ');
+        doToPrefixNotation(node.getLeft(), buffer);
+        doToPrefixNotation(node.getRight(), buffer);
+    }
+
+    public String toPostfixNotation() {
+        StringBuffer buffer = new StringBuffer();
+        doToPostfixNotation(parseTree.getRoot(), buffer);
+        return buffer.toString().trim();
+    }
+
+    private void doToPostfixNotation(
+            BinaryTree<String>.Node node,
+            StringBuffer buffer) {
+        if (node == null) {
+            return;
+        }
+
+        doToPostfixNotation(node.getLeft(), buffer);
+        doToPostfixNotation(node.getRight(), buffer);
+        buffer.append(node.getData()).append(' ');
+    }
+
+    public String toInfixNotation() {
+        StringBuffer buffer = new StringBuffer();
+        doToInfixNotation(parseTree.getRoot(), buffer);
+        return buffer.toString().trim();
+    }
+
+    private void doToInfixNotation(
+            BinaryTree<String>.Node node,
+            StringBuffer buffer) {
+        if (node == null) {
+            return;
+        }
+
+        if (node.isLeaf()) {
+            buffer.append(node.getData());
+        } else {
+            // Parentheses required to enforce precedence
+            buffer.append("(");
+            doToInfixNotation(node.getLeft(), buffer);
+            buffer.append(" ").append(node.getData()).append(" ");
+            doToInfixNotation(node.getRight(), buffer);
+            buffer.append(")");
+        }
+    }
+
+    public int evaluate() {
+        Stack<Integer> stack = new Stack<Integer>();
+        doEvaluate(parseTree.getRoot(), stack);
+        return stack.pop();
+    }
+
+    /**
+     * Execute a post-order traversal.  When a node is visited its value will
+     * be computed and placed on the stack.  Leaf nodes will have their integer
+     * value pushed directly on the stack.  Non-leaf nodes will be evaluated
+     * by popping the top two values from the stack, applying the operator held
+     * by the non-leaf node, then pushing the result onto the
+     * stack.  When the traversal is finished the stack will contain one value
+     * which is the result of the overall expression.
+     */
+    private void doEvaluate(
+            BinaryTree<String>.Node node,
+            Stack<Integer> stack) {
+        if (node == null) {
+            return;
+        }
+
+        // Evaluate parent
+        if (node.isLeaf()) {
+            // Leaf: Push value
+            stack.push(Integer.parseInt(node.getData()));
+        } else {
+            doEvaluate(node.getLeft(), stack);
+            doEvaluate(node.getRight(), stack);
+
+            // Non-leaf: Pop two values, apply operator, push result
+            int op2 = stack.pop();
+            int op1 = stack.pop();
+
+            switch (node.getData().charAt(0)) {
+                case '+':
+                    stack.push(op1 + op2);
+                    break;
+                case '-':
+                    stack.push(op1 - op2);
+                    break;
+                case '*':
+                    stack.push(op1 * op2);
+                    break;
+                case '/':
+                    stack.push(op1 / op2);
+                    break;
+                default:
+                    throw new IllegalArgumentException(
+                            "Unknown operator '" + node.getData() + "'");
+            }
+        }
+    }
+}
 
 
 
