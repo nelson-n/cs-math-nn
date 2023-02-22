@@ -74,13 +74,14 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/DataStructuresAlgorithms`
 
-* Notes and exercises on data structures and algorithms fundamental implemented in Java and Python.
-* Formal notes covering:
+* Notes and exercises on data structures and algorithms implemented in Java and Python.
+* Formal Notes:
     - Linked lists, queues, stacks, and sets.
     - Sorting and searching algorithms.
     - Hash tables, trees, heaps, and priority queues.
     - Graphs and graph algorithms.
-* Exercises include:
+* Exercises:
+    - [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java) covering binary tree searching, recursion, and implementation.
     - Comparing the speed of recursion in Python, R, Java, C, and C++.
     - Implementing quicksort and binary search from scratch in Python.
 
@@ -188,7 +189,7 @@ Open-source CS curriculum that inspired the structure and content of this curric
 [From the Transistor to the Web Browser - George Hotz](https://github.com/geohot/fromthetransistor)
 Proposed CS curriculum that inspired many of the low-level CS lessons on computer hardware, chips, and compilers that are in this curriculum.
 
-## to-do List
+## To-Do List
 
 * Learn Data Structures and Algorithms foundation.
 * Neural Network work.

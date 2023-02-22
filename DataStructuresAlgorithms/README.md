@@ -60,7 +60,7 @@ Notes covering hash table architecture, implementation, and applications in Java
 - Chained hash table implementation.
 - Hash sets.
 
-`/Trees.java'
+`/Trees.java`
 
 Notes covering tree data structures and implementation in Java. Primarily focuses on binary trees and covers:
 - Pre-order, in-order, post-order, and level-order tree traversal. 
