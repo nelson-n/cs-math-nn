@@ -21,6 +21,9 @@ String[] args // an array of string, "John Doe" passes the array ["John", "Doe"]
 
 // --- Types and Data Structures ---
 
+BinaryTree<Integer> tree1; // Declare and then init a binary tree of integers.
+tree1 = new BinaryTree<Integer>();
+
 int var1 = 4; // define an integer
 float var1 = 10.2; // define a float
 double var1 = 22.4652 // define a double
@@ -33,6 +36,7 @@ FunctionName <E> {} // Element
 FunctionName <K> {} // Key
 FunctionName <N> {} // Number
 FunctionName <V> {} // Value
+
 
 
 // --- Loops and Control Flow ---

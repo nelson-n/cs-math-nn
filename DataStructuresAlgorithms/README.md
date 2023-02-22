@@ -4,6 +4,15 @@
 
 Cheatsheet containing notes on the Big O notation of commonly used data structures and algorithms.
 
+`/BinaryTreeCheatsheet.java`
+
+Cheatsheet containing notes on how to build and query binary trees via recursion. Covers:
+- Building binary trees.
+- Counting the number of nodes, leaves, and non-leaf nodes in a binary tree.
+- Finding the height of a tree.
+- Removing leaves from a tree.
+- Pre-order, in-order, and post-order traversal.
+- Binary tree implementation.
 ## /DataStructuresAlgorithmsNotes
 
 Notes on the topics in data structures and algorithms.
@@ -43,6 +52,20 @@ Notes covering stacks, queues, sets, and set operations. Includes notes on the c
 - Queues
 - Sets 
 
+`/HashTables.java`
+
+Notes covering hash table architecture, implementation, and applications in Java. Covers:
+- How hash functions work.
+- Mapping hash codes to buckets with both division and multiplication methods.
+- Chained hash table implementation.
+- Hash sets.
+
+`/Trees.java'
+
+Notes covering tree data structures and implementation in Java. Primarily focuses on binary trees and covers:
+- Pre-order, in-order, post-order, and level-order tree traversal. 
+- Binary tree implementation.
+- Using binary trees to parse and evaluate mathematical expressions. 
 ## DataStructuresAlgorithmsExercises 
 
 Exercises that test various data structures and algorithms concepts.

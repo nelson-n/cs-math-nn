@@ -35,6 +35,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/GitCheatsheet.md)
 * [Python Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/PythonCheatsheet.py)
 * [Java Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaCheatsheet.java)
+* [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java)
 * [LaTeX Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md)
 
 ## Preface: Atoms to Bits 
