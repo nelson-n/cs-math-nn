@@ -186,7 +186,169 @@ public class Heap<E> {
 // Priority Queues 
 //------------------------------------------------------------------------------
 
+// Data structure used to store items that have priority.
+// We want to retrieve the item with the highest priority from the queue.
+// A heap is used internally to create a priority queue where the concept of 
+// largest value is just changed to represent highest priority.
 
+// Applications of priority queues:
+// - Task scheduling performed by OS to determine what to run next on the CPU.
+// - Event scheduling performed by GUIs to determine what to display next.
+// - Network routing algorithms to determine which packet to send next.
+// - Graph algorithms to determine which edge to traverse next.
 
+// Implementation.
+// Simply built on top of the heap class by using the heap's comparator to
+// determine the priority of the items.
 
+// import java.util.Comparator;
 
+public class PriorityQueue<E> {
+    Heap<E> heap;
+
+    public PriorityQueue(Comparator<? super E> comparator) {
+        this.heap = new Heap<E>(comparator);
+    }
+
+    public int getSize() {
+        return heap.getSize();
+    }
+
+    public boolean isEmpty() {
+        return heap.isEmpty();
+    }
+
+    @SuppressWarnings("unchecked")
+    public void insert(E data) {
+        heap.insert(data);
+    }
+
+    @SuppressWarnings("unchecked")
+    public E extract() throws IllegalStateException {
+        if (isEmpty()) {
+            throw new IllegalStateException(
+                    "Cannot extract from empty priority queue");
+        }
+
+        return heap.extract();
+    }
+
+    @SuppressWarnings("unchecked")
+    public E peek() throws IllegalStateException {
+        if (isEmpty()) {
+            throw new IllegalStateException(
+                    "Cannot peek into empty priority queue");
+        }
+
+        // Default package-internal visibility of tree allows access here
+        return (E)heap.tree[0];
+    }
+}
+
+// Priority Queue Example.
+
+public class Task {
+    private int priority;   // Low value means high priority
+    String Name;
+
+    public Task(int priority, String name) {
+        this.priority = priority;
+        Name = name;
+    }
+
+    public int getPriority() {
+        return priority;
+    }
+
+    public String getName() {
+        return Name;
+    }
+}
+
+// import java.util.Comparator;
+
+/**
+ * Simple task scheduler using a priority queue.
+ *
+ * Program output:
+ *      Priority = 1, Name = Play audio
+ *      Priority = 2, Name = Refresh screen
+ *      Priority = 3, Name = Handle mouse move
+ *      Priority = 4, Name = Swap process memory
+ *      Priority = 5, Name = Write data to disk
+ *      Priority = 6, Name = Close file
+ *      Priority = 7, Name = Write log entry
+ */
+public class Main {
+    public static void main(String args[]) {
+        // Populate prioritized tasks
+        PriorityQueue<Task> tasks = new PriorityQueue<Task>(
+                new Comparator<Task>() {
+                    public int compare(Task t1, Task t2) {
+                        return t2.getPriority() - t1.getPriority();
+                    }
+                }
+        );
+        tasks.insert(new Task(3, "Handle mouse move"));
+        tasks.insert(new Task(6, "Close file"));
+        tasks.insert(new Task(5, "Write data to disk"));
+        tasks.insert(new Task(2, "Refresh screen"));
+        tasks.insert(new Task(4, "Swap process memory"));
+        tasks.insert(new Task(1, "Play audio"));
+        tasks.insert(new Task(7, "Write log entry"));
+
+        // Output tasks in priority order
+        while (!tasks.isEmpty()) {
+            Task task = tasks.extract();
+
+            System.out.println("Priority = " + task.getPriority()
+                    + ", Name = " + task.getName());
+        }
+    }
+}
+
+//------------------------------------------------------------------------------
+// Huffman Coding 
+//------------------------------------------------------------------------------
+
+// Method for encoding symbols using fewer bits than previously required.
+// Commonly used for lossless compression. 
+
+// The idea is that symbols that occur more frequently are encoded into fewer
+// bits and those that occur less frequently are encoded into more bits.
+
+// Encode steps:
+// - Build a symbol frequency table.
+// - Build a Huffman tree from the frequency table.
+// - Build symbol encodings from the Huffman tree.
+// - Serialize the Huffman tree as a header in encoded data.
+// - Encode symbols into encoded data using encodings table.
+
+// Decode steps:
+// - Deserialize the Huffman tree from the header in encoded data.
+// - Decode symbols from encoded data using the Huffman tree.
+
+// Example case:
+// - 274 input characters (n) @ 1 byte per character (ASCII).
+// - 256 possible characters (m).
+// - 274 bytes * 8 bits/byte = 2192 bits.
+
+// First, count the occurrences of each character in the input to build the 
+// symbol frequency table. This is done in O(n) time.
+// - This can be done with a hash table or array of size m.
+
+// Then we build the Huffman tree. This is done in O(m log m) time.
+// - This consists of a tree of priority queues. 
+// - Build a seperate binary tree for each symbol from the frequency table.
+// - Each binary tree contains just a root node with the symbol and the number
+// of occurrences of the symbol.
+// - Then create a priority queue of all the binary trees.
+
+// Building the trees is O(1).
+// Inserting the trees into the priority queue is O(1).
+
+// Then repeatedly merge the two trees with the lowest frequency until there is
+// only one tree left. This is done in O(m log m) time.
+
+// The original data took 8 bits per character. The compressed data takes 
+// < 4 bits per character, a greater than 50% compression rate.

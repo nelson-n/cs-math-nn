@@ -71,7 +71,9 @@
     - Post-order Traversal: left sub-tree, right sub-tree, root.
     - Level-order Traversal (breadth-first-search): root, then proceed downward by level visiting nodes from left to right.
 - Heaps
-    - Implemented as a binary tree.
+    - Implemented as a binary tree in array form.
     - Allow for quick access to the largest or smallest items in a set.
 - Priority Queues
+    - Implemented using a heap data structure and a comparator to determine priority.
     - Allow for quick access to the highest or lowest priority item in a set.
+
