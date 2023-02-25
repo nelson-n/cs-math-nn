@@ -7,6 +7,8 @@
 - Array inserts and deletes: O(n)
 - Array random access: O(1)
 - Hash table search, inserts, and deletes: O(1)
+- Heap smallest / largest item retrieval: O(log n)
+- Quicksort: O(n log n)
 ## Sorting and Searching
 - Search slowest possible time: O(n)
 
@@ -68,3 +70,8 @@
     - In-order Traversal: left sub-tree, root, right sub-tree.
     - Post-order Traversal: left sub-tree, right sub-tree, root.
     - Level-order Traversal (breadth-first-search): root, then proceed downward by level visiting nodes from left to right.
+- Heaps
+    - Implemented as a binary tree.
+    - Allow for quick access to the largest or smallest items in a set.
+- Priority Queues
+    - Allow for quick access to the highest or lowest priority item in a set.
