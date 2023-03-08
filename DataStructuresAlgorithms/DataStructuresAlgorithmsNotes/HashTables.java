@@ -10,7 +10,7 @@
 - Data stored as an array and accessed internally via a key.
     - The key can be any data type, but it will be converted to an integer representation.
     - The key is hashed to an integer, and the integer is used as an index into the array.
-- Collisions occur when a hash function generates the same hash for different keys.
+- Collisions occur when a hash function generates the same has for different keys.
     - Typically the number of keys is small relative to the universe of possible keys
     and collisions are rare. 
     - A good hash function also minimizes collisions.
@@ -660,11 +660,4 @@ public class HashSet<E> implements Iterable<E> {
         return table.keys().iterator();
     }
 }
-
-
-
-
-
-
-
 
