@@ -1591,7 +1591,34 @@ avg(12)
 # The nonlocal Declaration
 #-------------------------------------------------------------------------------
 
-# Left off p 196 (221).
+# The previous implementation of the recursive function call make_averager() is
+# inefficient as all values of the historical series are stored. It would be
+# more efficient to simply store the sum and the number of items in the series,
+# and then compute the mean from this information. 
+
+# However, this is not possible with the current implementation because the
+# series variable is local to the make_averager() function.
+
+# To fix this, we can use the nonlocal declaration to indicate that the variable
+# is not local.
+
+def make_averager():
+    count = 0
+    total = 0
+
+    def averager(new_value):
+        nonlocal count, total
+        count += 1
+        total += new_value
+        return total / count
+
+#-------------------------------------------------------------------------------
+# Memoization with functools.lru_cache()
+#-------------------------------------------------------------------------------
+
+# Left off on p. 200
+
+
 
 
 
