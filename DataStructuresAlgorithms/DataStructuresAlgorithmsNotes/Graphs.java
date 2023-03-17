@@ -153,6 +153,7 @@ public class Graph<V, E> {
             };
         }
 
+        // Comparator.
         @Override
         @SuppressWarnings("unchecked")
         public boolean equals(Object o) {
@@ -357,6 +358,236 @@ public class Graph<V, E> {
         checkNotNull(to, "to must not be null");
         checkState(containsVertex(from), "from vertex does not exist");
         checkState(containsVertex(to), "to vertex does not exist");
+    }
+}
+
+//------------------------------------------------------------------------------
+// Breadth-First Search
+//------------------------------------------------------------------------------
+
+// Exploration algorithm that starts at a given vertex and explores all the
+// vertices reachable from it.
+
+// Useful for finding the minimum spanning trees and shortest paths. 
+
+// Algorithm:
+// - Place start vertex in a queue.
+// - For each vertex adjacent to the vertex at the front of the queue, check if
+// it has been visited, and if not then visit it. 
+// - Dequeue the vertex at the front of the queue once all adjacent vertices
+// have been looked at. 
+// - This algorithm is coded recursively.
+
+// At the end of the algorithm, the visited set will contain all the vertices
+// reachable from the start vertex.
+
+// You can also store the number of vertices traversed before reaching each
+// vertex in a map. This will allow you to find the shortest path from the
+// start vertex to any other vertex.
+
+// Example: use breadth-first search to count the number of hops between nodes
+// in a network, i.e. find the best way to get from one node (computer) to another
+// on the internet.
+// - Breadth-first search is used to find the shortest path between two nodes.
+
+// BreadthFirstSearch.java
+
+// import static com.google.common.base.Preconditions.*;
+
+public final class BreadthFirstSearch {
+    public static final class Server {
+        private String name;
+        private VertexColor color;
+        private int hops;
+
+        public Server(String name) {
+            checkNotNull(name, "name must not be null");
+
+            this.name = name;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getHops() {
+            return hops;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+
+            Server that = (Server) o;
+
+            return name.equals(that.name);
+
+        }
+
+        @Override
+        public int hashCode() {
+            return name.hashCode();
+        }
+    }
+
+    public static void countNetworkHops(Graph<Server, ?> graph, String start) {
+        checkNotNull(graph, "graph must not be null");
+        checkNotNull(start, "start must not be null");
+        checkArgument(graph.containsVertex(new Server(start)),
+                "start not found in graph");
+
+        // Initialize all vertices in the graph
+        for (Graph<Server, ?>.Vertex vertex : graph.getVertices()) {
+            Server server = vertex.getData();
+            if (start.equals(server.name)) {
+                // Initialize the start vertex
+                server.color = VertexColor.GRAY;
+                server.hops = 0;
+            } else {
+                // Initialize vertices other than the start vertex
+                server.color = VertexColor.WHITE;
+                server.hops = -1;
+            }
+        }
+
+        // Initialize queue with the start vertex
+        Queue<Graph<Server, ?>.Vertex> queue =
+                new Queue<Graph<Server, ?>.Vertex>();
+        queue.enqueue(graph.getVertex(new Server(start)));
+
+        // Perform breadth-first search setting each reachable vertex's hops
+        while (!queue.isEmpty()) {
+            Graph<Server, ?>.Vertex vertex = queue.dequeue();
+
+            // Look at all vertices adjacent to current vertex
+            for (Graph<Server, ?>.Edge edge
+                    : vertex.getEdgesIncidentFrom()) {
+                // If adjacent vertex is white, color it gray, update hops,
+                // and add to queue
+                Graph<Server, ?>.Vertex adjacentVertex = edge.getTo();
+                if (adjacentVertex.getData().color == VertexColor.WHITE) {
+                    adjacentVertex.getData().color = VertexColor.GRAY;
+                    adjacentVertex.getData().hops = vertex.getData().hops + 1;
+                    queue.enqueue(adjacentVertex);
+                }
+            }
+
+            vertex.getData().color = VertexColor.BLACK;
+        }
+    }
+}
+
+//------------------------------------------------------------------------------
+// Depth-First Search
+//------------------------------------------------------------------------------
+
+// Idea: Explore as far as possible in one direction, then backtrack and explore
+// in another direction.
+
+// Useful for detecting cycles in a graph.
+// Also useful for topological sorting.
+
+// Algorithm:
+// - Select a starting vertex.
+// - If any undiscovered vertices are adjacent to the selected vertex, then 
+// visit that vertex and repeat the process. Once you cannot travel any further,
+// return to the start vertex and label is as finished.
+// - Then move to the next unvisited vertex and repeat the process recursively.
+
+// Note* that this algorithm will only visit vertices reachable from the 
+// starting vertex. To visit all vertices the process should be repeated 
+// for all vertices in the graph.
+
+// Example: Topological Sorting
+// - Determine an order in which all courses can be taken with all pre-requisites
+// satisfied along the way.
+
+// We use a directed graph in which vertices represent classes and edges represent
+// dependencies (pre-requisites). 
+
+// Topological sort = sort in which tasks are sorted so that dependent classes
+// appear before dependencies. 
+
+// After performing a depth first search on all vertices, we are guaranteed to
+// receive linked list that is topologically sorted.
+
+// import static com.google.common.base.Preconditions.checkNotNull;
+
+public final class DepthFirstSearch {
+    public static final class Course {
+        private String name;
+        private VertexColor color;
+
+        public Course(String name) {
+            checkNotNull(name, "name must not be null");
+
+            this.name = name;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+
+            Course that = (Course) o;
+
+            return name.equals(that.name);
+
+        }
+
+        @Override
+        public int hashCode() {
+            return name.hashCode();
+        }
+    }
+
+    public static SinglyLinkedList<String> planCourses(
+            Graph<Course, ?> graph) {
+        checkNotNull(graph, "graph must not be null");
+
+        // Initialize all vertices in the graph
+        for (Graph<Course, ?>.Vertex vertex : graph.getVertices()) {
+            vertex.getData().color = VertexColor.WHITE;
+        }
+
+        // Create list to hold planned courses
+        SinglyLinkedList<String> plannedCourses =
+                new SinglyLinkedList<String>();
+
+        // Perform multiple depth first searches each starting at a different
+        // vertex to ensure courses with no prerequisites (i.e. disconnected
+        // parts of the graph) are included in the results
+        for (Graph<Course, ?>.Vertex vertex : graph.getVertices()) {
+            if (vertex.getData().color == VertexColor.WHITE) {
+                planCoursesRecursive(vertex, plannedCourses);
+            }
+        }
+
+        return plannedCourses;
+    }
+
+    private static void planCoursesRecursive(
+            Graph<Course, ?>.Vertex vertex,
+            SinglyLinkedList<String> plannedCourses) {
+        // Color the vertex gray
+        vertex.getData().color = VertexColor.GRAY;
+
+        // Recursively traverse each adjacent white vertex
+        for (Graph<Course, ?>.Edge edge : vertex.getEdgesIncidentFrom()) {
+            Graph<Course, ?>.Vertex adjacentVertex = edge.getTo();
+
+            if (adjacentVertex.getData().color == VertexColor.WHITE) {
+                planCoursesRecursive(adjacentVertex, plannedCourses);
+            }
+        }
+
+        // Color the vertex black and add it to the front of the list
+        plannedCourses.insertHead(vertex.getData().name);
     }
 }
 
