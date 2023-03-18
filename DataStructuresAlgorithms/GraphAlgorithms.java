@@ -454,3 +454,6 @@ public final class TravellingSalesPerson {
         return tour;
     }
 }
+
+// Traveling Salesperson Problem is NP-hard, meaning that there is no known
+// polynomial time algorithm to solve it. In this sense it is intractable.
