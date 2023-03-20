@@ -1,7 +1,7 @@
 
 # Data Structures Cheatsheet
 
-## Primitive Types
+### Primitive Types
 * byte (1 byte) = Stores whole numbers from -128 to 127.
 * short	(2 bytes) = Stores whole numbers from -32,768 to 32,767.
 * int (4 bytes) = Stores whole numbers from -2,147,483,648 to 2,147,483,647.
@@ -11,7 +11,7 @@
 * boolean (1 bit) = Stores true or false values.
 * char (2 bytes) = Stores a single character/letter or ASCII values.
 
-## Non-Primitive (Basic) Types
+### Non-Primitive (Basic) Types
 * Arrays = Grouping of objects of a homogenous data type.
     - Stored contiguously in memory as one long string of bytes. When you index the memory you know exactly how many bytes each element takes up because objects have the same type, so if you are storing 4 byte integers you can quickly return the element at index 5 by looking at bytes 4*5 = 20-24 in the string of bytes.
     - Cannot grow or shrink, a new array must be created to grow an array.

@@ -70,6 +70,29 @@ Notes covering tree data structures and implementation in Java. Primarily focuse
 - Pre-order, in-order, post-order, and level-order tree traversal. 
 - Binary tree implementation.
 - Using binary trees to parse and evaluate mathematical expressions. 
+
+`/HeapsPriorityQueues.java`
+
+Notes covering the theory, uses, and implementation of heaps and priority queues. Covers:
+- Heap implementation using a binary tree.
+- Heapsort and mergesort.
+- Priority queue implementation.
+- Huffman Coding overview.
+
+`/Graphs.java`
+
+Notes covering graph representation, terminology, implementation, and search. Covers:
+- Various forms of graph representation and terminology for describing graphs and graph traversal.
+- Graph implementation using a HashSet.
+- Breadth-First Search and Depth-First Search implementation and use-cases.
+
+`/GraphAlgorithms.java`
+
+Notes covering various graph traversal algorithms and their implementation. Covers:
+- Minimum spanning tree (Prim's Algorithm).
+- Shortest paths (Djikstra's Algorithm).
+- Traveling salesperson problem.
+
 ## DataStructuresAlgorithmsExercises 
 
 *Exercises that test various data structures and algorithms concepts.*
@@ -79,4 +102,3 @@ Notes covering tree data structures and implementation in Java. Primarily focuse
 Compares the speed of recursion in various programming languages by implementing a recursive factorial algorithm and calculating the factorials of all numbers 1 to 100. The speed of each language is compared using a shell script. Languages covered are: Python, R, Java, C, and C++.
 - The speed test may be executed with the shell script `CompareTime.sh`.
 - C and C++ are fastest, Java and Python are next fastest, R is the slowest.
-
