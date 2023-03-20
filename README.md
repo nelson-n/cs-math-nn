@@ -75,19 +75,17 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/DataStructuresAlgorithms`
 
 * Notes and exercises on data structures and algorithms implemented in Java and Python.
-* Formal Notes:
+* Formal Notes On:
     - Linked lists, queues, stacks, and sets.
     - Sorting and searching algorithms.
     - Hash tables, trees, heaps, and priority queues.
     - Graphs and graph algorithms.
 * Exercises:
-    - [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java) covering binary tree searching, recursion, and implementation.
-    - Comparing the speed of recursion in Python, R, Java, C, and C++.
-    - Implementing quicksort and binary search from scratch in Python.
+    - [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java) covering binary tree search, recursion, and implementation.
+    - Comparison of the speed of recursion in Python, R, Java, C, and C++.
 
 #### :bangbang: to-do
 * Learn the low-level data structures behind the base data types in Python such as: list, array, tuple, et cetera. Build versions of these data types in C++ and then port to Python with a package like `pybind11`.
-* Add a lesson on optimal algorithms.
 * Add a lesson on the properties of different number systems: hexadecimal system, 32-bit numbers, 128-bit numbers, how with a 32-bit number system you can generate the numbers 0-65535, etc.
 
 ## Computer Languages

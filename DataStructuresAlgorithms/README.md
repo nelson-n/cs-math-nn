@@ -1,5 +1,9 @@
 # DataStructuresAlgorithms
 
+`/DataStructuresCheatsheet.md`
+
+Cheatsheet containing notes on the most commonly used data structures and algorithms.
+
 `/BigOCheatsheet.md`
 
 Cheatsheet containing notes on the Big O notation of commonly used data structures and algorithms.
@@ -15,7 +19,7 @@ Cheatsheet containing notes on how to build and query binary trees via recursion
 - Binary tree implementation.
 ## /DataStructuresAlgorithmsNotes
 
-Notes on the topics in data structures and algorithms.
+*Notes on the topics in data structures and algorithms.*
 
 `/DataStructuresAlgorithmsFundamentals.java`
 
@@ -68,7 +72,7 @@ Notes covering tree data structures and implementation in Java. Primarily focuse
 - Using binary trees to parse and evaluate mathematical expressions. 
 ## DataStructuresAlgorithmsExercises 
 
-Exercises that test various data structures and algorithms concepts.
+*Exercises that test various data structures and algorithms concepts.*
 
 `/CompareRecursion`
 
