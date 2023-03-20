@@ -19,7 +19,7 @@ Cheatsheet containing notes on how to build and query binary trees via recursion
 - Binary tree implementation.
 ## /DataStructuresAlgorithmsNotes
 
-*Notes on the topics in data structures and algorithms.*
+*Notes on fundamental data structures and algorithms.*
 
 `/DataStructuresAlgorithmsFundamentals.java`
 
