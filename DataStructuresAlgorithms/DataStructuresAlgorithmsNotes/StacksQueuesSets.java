@@ -404,7 +404,7 @@ public class Set<E> implements Iterable<E> {
 // - S contains attributes that must be covered.
 // - P contains subsets of S that can be used to cover S.
 
-// In the set covering algorithm, first select the subset S that covers the moset
+// In the set covering algorithm, first select the subset S that covers the most
 // nodes, then remove all nodes covered by S from the set of nodes to be covered,
 // and repeat until all nodes are covered.
 // - This is a gready algorithm, because it always selects the best option at the

@@ -2,8 +2,12 @@
 # Data Structures Cheatsheet
 
 ### Dependency List
-* string -> array -> char
-* 
+* `string` -> `array` -> `char`
+* `stack` / `queue` / `set` -> `singly linked list`
+    - A singly linked list is used to hold the contents of the stack, queue, or set.
+* `hash table` -> `array`
+* `chained hash table` -> `singly linked list` -> `array`
+* `hash set` -> `hash table` -> `array`
 
 
 ### Primitive Types
@@ -32,21 +36,37 @@
 ### Linked Lists
 * Fast O(1) inserts and deletes, slow O(n) indexing.
 * Each element in the list has a reference to the next element, which is why values in the list can be spread randomly across memory instead of contiguously. When elements are inserted or deleted the references just need to be patched.
-* `Singly Linked List`: each element links to the next element and can only be
+* `Singly Linked List` = each element links to the next element and can only be
 traversed forward.
-    - Fields = head, tail, data, nextElement.
-* `Doubly Linked List`: each element links to the next and previous element, can
+    - Fields = `head`, `tail`, `data`, `nextElement`.
+* `Doubly Linked List` = each element links to the next and previous element, can
 be traversed forward and backward. Does take up more memory because each element
 has two references.
-    - Fields = head, tail, data, nextElement, prevElement.
-* `Circular Linked List`: list wraps around on itself and has no beginning or end.
+    - Fields = `head`, `tail`, `data`, `nextElement`, `prevElement`.
+* `Circular Linked List` =  list wraps around on itself and has no beginning or end.
 This can be implemented with either a single or doubly linked list. Useful for 
 applications where you are continually looping through a list.
 
-##  Stacks, Queues, Sets
+###  Stacks, Queues, Sets
+* `Stack` = Last in first out (LIFO) data storage.
+    - Supports three operations: `push`, `pop`, `peek` (look at the top of the stack).
+* `Queue` = First in first out (FIFO) data storage.
+    - Supports three operations: `enqueue` (add to the end of the queue), `dequeue` (remove from the front of the queue), `peek` (look at the front of the queue).
+* `Set` = Unordered collection of items of the same type without any duplicates.
+    - Supported operations: `equality`, `subset`, `union`, `intersection`, `difference`.
+* A singly linked list is used to store the underlying data for all three of these data types. For example, to test whether a value is in a set, the underlying singly linked list is iterated through and tested for the presence of the value.
 
+### Hash Tables
+* Fast O(1) inserts, deletes, and searches, addressing the tradeoffs between arrays and lists.
+* Data is stored as an array and accessed internally via a key.
+    - Key can be any data type, but it will be hashed to an integer and this integer is used to index the underlying data in the array.
+* Collisions can occur if the hash function generates the same integer index for different keys.
+* Load factor = number of elements in the array / number of buckets. A low load factor is required to maintain constant time lookups.
+* Data (i.e. attributes of a person) are hashed into a hash value (i.e. 20494824024) by combining the attributes of the person in a hashing equation. The output hash value is then converted to an integer representing an index in the array using Modulo Hashing (division method) or Multiplication Hashing.
+* `Chained Hash Table` = array of linked lists where each list forms a bucket. This provides collision resistance as keys that are mapped to the same bucket are simply added to the tail of the linked list in that bucket.
+* `Hash Sets` = Set that uses a hash table to store the members of the set internally. This results in set indexing that is faster than if the set had been implemented using a `Singly Linked List`.
 
-
+### Trees
 
 
 
