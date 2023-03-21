@@ -2,12 +2,19 @@
 # Data Structures Cheatsheet
 
 ### Dependency List
+* `array` -> No Dependencies
+* `linked list` -> No Dependencies
 * `string` -> `array` -> `char`
 * `stack` / `queue` / `set` -> `singly linked list`
     - A singly linked list is used to hold the contents of the stack, queue, or set.
+
 * `hash table` -> `array`
 * `chained hash table` -> `singly linked list` -> `array`
 * `hash set` -> `hash table` -> `array`
+
+* `binary tree` -> No Dependencies
+* `binary tree level-order traversal` (breadth-first search) -> `queue`
+    - A queue is used to hold nodes that have been discovered but not visited.
 
 
 ### Primitive Types
@@ -66,8 +73,14 @@ applications where you are continually looping through a list.
 * `Chained Hash Table` = array of linked lists where each list forms a bucket. This provides collision resistance as keys that are mapped to the same bucket are simply added to the tail of the linked list in that bucket.
 * `Hash Sets` = Set that uses a hash table to store the members of the set internally. This results in set indexing that is faster than if the set had been implemented using a `Singly Linked List`.
 
-### Trees
-
+### Binary Trees
+* Recursive data structure in which data is organized into nodes that take a hierarchical form.
+* `Binary Tree` Fields = `data`, `left`, `right`.
+* Four methods of `Binary Tree` traversal.
+    - Pre-Order Traversal = Visit root node, recursively traverse left, recursively traverse right (depth-first search).
+    - In-Order Traversal = Recursively traverse left, visit root node, recursively traverse right.
+    - Post-Order Traversal = Recursively traverse left, recursively traverse right, visit root node.
+    - Level-Order Traversal = Visit root node, then proceed downward visiting nodes at each level from left to right (breadth-first search).
 
 
 
