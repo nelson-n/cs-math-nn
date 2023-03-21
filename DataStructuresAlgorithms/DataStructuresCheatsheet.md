@@ -1,6 +1,11 @@
 
 # Data Structures Cheatsheet
 
+### Dependency List
+* string -> array -> char
+* 
+
+
 ### Primitive Types
 * byte (1 byte) = Stores whole numbers from -128 to 127.
 * short	(2 bytes) = Stores whole numbers from -32,768 to 32,767.
@@ -15,7 +20,7 @@
 * Arrays = Grouping of objects of a homogenous data type.
     - Stored contiguously in memory as one long string of bytes. When you index the memory you know exactly how many bytes each element takes up because objects have the same type, so if you are storing 4 byte integers you can quickly return the element at index 5 by looking at bytes 4*5 = 20-24 in the string of bytes.
     - Cannot grow or shrink, a new array must be created to grow an array.
-    - Fast random access (indexing), slow inserts and deletes as a new array must be created.
+    - Fast indexing O(1), slow inserts and deletes O(n) as a new array must be created.
 * Lists = Grouping of objects of heterogenous data types.
     - Items stored non-contiguously in memory (items are stored randomly in memory).
     - Fast inserts and deletes as prior elements do not need to be shifted in memory, slow random access.
@@ -24,7 +29,21 @@
     - Used to store domain definitions or arguments.
 * Strings = Array of characters.
 
+## Linked Lists
+* Fast O(1) inserts and deletes, slow O(n) indexing.
+* Each element in the list has a reference to the next element, which is why values in the list can be spread randomly across memory instead of contiguously. When elements are inserted or deleted the references just need to be patched.
+* Singly linked list: each element links to the next element and can only be
+traversed forward.
+    - Fields = head, tail, data, nextElement.
+* Doubly linked list: each element links to the next and previous element, can
+be traversed forward and backward. Does take up more memory because each element
+has two references.
+    - Fields = head, tail, data, nextElement, prevElement.
+* Circular linked list: list wraps around on itself and has no beginning or end.
+This can be implemented with either a single or doubly linked list. Useful for 
+applications where you are continually looping through a list.
 
+##  Stacks, Queues, Sets
 
 
 
