@@ -7,39 +7,39 @@
 
 
 ### Primitive Types
-* byte (1 byte) = Stores whole numbers from -128 to 127.
-* short	(2 bytes) = Stores whole numbers from -32,768 to 32,767.
-* int (4 bytes) = Stores whole numbers from -2,147,483,648 to 2,147,483,647.
-* long (8 bytes) = Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
-* float	(4 bytes) = Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits.
-* double (8 bytes) = Stores fractional numbers. Sufficient for storing 15 decimal digits.
-* boolean (1 bit) = Stores true or false values.
-* char (2 bytes) = Stores a single character/letter or ASCII values.
+* `byte` (1 byte) = Stores whole numbers from -128 to 127.
+* `short` (2 bytes) = Stores whole numbers from -32,768 to 32,767.
+* `int` (4 bytes) = Stores whole numbers from -2,147,483,648 to 2,147,483,647.
+* `long` (8 bytes) = Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
+* `float` (4 bytes) = Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits.
+* `double` (8 bytes) = Stores fractional numbers. Sufficient for storing 15 decimal digits.
+* `boolean` (1 bit) = Stores true or false values.
+* `char` (2 bytes) = Stores a single character/letter or ASCII values.
 
 ### Non-Primitive (Basic) Types
-* Arrays = Grouping of objects of a homogenous data type.
+* `Arrays` = Grouping of objects of a homogenous data type.
     - Stored contiguously in memory as one long string of bytes. When you index the memory you know exactly how many bytes each element takes up because objects have the same type, so if you are storing 4 byte integers you can quickly return the element at index 5 by looking at bytes 4*5 = 20-24 in the string of bytes.
     - Cannot grow or shrink, a new array must be created to grow an array.
     - Fast indexing O(1), slow inserts and deletes O(n) as a new array must be created.
-* Lists = Grouping of objects of heterogenous data types.
+* `Lists` = Grouping of objects of heterogenous data types.
     - Items stored non-contiguously in memory (items are stored randomly in memory).
     - Fast inserts and deletes as prior elements do not need to be shifted in memory, slow random access.
-* Structs = Grouping of objects of different data types.
+* `Structs` = Grouping of objects of different data types.
     - Stored contiguously in memory as bits arranged in a specific way.
     - Used to store domain definitions or arguments.
-* Strings = Array of characters.
+* `Strings` = Array of characters.
 
-## Linked Lists
+### Linked Lists
 * Fast O(1) inserts and deletes, slow O(n) indexing.
 * Each element in the list has a reference to the next element, which is why values in the list can be spread randomly across memory instead of contiguously. When elements are inserted or deleted the references just need to be patched.
-* Singly linked list: each element links to the next element and can only be
+* `Singly Linked List`: each element links to the next element and can only be
 traversed forward.
     - Fields = head, tail, data, nextElement.
-* Doubly linked list: each element links to the next and previous element, can
+* `Doubly Linked List`: each element links to the next and previous element, can
 be traversed forward and backward. Does take up more memory because each element
 has two references.
     - Fields = head, tail, data, nextElement, prevElement.
-* Circular linked list: list wraps around on itself and has no beginning or end.
+* `Circular Linked List`: list wraps around on itself and has no beginning or end.
 This can be implemented with either a single or doubly linked list. Useful for 
 applications where you are continually looping through a list.
 
