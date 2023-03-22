@@ -2,11 +2,11 @@
 # Big O Cheatsheet
 
 ### Data Structures 
-* Linked Lists
+* `Linked Lists`
     - Inserts and deletes: O(1)
     - Random access: O(n)
 * Arrays
-    - Inserts and delets: O(n)
+    - Inserts and deletes: O(n)
     - Random access: O(1)
 * Hash Tables
     - Inserts, deletes, and random access: O(1)
