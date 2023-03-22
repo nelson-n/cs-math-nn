@@ -138,3 +138,35 @@ applications where you are continually looping through a list.
     - Resembles `Breadth-First Search`, the algorithm repeatedly selects a vertex and explores the edges incident to it, storing the path that looks best at the moment (greedy) into the shortest paths tree. Despite being greedy Djikstra's algorithm generates the optimal solution.
     - Each vertex maintains two values, whether it has been visited and the cost of the shortest path to that vertex. 
     - At the end of the algorithm, traversing the shortest paths tree gives the shortest path to each of the vertices in the graph.
+
+### Sorting
+* `Insertion Sort` = Simple sorting algorithm where you insert the next unsorted item into an already sorted list.
+    - Sorting occurs in-place and no additional memory needs to be allocated, good for small datasets and applications where the data is already sorted, inefficient for large, unordered datasets.
+    - If the data is already ordered, inserting a new value costs O(n) as you only have to pass through the data once and insert the new value in the correct location.
+    - If the data is unsorted, in the worst case you have to search through the list to sort it before inserting the new element which costs: O(n/2) * O(n) = O(n^2).
+* `Quicksort` = Find the median value in the data and continually split the data into two halves to sort.
+    - Algorithm: Quicksort the array, then split the array at the partitions and quicksort the two halves of the array, then split again until the entire array is broken in two arrays of two that are fully sorted.
+    - If the median splitting values are chosen poorly then worst case performance is O(n^2), if median values are chosen well then average performance is O(n log n).
+    - To guarantee good median values, select 3 values randomly from the pile and select the median value of the partition. 
+    - Any time that you are repeatedly dividing the dataset by two, the cost of implementing the algorithm on the split data costs log(n), this is why the end cost is O(n log n) instead of O(n^2).
+    - Sorting occurs in-place, but the algorithm is unstable as it might swap the position of two equal elements.
+* `Merge Sort` = Divides the original pile into halves until you have individual elements, then merges the piles back together in sorted order.
+    - Has a cost of O(n log n) due to the splitting, however n is a larger constant than `Quicksort` and it requires twice the space as `Quicksort` because when merging the piles back together memory must be allocated for a new merged array.
+    - Sorting occurs out-of-place, but the sort is stable and works with data that is too large to fit in memory because it splits the data into chunks that can be loaded and unloaded from memory.
+* `Counting Sort` = Counts how many times an element of a set occurs to see how the set should be ordered.
+    - Requires that elements in the set are integers and needs to allocate a new array to store the ordered elements.
+    - Costs O(n + k) where n is the number of elements and k is the max integer in the set + 1. If the range of the data is small (i.e. 0-10), even if there are a 1m values in the set (n) then k acts as a constant and the big O is O(n).
+* `Radix Sort` = Sorts integers digitwise until all digit places have been sorted, only works with integers.
+    - Cost is O(pn + pk) where k is the range of elements and p is the number of digit positions (100 = 3).
+    - Uses `Counting Sort` under the hood, so the algorithm requires twice the space of the unsorted input + an array of size k, stable sorting.
+    - Sorting radix-10 numbers example:
+        - Unsorted: {15, 12, 49, 16, 36, 40}
+        - After sorting least significant digit (1s place): {40, 12, 15, 16, 36, 49}
+        - After sorting most significant digit (10s place): {12, 15, 16, 36, 40, 49}
+
+### Searching 
+* `Linear Search` = Iterate through an array and compare the value you are looking for to each element until you find it.
+    - Slowest possible search, costs O(n). 
+    - If you need to repeatedly search data, it is often cheaper to sort the data.
+* `Binary Search` = Divides a sorted array in the middle, then compares the key to the middle value and proceeds to compare to the data on the larger or smaller half, then divides those values in half and continue this process recursively until the key is found.
+    - Splitting the data into two halves introduces log(n) behavior, the cost of this algorithm is O(log n).

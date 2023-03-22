@@ -8,7 +8,7 @@
 /*
 
 Comparison Sorts
-- Rely on comparing elements to place them in the correct order.
+- Rely on comparing elements to place them in the corre*t order.
 - Requires a comparison function to compare elements.
 - Fastest possible time: O(n log n)
 
@@ -151,6 +151,7 @@ public class RadiusComparator implements Comparator<Circle> {
         return 0;
     }
 }
+
 // Compare two circles using radius descending
 public class RadiusDescendingComparator implements Comparator<Circle> {
     public int compare(Circle c1, Circle c2) {
@@ -595,7 +596,7 @@ public class MergeSort {
 // Counts how many times an element of a set occurs to see how it should be ordered.
 // - Does not require comparisons.
 // Improves upon O(n log n) upper bound of comparison sort algorithms.
-// Requires that elements in the set are integral types.
+// Requires that elements in the set are integer types.
 // We also need to know what the largest value that can occur is.
 // Stable sort.
 

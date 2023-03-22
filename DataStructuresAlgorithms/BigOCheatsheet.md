@@ -5,26 +5,26 @@
 * `Linked Lists`
     - Inserts and deletes: O(1)
     - Random access: O(n)
-* Arrays
+* `Arrays`
     - Inserts and deletes: O(n)
     - Random access: O(1)
-* Hash Tables
+* `Hash Tables`
     - Inserts, deletes, and random access: O(1)
-* Heaps
+* `Heaps`
     - Largest (smallest) item retrieval: O(log n)
-* Priority Queues
+* `Priority Queues`
     - Highest priority item retrieval: O(log n)
 
 ### Computation
-- For loop: O(n)
-- Nested for loop: O(n^2)
+- `For Loop`: O(n)
+- `Nested For Loop`: O(n^2)
 
 ### Searching
-* Linear search: O(n)
+* `Linear Search`: O(n)
     - Slowest possible search, list/array is iterated through until element is found.
     - Used when you only need to search the data once, and it is not worth sorting.
 
-* Binary search: O(log n)
+* `Binary Search`: O(log n)
     - Requires that data is sorted first, search occurs in-place.
     - Used when you need to repeatedly search data.
 
@@ -47,7 +47,7 @@
 * Counting Sort: O(n)
     - O(n + k) performance where k is the range of the elements being sorted (i.e. 0-10).
     - Requires twice the space of the unsorted input + an array of size k, stable sorting.
-    - Only works on integral types, good when sorting data with a small range of values.
+    - Only works on integer types, good when sorting data with a small range of values.
 
 * Radix Sort: O(n)
     - O(pn + pk) where k is the range of elements and p is the number of digit positions (100 = 3).
