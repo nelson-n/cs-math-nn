@@ -4,7 +4,7 @@
 
 Cheatsheet containing notes on the most commonly used data structures and algorithms.
 
-`/BigOCheatsheet.md`
+`/TimeComplexityCheatsheet.md`
 
 Cheatsheet containing notes on the Big O notation of commonly used data structures and algorithms.
 

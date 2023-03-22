@@ -10,25 +10,18 @@
 
 * `string` -> `array` -> `char`
     - Strings are represented as an array of characters.
-
 * `stack` / `queue` / `set` -> `singly linked list`
     - A singly linked list is used to hold the contents of the stack, queue, or set.
-
 * `hash table` -> `array`
     - An array is used to store the underlying values in a hash table.
-
 * `chained hash table` -> `singly linked list` -> `array`
     - A singly linked list is used to represent the buckets of the hash table, and an array is used to store the underlying data.
-
 * `hash set` -> `hash table` -> `array`
     - A hash table is used to store the contents of the set S = {x, y, z}.
-
 * `heap` -> `singly linked list` / `array`
     - A heap can be implemented with both a singly linked list or array. The array is more efficient as it saves the overhead of the pointers in a singly linked list.
-
 * `priority queue` -> `heap` -> `singly linked list` / `array`
     - A heap is used to store the highest priority item at the top of the priority heap (queue).
-
 * `graph` -> `hash set` -> `hash table` -> `array`
     - A hash set is used to store the set of edges going into and out from a given vertex in a graph.
 
@@ -58,14 +51,14 @@
 ### Linked Lists
 * Fast O(1) inserts and deletes, slow O(n) indexing.
 * Each element in the list has a reference to the next element, which is why values in the list can be spread randomly across memory instead of contiguously. When elements are inserted or deleted the references just need to be patched.
-* `Singly Linked List` = each element links to the next element and can only be
+* `Singly Linked List` = Each element links to the next element and can only be
 traversed forward.
     - Fields = `head`, `tail`, `data`, `nextElement`.
-* `Doubly Linked List` = each element links to the next and previous element, can
+* `Doubly Linked List` = Each element links to the next and previous element, can
 be traversed forward and backward. Does take up more memory because each element
 has two references.
     - Fields = `head`, `tail`, `data`, `nextElement`, `prevElement`.
-* `Circular Linked List` =  list wraps around on itself and has no beginning or end.
+* `Circular Linked List` =  List that wraps around on itself and has no beginning or end.
 This can be implemented with either a single or doubly linked list. Useful for 
 applications where you are continually looping through a list.
 
@@ -81,16 +74,16 @@ applications where you are continually looping through a list.
 ### Hash Tables
 * Fast O(1) inserts, deletes, and searches, addressing the tradeoffs between arrays and lists.
 * Data is stored as an array and accessed internally via a key.
-    - Key can be any data type, but it will be hashed to an integer and this integer is used to index the underlying data in the array.
+    - Key can be any data type, but it will be hashed to a large integer and then converted to a bucket integer, this integer is used to index the underlying data in the array.
 * Collisions can occur if the hash function generates the same integer index for different keys.
-* Load factor = number of elements in the array / number of buckets. A low load factor is required to maintain constant time lookups.
+* Load factor = Number of elements in the array / number of buckets. A low load factor is required to maintain constant time lookups.
 * Data (i.e. attributes of a person) are hashed into a hash value (i.e. 20494824024) by combining the attributes of the person in a hashing equation. The output hash value is then converted to an integer representing an index in the array using Modulo Hashing (division method) or Multiplication Hashing.
 * `Chained Hash Table` = Array of linked lists where each list forms a bucket. This provides collision resistance as keys that are mapped to the same bucket are simply added to the tail of the linked list in that bucket.
 * `Hash Sets` = Set that uses a hash table to store the members of the set internally. This results in set indexing that is faster than if the set had been implemented using a `Singly Linked List`.
 
 ### Binary Trees
 * Recursive data structure in which data is organized into nodes that take a hierarchical form.
-* `Binary Tree` Fields = `data`, `left`, `right`.
+* Fields = `data`, `left`, `right`.
 * Four methods of `Binary Tree` traversal.
     - Pre-Order Traversal = Visit root node, recursively traverse left, recursively traverse right (depth-first search).
     - In-Order Traversal = Recursively traverse left, visit root node, recursively traverse right.
@@ -101,14 +94,14 @@ applications where you are continually looping through a list.
 * `Heaps` allow for quick access to the smallest or largest item in a set.
 * One approach would be to just keep a sorted set, but this is expensive as it requires a O(n log n) re-sort with each insertion to the set. 
 * The heap approach is to keep the largest (or smallest) item at a known location in the set where inserts cause the item to move to a known location.
-    - This is implemented as a `Binary Tree` where the child node is always smaller than the parent node, thus the root node is the largest value in the heap.
+    - This is represented (but not implemented) as a `Binary Tree` where the child node is always smaller than the parent node, thus the root node is the largest value in the heap. In practice, this is implemented with a `Singly Linked List`.
 * `Heaps` can also be stored as `Arrays` where the root node is stored at index 0. This saves the overhead cost of pointers that are in a linked-list. 
     - The left child of a node is stored at index 2n + 1.
     - The right child of a node is stored at index 2n + 2.
     - The parent of a node is stored at index (n - 1) / 2.
-* `Heapsort` = Algorithm where the largest value is pulled off the heap one at a time and placed in a sorted array, runs in O(n log n).
 * Heap Insert Algorithm = Insert the new value into the tree, compare to its parent node, if greater then swap the two values, repeat until the value finds its correct position.
-* `Priority Queue` = Structure to store the highest priority item at the front. A heap is used internally, but the concept of largest value is changed to represent highest priority using a custom comparator to determine the priority of items.
+* `Heapsort` = Algorithm where the largest value is pulled off the heap one at a time and placed in a sorted array, runs in O(n log n).
+* `Priority Queue` = Structure to store the highest priority item at the front. A heap is used internally, but the concept of largest value is changed to represent highest priority by using a custom comparator to determine the priority of items.
     - Allows quick access to the highest (or lowest) priority item in a set.
 
 ### Graphs
@@ -117,11 +110,11 @@ applications where you are continually looping through a list.
 * `Graphs` can either be directed or undirected. In a directed graph you can only travel one direction along edges, in an undirected graph you can travel both directions.
 * Adjacency List Representation = Most common way to represent graphs in a computer.
     - `Linked List` type representation where each member of the list contains the vertex and a list of vertices adjacent to the matrix.
-    - In this structure edges logically exist from the vertex to each adjacent vertex.
+        - In this structure edges logically exist from the vertex to each adjacent vertex.
     - In a directed graph implementation, each member of the list has three fields.
         - The vertex and any associated data.
-        - A `Hash Set` of vertices that form the edges incident to (pointing towards) from the vertex.
-        - A `Hash Set` of vertices that form the edges incident from (pointing away) from the vertex.
+        - A `Hash Set` of vertices that form the edges incident to (pointing towards) the vertex.
+        - A `Hash Set` of vertices that form the edges incident from (pointing away from) the vertex.
 * `Breadth-First Search` = Starts at a given vertex and explores all vertices reachable from it.
     - Place starting vertex in a queue.
     - For each vertex adjacent to the vertex at the start of the queue, check if the vertex has been visited and if not visit it.

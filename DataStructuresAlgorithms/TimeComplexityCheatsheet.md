@@ -29,32 +29,32 @@
     - Used when you need to repeatedly search data.
 
 ### Sorting
-* Insertion Sort: O(n^2)
+* `Insertion Sort`: O(n^2)
     - O(n) if inserting new data into an already sorted list.
     - Sorting performed in-place, stable sort.
     - Good for small amounts of data.
 
-* Quicksort: O(n log n)
+* `Quicksort`: O(n log n)
     - O(n^2) if partitions are incorrectly selected.
     - Sorting performance in-place, unstable sorting.
     - Considered the best general sorting algorithm.
 
-* Mergesort: O(n log n)
+* `Mergesort`: O(n log n)
     - Same performance as quicksort but has a slightly larger n constant.
     - Requires twice the space of the unsorted array, stable sorting.
     - Works on data that is too large to fit into memory.
 
-* Counting Sort: O(n)
+* `Counting Sort`: O(n)
     - O(n + k) performance where k is the range of the elements being sorted (i.e. 0-10).
     - Requires twice the space of the unsorted input + an array of size k, stable sorting.
     - Only works on integer types, good when sorting data with a small range of values.
 
-* Radix Sort: O(n)
+* `Radix Sort`: O(n)
     - O(pn + pk) where k is the range of elements and p is the number of digit positions (100 = 3).
     - Uses counting sort under the hood, so requires twice the space of the unsorted input + an array of size k, stable sorting.
     - Only works with integers.
 
 ### Traversal
-* Graph Shortest Path (Djikstra's Algorithm): O(E log V)
+* `Graph Shortest Path` (`Djikstra's Algorithm`): O(E log V)
     - O(E log V) where E is the number of edges and V is the number of vertices in the graph.
     - Only works with positive edge weights, for negative edge weights one must use the Bellman-Ford algorithm which runs in O(VE) time.
