@@ -1,6 +1,15 @@
 
 # Big O Cheatsheet
 
+
+
+# Djikstra's (Shortest Paths)
+// - For a graph G = (V, E) runs in O(E lg V) time when implemented correctly.
+// - Only works with positive edge weights, for negative edge weights one must
+// use the Bellman-Ford algorithm which runs in O(VE) time.
+
+
+
 ## Data Structures Big O
 - Linked list inserts and deletes: O(1)
 - Linked list random access: O(n)
@@ -52,28 +61,4 @@
 - For loop: O(n)
 - Nested for loop: O(n^2)
 
-## Data Structures Overview
-- Basics: int, double, float, character, etc.
-- Arrays
-- Lists
-- Singly Linked List
-    - Stack
-    - Queue
-    - Set
-- Doubly Linked List
-- Hash Tables
-    - Very fast inserts, deletes, and searches.
-- Trees
-    - Good for: sequential access, random access, inserts, and deletes.
-- Binary Tree Traversal Methods
-    - Pre-order Traversal (depth-first-search): root, left sub-tree, right sub-tree.
-    - In-order Traversal: left sub-tree, root, right sub-tree.
-    - Post-order Traversal: left sub-tree, right sub-tree, root.
-    - Level-order Traversal (breadth-first-search): root, then proceed downward by level visiting nodes from left to right.
-- Heaps
-    - Implemented as a binary tree in array form.
-    - Allow for quick access to the largest or smallest items in a set.
-- Priority Queues
-    - Implemented using a heap data structure and a comparator to determine priority.
-    - Allow for quick access to the highest or lowest priority item in a set.
 
