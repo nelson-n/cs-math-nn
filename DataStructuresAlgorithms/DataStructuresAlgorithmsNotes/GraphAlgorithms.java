@@ -56,6 +56,7 @@ public final class MinimumSpanningTree {
      */
     public static final class WaterFacility {
         private String name;
+
         private WaterFacility parent;
         private VertexColor color;
         private double costToConnectToParent;

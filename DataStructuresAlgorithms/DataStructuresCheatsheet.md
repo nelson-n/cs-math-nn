@@ -6,7 +6,7 @@
 * `linked list` -> No Dependencies
 * `binary tree` -> No Dependencies
 
-<\br>
+<br>
 
 * `string` -> `array` -> `char`
     - Strings are represented as an array of characters.
@@ -15,13 +15,13 @@
     - A singly linked list is used to hold the contents of the stack, queue, or set.
 
 * `hash table` -> `array`
-    - An array is used to store the values that are saved and indexed in an underlying array.
+    - An array is used to store the underlying values in a hash table.
 
 * `chained hash table` -> `singly linked list` -> `array`
     - A singly linked list is used to represent the buckets of the hash table, and an array is used to store the underlying data.
 
 * `hash set` -> `hash table` -> `array`
-    - A hash table is used to store the contents of the set S = {}.
+    - A hash table is used to store the contents of the set S = {x, y, z}.
 
 * `heap` -> `singly linked list` / `array`
     - A heap can be implemented with both a singly linked list or array. The array is more efficient as it saves the overhead of the pointers in a singly linked list.
