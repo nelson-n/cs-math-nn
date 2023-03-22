@@ -1,5 +1,5 @@
 
-# Big O Cheatsheet
+# Time Complexity Cheatsheet
 
 ### Data Structures 
 * `Linked Lists`
