@@ -6,6 +6,8 @@
 * `linked list` -> No Dependencies
 * `binary tree` -> No Dependencies
 
+<\br>
+
 * `string` -> `array` -> `char`
     - Strings are represented as an array of characters.
 
