@@ -1,17 +1,23 @@
 # ComputerLanguages
 ## /Python 
 
+`/FluentPython.py`
+
+Notes on the book *Fluent Python* by Luciano Ramalho. This 700 page book provides an in-depth understanding of Python 3 that covers all of the fundamental Python data types, the methods and OOP system that underpins Python, and the programming tradeoffs present in the Python language. These notes follow the text of the book closely. A pdf copy of *Fluent Python* may be found at [Fluent Python](https://github.com/hiddenJuliet/pythondocument/blob/master/Fluent%20Python.pdf).
+
 `/PythonCheatsheet.py`
 
 Cheatsheet containing notes on loops, regex, data structures, and useful functions available in base Python. Serves as a useful refresher on Python functionality and syntax.
 
+`/PythonExploration.py`
+
+Exploration of various concepts in the Python language. Currently covers:
+* Disassembling Python code into CPython bytecode using the dis module, exploring various bytecode operations. 
+* Testing contiguous memory in arrays by indexing using memory addresses.
+
 `/TimeComparison.py`
 
 General script for comparing the speed of various Python functions and methods. This script is used to explore how and why certain implementations are faster than others.
-
-`/FluentPython.py`
-
-Notes on the book *Fluent Python* by Luciano Ramalho. This 700 page book provides an in-depth understanding of Python 3 that covers all of the fundamental Python data types, the methods and OOP system that underpins Python, and the programming tradeoffs present in the Python language. These notes follow the text of the book closely. A pdf copy of *Fluent Python* may be found at [Fluent Python](https://github.com/hiddenJuliet/pythondocument/blob/master/Fluent%20Python.pdf).
 
 ## /Java
 

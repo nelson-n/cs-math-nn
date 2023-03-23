@@ -37,8 +37,6 @@ FunctionName <K> {} // Key
 FunctionName <N> {} // Number
 FunctionName <V> {} // Value
 
-
-
 // --- Loops and Control Flow ---
 
 // Loop through an array.
@@ -47,8 +45,6 @@ for(int i = 0; i < intArray.length; i++) {}
 // Loop through a list.
 for (String item : list) {}
 for (Skill skill : skills) {}
-
-
 
 // --- Random ---
 
