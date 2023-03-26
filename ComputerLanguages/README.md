@@ -41,8 +41,6 @@ Notes on the book *Advanced R* by Hadley Wickham. This book focuses on advanced 
 
 ## /Julia
 
-Julia Links:
-* https://julialang.org/learning/tutorials/
-* https://sje30.github.io/catam-julia/
-* https://sje30.github.io/catam-julia/casestudies/Permutations/permutationsnotebook.html
-* https://sje30.github.io/catam-julia/intro/julia-manual.html
+`/JuliaNotes.jl`
+
+Notes on the basics of the Julia programming language covering fundamentals, unique Julia features, and efficiency in Julia.

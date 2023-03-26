@@ -10,6 +10,10 @@ echo 'R'
 time Rscript RFactorial.R
 
 echo
+echo 'Julia'
+time julia juliaFactorial.jl
+
+echo
 echo 'Java'
 time java javaFactorial
 

@@ -205,3 +205,4 @@ Proposed CS curriculum that inspired many of the low-level CS lessons on compute
 * Replicate lower level Python functions such as len() in C++, then port to Python and compare speed.
 * Add LaTeX equations to pre-existing math/stats/neural network exercises and `/Assorted/EquationsCheetsheet.md` based off of this [tutorial](https://blmoistawinde.github.io/ml_equations_latex/#negative-loglikelihood).
 * Work on poker exercises.
+* Build a hashing function (SHA256?) from scratch, then use it to build a hash table class from scratch.

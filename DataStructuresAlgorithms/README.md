@@ -99,6 +99,6 @@ Notes covering various graph traversal algorithms and their implementation. Cove
 
 `/CompareRecursion`
 
-Compares the speed of recursion in various programming languages by implementing a recursive factorial algorithm and calculating the factorials of all numbers 1 to 100. The speed of each language is compared using a shell script. Languages covered are: Python, R, Java, C, and C++.
+Compares the speed of recursion in various programming languages by implementing a recursive factorial algorithm and calculating the factorials of all numbers 1 to 100. The speed of each language is compared using a shell script. Languages covered are: Python, R, Julia, Java, C, and C++.
 - The speed test may be executed with the shell script `CompareTime.sh`.
-- C and C++ are fastest, Java and Python are next fastest, R is the slowest.
+- C and C++ are fastest, Java and Python are next fastest, R and Julia are the slowest.
