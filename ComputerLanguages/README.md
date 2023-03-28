@@ -1,4 +1,9 @@
 # ComputerLanguages
+
+`/ProgrammingParadigms.md`
+
+Cheatsheet containing notes on different programming paradigms (imperative, functional, object-oriented, etc) and survey of the paradigms used by popular programming languages.
+
 ## /Python 
 
 `/FluentPython.py`
