@@ -1,5 +1,12 @@
 # Statistics
 
+`Statistics`
+* p-score, z-score, gaussian
+
+
+
+
+
 `MLE.R`
 
 Estimates the properties of a Gaussian (normal) distribution using Maximum Likelihood Estimation (MLE). MLE is implemented from scratch using a density function, negative log likelihood function, and a naive optimization function. From-scratch results are then benchmarked against MLE performed with Nelder-Mead simplex optimization.

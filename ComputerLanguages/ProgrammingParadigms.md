@@ -1,6 +1,26 @@
 
 # Programming Paradigms
 
+### Compiled
+* Code is converted directly into machine code that the CPU can execute.
+* Generally faster than interpreted languages.
+* Example languages: C, C++, Haskell, Rust, Go.
+
+### Interpreted
+* Instructions are run line by line without compiling the entire program into machine language.
+* Instructions are not directly executed by the target machine, but instead read and executed by another program.
+    * For example Python code compiles line by line into bytecode which is then run on the Python Virtual Machine.
+* Generally slower than compiled languages due to the overhead of compiling the line before running it.
+* Example languages: Ruby, Python, R, JavaScript.
+
+### Just-in-Time Compilation 
+* Code is compiled during the execution of the program instead of beforehand.
+* JIT generally consists of bytecode translation to machine code, which is then executed directly.
+* A JIT compiler analyses the code being executed and identifies the parts of the code where speedup gained from compilation or recompilation would outweigh the overhead of compiling that code.
+* Example languages: Java (Java Virtual Machine), C#, Julia.
+
+---
+
 ### Imperative
 * Programming with an explicit sequence of commands that update state.
 * Commands show how the computation takes place, step by step. Each step affects the global state. 
@@ -72,6 +92,8 @@ result sort.
 ```
 sorted(p.name.upper() for p in people if len(p.name) > 5)
 ```
+
+---
 
 ### Paradigms Supported by Various Languages
 * **C** = Imperative, procedural language that supports structured programming, lexical variable scope, and recursion, statically typed.
