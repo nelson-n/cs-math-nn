@@ -192,6 +192,7 @@ Proposed CS curriculum that inspired many of the low-level CS lessons on compute
 ## To-Do List
 
 * Create a markdown (maybe Rmarkdown/Jupyter notebook?) compilation of high level math notes covering calc 1, calc 2, multivariable calc, linear algebra, discrete math, and PDEs. Cover the most important equations from each course and how they relate.
+    * Go back through all math cheatsheets and add full latex equations.
 * Create a markdown compilation of high level statistics notes. Cover the most important equations and theorems such as CLT, negative log likelihood, maximum likelihood estimation, power laws, other distributions such as the Poisson distribution.
 * Neural Network work.
     * Look at Karpathy lectures.
