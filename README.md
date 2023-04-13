@@ -29,7 +29,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 [Assorted](#assorted)
 
-## Quick Access Links
+## Cheatsheet Links
 * [Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/TimeComplexityCheatsheet.md)
 * [Data Structures Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md)
 * [Programming Paradigms Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/ProgrammingParadigms.md)
@@ -40,6 +40,8 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java)
 * [LaTeX Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md)
 
+## Notes Links
+* [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb)
 ## Preface: Atoms to Bits 
 
 `/Preface/atoms2bits.pdf`
@@ -124,6 +126,7 @@ Languages currently covered:
 
 `/Math`
 
+* Notes on the basics of linear algebra.
 * Implements Singular Value Decomposition (SVD) and Principal Component Analysis (PCA) from theory. Uses SVD and PCA to compress images and find the properties of transformed Gaussian data.
 
 #### :bangbang: to-do

@@ -1,9 +1,12 @@
 # Math
 
 `LinearAlgebra.ipynb`
-* Matrix multiplication.
-    - transpose
-    - inversion
+* Notes and code examples covering the following linear algebra concepts:
+    * Linear transformations.
+    * Vector space, span, basis, rank, column space, null space, etc.
+    * Dot product and cross product.
+    * Matrix multiplication.
+    * Systems of linear equations.
 
 
 
