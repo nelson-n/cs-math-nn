@@ -8,8 +8,6 @@
     * Matrix multiplication.
     * Systems of linear equations.
 
-
-
 `Calculus`
 * Partial derivatives.
 * Derivatives
