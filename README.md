@@ -104,7 +104,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 Languages currently covered:
 * Python - [Python Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/FluentPython.py)
 * Java - [Java Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaNotes.java)
-* R - [R Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Julia/AdvancedR.R)
+* R - [R Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/R/AdvancedR.R)
 * Julia - [Julia Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Julia/JuliaNotes.jl)
 
 #### :bangbang: to-do
