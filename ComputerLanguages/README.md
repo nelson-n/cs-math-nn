@@ -6,13 +6,19 @@ Cheatsheet containing notes on different programming paradigms (imperative, func
 
 ## /Python 
 
+`/PythonCheatsheet.py`
+
+Cheatsheet with notes on important functionality in Python. Covers:
+* Lambda functions.
+* Class construction.
+* Loops and control flow.
+* Regex and string operations.
+* Lists and list operations.
+* Sets and dictionaries.
+
 `/FluentPython.py`
 
 Notes on the book *Fluent Python* by Luciano Ramalho. This 700 page book provides an in-depth understanding of Python 3 that covers all of the fundamental Python data types, the methods and OOP system that underpins Python, and the programming tradeoffs present in the Python language. These notes follow the text of the book closely. A pdf copy of *Fluent Python* may be found at [Fluent Python](https://github.com/hiddenJuliet/pythondocument/blob/master/Fluent%20Python.pdf).
-
-`/PythonCheatsheet.py`
-
-Cheatsheet containing notes on loops, regex, data structures, and useful functions available in base Python. Serves as a useful refresher on Python functionality and syntax.
 
 `/PythonExploration.py`
 
@@ -26,19 +32,30 @@ General script for comparing the speed of various Python functions and methods. 
 
 ## /Java
 
+`/JavaCheatsheet.java`
+
+Cheatsheet with notes on important functionality in Java. Covers:
+* Classes and functions.
+* Types and data structures in Java.
+
 `/JavaNotes.java`
 
 Contains notes on the Java language, drawn mainly from the book *Java: A Beginner's Guide* by Herbert Schildt. This book covers Java fundamentals, data types, methods, operators, inheritance, packages, I/O, multithreading, and generics.
-
-`/JavaCheatsheet.java`
-
-Cheatsheet with notes on classes and functions, types and data structures, loops and control flow, and generics. Serves as a useful refresher when writing in Java.
 
 `/JavaHelpers.java`
 
 Contains useful Java helpers such as methods for printing arrays and generating random integers.
 
 ## /R
+
+`/RCheatsheet.R`
+
+Cheatsheet with notes on important functionality in the R language. Covers:
+* Tracing memory.
+* Functionals such as `map()`, `sapply()`, and `parSapply`.
+* S3 methods, S4 methods, and OOP in R.
+* Metaprogramming.
+* Plots and tables.
 
 `/AdvancedR.R`
 
