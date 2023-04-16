@@ -106,15 +106,3 @@ $\frac{\partial f}{\partial x}$ : The partial derivative of $f$ with respect to 
 $\nabla f$ : The gradient of $f$.
 
 $\iint f(x,y) dA$ : The double integral of $f(x,y)$ over the region $A$.
-
-$\iiint f(x,y,z) dV$ : The triple integral of $f(x,y,z)$ over the region $V$.
-
-$\frac{d}{dx}\left(f(g(x))\right) = f'(g(x))g'(x)$ : The chain rule for derivatives.
-
-$\frac{d}{dx}\left(\frac{f(x)}{g(x)}\right) = \frac{f'(x)g(x) - g'(x)f(x)}{(g(x))^2}$: The quotient rule for derivatives.
-
-$\frac{d}{dx}\left(f(x)g(x)\right) = f'(x)g(x) + f(x)g'(x)$ : The product rule for derivatives.
-
-$\frac{d}{dx}\left(e^{f(x)}\right) = f'(x)e^{f(x)}$ : The derivative of $e^{f(x)}$.
-
-$\frac{d}{dx}\left(\ln(f(x))\right) = \frac{f'(x)}{f(x)}$ : The derivative of $\ln(f(x))$.
