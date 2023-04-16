@@ -95,7 +95,7 @@ $\lim_{x\to a}f(x)=L$ : The limit of $f(x)$ as $x$ approaches $a$ is $L$.
 
 $\frac{dy}{dx}$ or $y'$ : The derivative of $y$ with respect to $x$.
 
-$\frac{d^n y}{dx^n}$ or $y^{(n)}$ : The $n$th derivative of $y$ with respect to $x$.
+$\frac{d^n y}{dx^n}$ or $y^{(n)}$ : The $n$ th derivative of $y$ with respect to $x$.
 
 $\int f(x) dx$ : The indefinite integral of $f(x)$ with respect to $x$.
 
