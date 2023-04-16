@@ -17,7 +17,7 @@ $\displaystyle\prod_{i=1}^n a_i$ : Product of terms $a_1, a_2, \ldots, a_n$.
 
 ### Set Theory
 
-$\{ ... \}$ : Set, i.e. $\{ 1, 4, 7, 3, 5 \}$.
+$\\{...\}$ : Set, i.e. $\\{1, 4, 7, 3, 5\\}$.
 
 $\emptyset$ : Empty set symbol, i.e. $\{\}$.
 
