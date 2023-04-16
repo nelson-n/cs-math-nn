@@ -9,15 +9,15 @@ $\pm$ : Denotes plus minus or a range of values, i.e. $10 \pm 2$ represents an u
 
 $<<$, $>>$ : Much less than or much greater than.
 
-$\displaystyle\sum_{i=1}^n a_i$ : The sum of the terms $a_1, a_2, \ldots, a_n$.
+$\displaystyle\sum_{i=1}^n a_i$ : Sum of terms $a_1, a_2, \ldots, a_n$.
 
-$\displaystyle\prod_{i=1}^n a_i$ : The product of the terms $a_1, a_2, \ldots, a_n$.
+$\displaystyle\prod_{i=1}^n a_i$ : Product of terms $a_1, a_2, \ldots, a_n$.
 
 <br>
 
 ### Set Theory
 
-$\{...\}$ : Set, i.e. $\{1, 4, 7, 3, 5\}$.
+$\{ ... \}$ : Set, i.e. $\{ 1, 4, 7, 3, 5 \}$.
 
 $\emptyset$ : Empty set symbol, i.e. $\{\}$.
 
