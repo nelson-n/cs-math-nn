@@ -192,6 +192,7 @@ Proposed CS curriculum that inspired many of the low-level CS lessons on compute
 
 ## To-Do List
 
+* Finish `/Math` linear algebra fundamentals notes.
 * Work on `/Math` calculus fundamentals notes and `/Statistics` statistics fundamentals notes. 
 * Neural Network work.
     * Look at Karpathy lectures.
