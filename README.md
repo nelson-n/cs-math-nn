@@ -6,50 +6,44 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 ## Sections
 
-[Hardware / Processors](#hardware--processors)
+* [Hardware / Processors](#hardware--processors)
+* [Compilers / Operating Systems](#compilers--operating-systems)
+* [Data Structures / Algorithms](#data-structures--algorithms)
+* [Computer Languages](#computer-languages)
+* [Statistics](#statistics)
+* [Mathematics](#mathematics)
+* [Neural Networks](#neural-networks)
+* [Additional Topics](#additional-topics)
+    * [Networking / Internet](#networking--internet)
+    * [Parallel Computing](#parallel-computing)
+    * [Databases](#databases)
+    * [Cryptography](#cryptography) 
+    * [Information Theory / Entropy](#information-theory--entropy)
+* [Assorted](#assorted)
 
-[Compilers / Operating Systems](#compilers--operating-systems)
-
-[Data Structures / Algorithms](#data-structures--algorithms)
-
-[Computer Languages](#computer-languages)
-
-[Statistics](#statistics)
-
-[Mathematics](#mathematics)
-
-[Neural Networks](#neural-networks)
-
-[Additional Topics](#additional-topics)
-* [Networking / Internet](#networking--internet)
-* [Parallel Computing](#parallel-computing)
-* [Databases](#databases)
-* [Cryptography](#cryptography) 
-* [Information Theory / Entropy](#information-theory--entropy)
-
-[Assorted](#assorted)
-
-## Cheatsheets
-* [Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/TimeComplexityCheatsheet.md)
-* [Data Structures Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md)
-* [Programming Paradigms Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/ProgrammingParadigms.md)
+## Language Cheatsheets
 * [Unix Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/CompilersOperatingSystems/Unix/UnixCheatsheet.md)
 * [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/GitCheatsheet.md)
 * [Python Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/PythonCheatsheet.py)
 * [R Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/R/RCheatsheet.R)
 * [Java Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaCheatsheet.java)
-* [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java)
-* [LaTeX Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md)
-* [Math Symbols Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathSymbolsCheatsheet.md)
 
-## Notes
+## General Cheatsheets
+* [Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/TimeComplexityCheatsheet.md)
+* [Data Structures Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md)
+* [Programming Paradigms Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/ProgrammingParadigms.md)
+* [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java)
+* [Math Symbols Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathSymbolsCheatsheet.md)
+* [Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md)
+
+## Subject Notes
 * [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb)
 
 ## Preface: Atoms to Bits 
 
 `/Preface/atoms2bits.pdf`
 
-* The preface gives an overview of the complete compute stack: the refining of sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build transistors, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. This preface gives an overview of concepts that will be covered in detail in later sections.
+* This preface gives an overview of the complete compute stack: the refining of sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build transistors, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. This preface gives an overview of concepts that will be covered in detail in later sections of `cs-math-nn`.
 
 #### :bangbang: to-do
 * Add notes on FPGAs, how FPGAs are built from transistors, notes on how ICs are a collection of transistors in a reliable package, notes on LUTs (lookup tables).
@@ -82,13 +76,13 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/DataStructuresAlgorithms`
 
 * Notes and exercises on data structures and algorithms implemented in Java and Python.
-* Formal Notes On:
+* Notes On:
     - Linked lists, queues, stacks, and sets.
     - Sorting and searching algorithms.
     - Hash tables, trees, heaps, and priority queues.
     - Graphs and graph algorithms.
-* Exercises:
     - [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java) covering binary tree search, recursion, and implementation.
+* Exercises:
     - Comparison of the speed of recursion in Python, R, Java, C, and C++.
 
 #### :bangbang: to-do
@@ -100,7 +94,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/ComputerLanguages`
 
 * Notes, exercises, and cheatsheets on both high level and low level programming languages.
-* Notes from popular books such as [Fluent Python](https://github.com/hiddenJuliet/pythondocument/blob/master/Fluent%20Python.pdf), [Advanced R](https://adv-r.hadley.nz/), and *Java: A Beginner's Guide*.
+* Notes from popular books such as *Fluent Python*, *Advanced R*, and *Java: A Beginner's Guide*.
 
 Languages currently covered:
 * Python - [Python Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/FluentPython.py)
@@ -130,7 +124,7 @@ Languages currently covered:
 
 `/Math`
 
-* Notes on the basics of linear algebra.
+* [Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb) on the fundamentals of linear algebra
 * Implements Singular Value Decomposition (SVD) and Principal Component Analysis (PCA) from theory. Uses SVD and PCA to compress images and find the properties of transformed Gaussian data.
 
 #### :bangbang: to-do
@@ -198,20 +192,13 @@ Proposed CS curriculum that inspired many of the low-level CS lessons on compute
 
 ## To-Do List
 
-* Create a markdown (maybe Rmarkdown/Jupyter notebook?) compilation of high level math notes covering calc 1, calc 2, multivariable calc, linear algebra, discrete math, and PDEs. Cover the most important equations from each course and how they relate.
-    * Go back through all math cheatsheets and add full latex equations.
-* Create a markdown compilation of high level statistics notes. Cover the most important equations and theorems such as CLT, negative log likelihood, maximum likelihood estimation, power laws, other distributions such as the Poisson distribution.
+* Work on `/Math` calculus fundamentals notes and `/Statistics` statistics fundamentals notes. 
 * Neural Network work.
     * Look at Karpathy lectures.
     * Look at tinygrad tutorial, play with tinygrad.
-    * Build paradigmatic models in sequential order until Transformer model is reached.
-    * Read "Attention Is All You Need" paper.
-    * Download GPT2 or another LLM from Hugging Face and play with it under the hood.
-        * Generate most likely next word, see what happens when you change the temperature? Etc.
-* Create LeetCode / Google CodeJam practice schedule. 
-* Finish Fluent Python.
-* Learn C++ basics (**Computer Languages**), write/replicate a hashing function from scratch in C++ (**Cryptography**), build a low-level hash table function and then use this to build a dictionary type in Python (**Data Structures**), use `timeit` to compare the speed of lookup using the standard Python dictionary implementation versus the dictionary implementation you just wrote.
-* Replicate lower level Python functions such as len() in C++, then port to Python and compare speed.
+    * Build paradigmatic models in sequential order up to the Transformer model.
+    * Read *Attention Is All You Need* paper.
+* Work on *Fluent Python* notes.
 * Add LaTeX equations to pre-existing math/stats/neural network exercises and `/Assorted/EquationsCheetsheet.md` based off of this [tutorial](https://blmoistawinde.github.io/ml_equations_latex/#negative-loglikelihood).
 * Work on poker exercises.
-* Build a hashing function (SHA256?) from scratch, then use it to build a hash table class from scratch.
+* Build a hashing function (SHA256) from scratch, then use it to build a hash table class from scratch.
