@@ -1,4 +1,32 @@
 
+## Sections
+# - Helper Functions
+# - General Notes
+# - R Language Notes
+
+#===============================================================================
+# Helper Functions
+#===============================================================================
+
+# Date formatting template.
+Date <- "06-14-2001"
+as.Date(Date, format = "%m/%d/%Y")
+
+# Date formatting list.
+# %S = second
+# %M = minute
+# %p = am/pm
+# %H = hour in 24 hour clock
+# %a = day of the week, abbreviated (Mon-Sun)
+# %A = day of the week, full (Monday-Sunday)
+# %e = day of the month (1-31)
+# %d = day of the month (01-31)
+# %m = month, numeric (01-12)
+# %b = month, abbreviated (Jan-Dec)
+# %B = month, full (January-December)
+# %y = year, without century (00-99)
+# &Y = year, with century (0000-9999)
+
 #===============================================================================
 # General
 #===============================================================================
@@ -493,34 +521,3 @@ ggsave(
    width = 9, height = 5, units = "in",
    path = paste0(dir)
 )
-
-#===============================================================================
-# Tables
-#===============================================================================
-
-# Example, creating a numeric latex table with stargazer and tex2pdf.
-table <- data.frame(c(1, 2, 3), c(4, 5, 6))
-
-stargazer(
-   table,
-   summary = FALSE,
-   title = "Demo Table",
-   notes = c(
-      "Demo Note 1.",
-      "Demo Note 2."
-   ),
-   out = paste0(dir, "demo_note.tex")
-)
-
-tex2pdf(
-   texfiles = paste0(dir, "demo_note.tex"),
-   filename = paste0(dir, "demo_note_out.pdf"),
-   directory = dir,
-   horizontal = FALSE
-)
-
-# Latex code to make a column span multiple lines.
-# \begin{tabular}{@{}@c@{}} R-squared \\ GDP Growth \end{tabular}
-
-# Latex code to make a column span multiple columns.
-# \multicolumn{2}{c}{This column name spans two columns.}
