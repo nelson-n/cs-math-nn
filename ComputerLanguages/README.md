@@ -57,6 +57,14 @@ Cheatsheet with notes on important functionality in the R language. Covers:
 * Metaprogramming.
 * Plots and tables.
 
+`/PlotsTables.R`
+
+Cheatsheet with notes on the grammar of graphics and how to create plots and tables in R. Covers:
+* ggplot overview, syntax, and design.
+* Useful aesthetics, geoms, and scales in ggplot.
+* Creating tables using the `kable` package.
+* Create tables using the `stargazer` package.
+
 `/AdvancedR.R`
 
 Notes on the book *Advanced R* by Hadley Wickham. This book focuses on advanced topics in the R language as well as how the R language works under the surface. Topics covered in the book include memory use, functional programming, the multiple OOP systems in R, and metaprogramming. After reading this book, one will have an advanced understanding of how code actually executes in R with knowledge of method dispatch, memory allocation, multithreading, and when the R language calls code written in C. The full book may be found at [Advanced R](https://adv-r.hadley.nz/). 

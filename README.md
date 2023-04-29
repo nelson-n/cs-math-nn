@@ -26,6 +26,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/GitCheatsheet.md)
 * [Python Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/PythonCheatsheet.py)
 * [R Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/R/RCheatsheet.R)
+* [R Plots and Tables Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/R/PlotsTables.R)
 * [Java Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaCheatsheet.java)
 
 ## General Cheatsheets
