@@ -19,6 +19,7 @@ This curriculum is my personal approach to learning topics in computer science, 
     * [Databases](#databases)
     * [Cryptography](#cryptography) 
     * [Information Theory / Entropy](#information-theory--entropy)
+    * [Quantitative Finance](#quantitative-finance)
 * [Assorted](#assorted)
 
 ## Language Cheatsheets
@@ -39,6 +40,9 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 ## Subject Notes
 * [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb)
+* [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/AdditionalTopics/QuantFinance/QuantFinance.md)
+* [Atoms2Bits](https://github.com/nelson-n/cs-math-nn/blob/main/Preface/atoms2bits.pdf)
+* [Internet Notes](https://github.com/nelson-n/cs-math-nn/blob/main/AdditionalTopics/NetworkInternet/internet.pdf)
 
 ## Preface: Atoms to Bits 
 
@@ -170,6 +174,10 @@ Languages currently covered:
 * Write a hashing function from scratch. Use the hashing function to build a hash table function. 
 * Upload pre-existing crptography notes.
 * Write a script to generate public/private key pairs using SHA256 or another hashing function.
+
+### Quantitative Finance
+
+* Notes and exercises in quantitative finance. 
 
 ### Information Theory / Entropy
 

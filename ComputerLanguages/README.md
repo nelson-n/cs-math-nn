@@ -60,8 +60,8 @@ Cheatsheet with notes on important functionality in the R language. Covers:
 `/PlotsTables.R`
 
 Cheatsheet with notes on the grammar of graphics and how to create plots and tables in R. Covers:
-* ggplot overview, syntax, and design.
-* Useful aesthetics, geoms, and scales in ggplot.
+* `ggplot` overview, syntax, and design.
+* Useful aesthetics, geoms, and scales in `ggplot`.
 * Creating tables using the `kable` package.
 * Create tables using the `stargazer` package.
 
