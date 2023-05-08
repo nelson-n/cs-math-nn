@@ -25,6 +25,9 @@
 # Pairs:
 # dodgerblue3, firebrick3
 # skyblue1, royalblue
+# firebrick, darkorange2
+# royalblue2, goldenrod1
+# cornflowerblue, darkorange2
 
 #-------------------------------------------------------------------------------
 # ggplot Notes
@@ -71,6 +74,10 @@ geom_smooth(method = lm) # Linear regression prediction with confidence interval
 # Continuous.
 geom_line() # Lineplot.
 geom_area() # Lineplot that fills in the area under the line.
+
+# Alternative.
+library(ggrepel)
+geom_text_repel(aes(label = Ticker, color = Size)) # geom_point + geom_text variant that fixes overlapping labels.
 
 # --- Scales -------------------------------------------------------------------
 
@@ -156,6 +163,7 @@ theme(
     legend.position = "top" # Automatically set legend to the top of the plot.
     legend.position = c(0.9, 0.9), # Manually set legend position.
     plot.title = element_text(hjust = 0.5) # Center plot title.
+    legend.text = element_text(size = 7) # Change the size of the legend text.
 )
 
 # Place a geom with manually selected aesthetics on the plot.
@@ -163,6 +171,15 @@ annotate(geom = "text", x = 8, y = 9, label = "A")
 
 # Set the legend type for a specified aesthetic: colorbar, legend, or none (no legend).
 guides(fill = "none")
+
+# Change the size of all text elements.
+theme(text = element_text(size = 20))
+
+# Do not render a legend from a specific scale.
+scale_colour_manual(name = "", values = c("below" = blue), guide = "none")
+
+# Do not render the legend for a specific geom.
+geom_text(aes(label = Ticker), show.legend = FALSE)
 
 # --- Notes on Mapping to Aesthetics -------------------------------------------
 
@@ -190,6 +207,9 @@ geom_point(aes(color = year(date)))
 # Use markdown (bold, italic) in title or axes.
 labs(x = "Axis title with *italics* and **boldface**") +
 theme(axis.title.x = ggtext::element_markdown())
+
+# Automatically set scales based on how many tick marks want.
+scale_x_continuous(breaks = scales::pretty_breaks(n = 5))
 
 # Place two plots side-by-side or one above the other.
 library(patchwork)
@@ -286,7 +306,10 @@ p + layer(
 # Kable Table Notes
 #-------------------------------------------------------------------------------
 
-# Needs to be rendered with Pandoc in an Rmarkdown document. 
+library(kableExtra)
+
+# Needs to be rendered with Pandoc in an Rmarkdown document or using `tex2pdf` 
+# and pdflatex.
 
 TableData %>%
 
@@ -309,10 +332,11 @@ TableData %>%
 
     # --- General Styling
     collapse_rows(columns = c(1, 2), latex_hline = "major") %>% # Collapse repeated values to one row.
-    add_header_above(c(" " = 2, "Header" = 3)) %>% # Add a custom header over the third column.
+    add_header_above(c(" " = 2, "Header" = 3)) %>% # Adds no header over the first two columns and a custom header over the third column.
     kable_styling(latex_options = c("hold_position", "repeat_header")) %>%
     kable_styling(latex_options = "striped") %>% # Stripe every other row.
     kable_styling(latex_options = "striped", stripe_index = c(1,2, 5:6)) %>% # Stripe specific rows.
+    kable_styling(latex_options = "striped", stripe_index = which(df$Marker == "X"), stripe_color = "gray") %>% # Strip based on a condition.
 
     # --- Font Size, Colors, Aesthetics ---
     kable_styling(font_size = 7) %>% # Set table font size.
@@ -326,6 +350,9 @@ TableData %>%
         general = "Here is a general comments of the table. ", # General footnote.
         number = c("Footnote 1; ", "Footnote 2; ") # Numbered footnotes.
     ) 
+    
+# Save a kable table to .tex output. 
+save_kable(filepath)
 
 #-------------------------------------------------------------------------------
 # Stargazer and tex2pdf Notes
