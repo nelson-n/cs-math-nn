@@ -1616,11 +1616,71 @@ def make_averager():
 # Memoization with functools.lru_cache()
 #-------------------------------------------------------------------------------
 
-# Left off on p. 200
+# A very practical decorator is functools.lru_cache() which implements memoization
+# on a pre-existing function. LRU standings for least recently used meaning that
+# the growth of the cache is limited by discarding entries that have not been
+# read for a while.
 
+# A good demonstration is to apply lru_cache to a painfully slow, recursive
+# algorithm for calculating numbers in the fibonacci sequence.
 
+def fibonacci(n):
+    if n < 2:
+        return n
+    return fibonacci(n-2) + fibonacci(n-1)
 
+@functools.lru_cache()
+def fibonacci(n):
+    if n < 2:
+        return n
+    return fibonacci(n-2) + fibonacci(n-1)
 
+# lru_cache() is particularly effective in functions that need to grab information
+# from the web.
 
+#-------------------------------------------------------------------------------
+# Parameterized Decorators
+#-------------------------------------------------------------------------------
+
+# When parsing a decorator in source code, Python takes the decorated function
+# and passes it as the first argument to the decorator function. To make a decorator
+# accept other arguments you need to make a decorator factory that takes those
+# arguments and returns a decorator.
+
+registry = set()
+
+def register(active=True):
+    def decorate(func):
+        print('running register(active=%s)->decorate(%s)'
+            % (active, func))
+
+        if active: 
+            registry.add(func)
+        else:
+            registry.discard(func)
+
+        return func
+    return decorate
+
+@register(active=False)
+def f1():
+    print('running f1()')
+
+@register() 
+def f2():
+    print('running f2()')
+
+def f3():
+    print('running f3()')
+
+#==============================================================================
+# Part 4: Object-Oriented Idioms
+#==============================================================================
+
+#==============================================================================
+# Chapter 8: Object References, Mutability, and Recycling
+#==============================================================================
+
+# Left off on p. 219
 
 
