@@ -27,6 +27,9 @@ as.Date(Date, format = "%m/%d/%Y")
 # %y = year, without century (00-99)
 # &Y = year, with century (0000-9999)
 
+# Round all numeric columns in a data frame.
+mutate_if(is.numeric, round, digits = 1)
+
 #===============================================================================
 # General
 #===============================================================================
