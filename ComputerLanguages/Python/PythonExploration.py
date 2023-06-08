@@ -120,3 +120,57 @@ id(array[1]) - id(array[0]) # 32 bits
 memAddress = id(array[0]) + 4*32
 ctypes.cast(memAddress,ctypes.py_object).value
 
+#===============================================================================
+# Exploring the Walrus Operator
+#===============================================================================
+
+# The walrus operator (new in Python 3.8) allows allows you to assign variables
+# in the middle of an expression.
+
+# One unique feature of the walrus operator is that it returns the assigned value
+# upon assignment. This is the main intent of the operator, to assign a value and
+# also return it, making code clearer.
+(walrus := True)
+
+# Use case:
+# The walrus operator can be used to shorted code by assigning and returning 
+# values at the same time within a function.
+
+# Without walrus operator. Note that we need to assign `num_length` and `num_sum`
+# to be able to use them in the dictionary.
+numbers = [2, 8, 0, 1, 1, 9, 7, 7]
+
+num_length = len(numbers)
+num_sum = sum(numbers)
+
+description = {
+    "length": num_length,
+    "sum": num_sum,
+    "mean": num_sum / num_length,
+}
+
+description
+
+# With walrus operator we can assign the values and return them to the dictionary
+# at the same time.
+numbers = [2, 8, 0, 1, 1, 9, 7, 7]
+
+description = {
+    "length": (num_length := len(numbers)),
+    "sum": (num_sum := sum(numbers)),
+    "mean": num_sum / num_length,
+}
+
+description
+
+#===============================================================================
+#
+#===============================================================================
+
+
+
+
+
+
+
+
