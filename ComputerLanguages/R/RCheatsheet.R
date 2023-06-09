@@ -494,6 +494,25 @@ df[, weekday := weekdays(date)][
    )]
 
 #===============================================================================
+# group_by
+#===============================================================================
+          
+# Calculate mean by group.
+df <- df %>%
+   group_by(id) %>%
+   summarise(avg = mean(col1, na.rm = TRUE))
+        
+# Perform index-specific computation within a group.
+df <- df %>%
+   group_by(id) %>%
+   summarize(diff1 = last(col1) - first(col1) %>%
+   summarize(diff2 = nth(col1, 5) - first(col1)
+             
+df <- df %>%
+   group_by(id) %>%
+   summarize(diff1 = col1[4:10] - col1[[1]]) 
+          
+#===============================================================================
 # Plotting
 #===============================================================================
 
