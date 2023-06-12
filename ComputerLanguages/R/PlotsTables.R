@@ -211,6 +211,10 @@ theme(axis.title.x = ggtext::element_markdown())
 # Automatically set scales based on how many tick marks want.
 scale_x_continuous(breaks = scales::pretty_breaks(n = 5))
 
+# Create interactive charts and scaling with plotly.
+library(plotly)
+ggplotly(ggplot())
+
 # Place two plots side-by-side or one above the other.
 library(patchwork)
 plot1 | plot2 
