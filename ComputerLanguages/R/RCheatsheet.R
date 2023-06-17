@@ -426,6 +426,16 @@ lb <- bench::mark(
 plot(lb)
 
 #===============================================================================
+# Normalization
+#===============================================================================
+
+# Normalize values to between [0, 1].               
+normalize <- function(X) (X - min(X)) / (max(X) - min(X))
+
+# Standardize values to a normal distribution scale.                         
+standardize <- function(X) (X - mean(X)) / sd(X)   
+                                               
+#===============================================================================
 # Growth Rates
 #===============================================================================
 
@@ -493,6 +503,25 @@ df[, weekday := weekdays(date)][
       weekday != c("Saturday", "Sunday"), date
    )]
 
+#===============================================================================
+# group_by
+#===============================================================================
+          
+# Calculate mean by group.
+df <- df %>%
+   group_by(id) %>%
+   summarise(avg = mean(col1, na.rm = TRUE))
+        
+# Perform index-specific computation within a group.
+df <- df %>%
+   group_by(id) %>%
+   summarize(diff1 = last(col1) - first(col1) %>%
+   summarize(diff2 = nth(col1, 5) - first(col1)
+             
+df <- df %>%
+   group_by(id) %>%
+   summarize(diff1 = col1[4:10] - col1[[1]]) 
+          
 #===============================================================================
 # Plotting
 #===============================================================================
