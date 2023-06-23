@@ -38,6 +38,7 @@
 `find . -name Dockerfile *` find all files with a specific name below <br/>
 `ls -l <filename>` view the permissions of a file <br/>
 `ls -al` view the permissions of all files in a directory <br/>
+`id <username>` find UID and group membership of a user <br/>
 `id -u <username>` find the UID (user ID) of a user <br/>
 `id -Gn <username>` or `id -G` to find the groups of a user <br/>
 `id -gn <username>` or `id -g` to find the current group of a user <br/>
