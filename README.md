@@ -40,7 +40,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 ## Subject Notes
 * [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb)
-* [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/AdditionalTopics/QuantFinance/QuantFinance.md)
+* [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/AdditionalTopics/QuantFinance/QuantFinance.ipynb)
 
 ## Preface: Atoms to Bits 
 
