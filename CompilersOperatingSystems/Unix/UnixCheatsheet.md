@@ -1,5 +1,5 @@
 
-#### Unix
+### Unix
 `sudo su` change to root user <br/>
 `history`  gives a history of commands run <br/>
 `!number`  repeats command run on the line number <br/>
@@ -24,7 +24,7 @@
 `head` retrieves the first few lines of a file <br/>
 `head -n 20` retrieves the first twenty lines of code <br/>
 `tail` retrieves the last few lines of code <br/>
-`grep` search a file for a specific word ex: `grep knot haiku.txt` <br/>
+`grep` search a file for a specific word i.e. `grep knot haiku.txt` <br/>
 `grep -w` limits search to a specific phrase `grep -w “is knot” haiku.txt` <br/>
 `grep -n` numbers the lines that the text is found in <br/>
 `grep -i` makes the search non case sensitive <br/>
@@ -45,6 +45,11 @@
 `chown <username>:<usergroup> list.html` to change file ownership <br/>
 `free -h` find the amount of memory/memory usage <br/>
 `lscpu` on linux find the number of cores/threads available <br/>
-`sysctl -a | grep machdep.cpu` on macos find the number of cores/threads available </br/>
+`sysctl -a | grep machdep.cpu` on macos find the number of cores/threads available <br/>
 `df -h` see storage across the entire filesystem <br/>
 `df -Ph . | tail -1 | awk '{print $4}'` see storage available to the current directory <br/>
+
+#### Mac Specific
+`mdfind -name <name>` search for all files matching the given name <br/>
+`textutil` convert files to and from Microsoft word, plain text, rich text, and html, i.e. `textutil -convert txt mytext.docx` <br/>
+`networkQuality` run an internet speed test <br/>
