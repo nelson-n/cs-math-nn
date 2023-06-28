@@ -1,5 +1,7 @@
 
-### Unix
+## Unix
+
+### General 
 `sudo su` change to root user <br/>
 `history`  gives a history of commands run <br/>
 `!number`  repeats command run on the line number <br/>
@@ -24,6 +26,10 @@
 `head` retrieves the first few lines of a file <br/>
 `head -n 20` retrieves the first twenty lines of code <br/>
 `tail` retrieves the last few lines of code <br/>
+`ls -l <filename>` view the permissions of a file <br/>
+`ls -al` view the permissions of all files in a directory <br/>
+
+### Search
 `grep` search a file for a specific word i.e. `grep knot haiku.txt` <br/>
 `grep -w` limits search to a specific phrase `grep -w “is knot” haiku.txt` <br/>
 `grep -n` numbers the lines that the text is found in <br/>
@@ -36,20 +42,30 @@
 `find . -type f` displays only files below <br/> 
 `find . -name “*.txt”` finds all text files <br/>
 `find . -name Dockerfile *` find all files with a specific name below <br/>
-`ls -l <filename>` view the permissions of a file <br/>
-`ls -al` view the permissions of all files in a directory <br/>
+
+### Users/Permissions
 `id <username>` find UID and group membership of a user <br/>
 `id -u <username>` find the UID (user ID) of a user <br/>
 `id -Gn <username>` or `id -G` to find the groups of a user <br/>
 `id -gn <username>` or `id -g` to find the current group of a user <br/>
 `chown <username>:<usergroup> list.html` to change file ownership <br/>
+
+### Memory/Compute
 `free -h` find the amount of memory/memory usage <br/>
 `lscpu` on linux find the number of cores/threads available <br/>
-`sysctl -a | grep machdep.cpu` on macos find the number of cores/threads available <br/>
 `df -h` see storage across the entire filesystem <br/>
 `df -Ph . | tail -1 | awk '{print $4}'` see storage available to the current directory <br/>
+`du -h` find the amount of disk space used in the current directory <br/>
 
-#### Mac Specific
+### Networking
+`ssh -p 22 username@server` SSH to another server using a specific port <br/>
+`ssh -l username -L 8685:localhost:8685 server` SSH to another server and portforward traffic back to local through a specific port <br/>
+`scp /path/to/file username@server:/path/to/destination` push a file from local to another server <br/>
+`scp username@server:/path/to/file /path/to/destination` pull file from another server to local <br/>
+
+### Mac Specific
 `mdfind -name <name>` search for all files matching the given name <br/>
 `textutil` convert files to and from Microsoft word, plain text, rich text, and html, i.e. `textutil -convert txt mytext.docx` <br/>
 `networkQuality` run an internet speed test <br/>
+`sysctl -a | grep machdep.cpu` on macos find the number of cores/threads available <br/>
+
