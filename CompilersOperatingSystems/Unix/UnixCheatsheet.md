@@ -49,6 +49,7 @@
 `id -Gn <username>` or `id -G` to find the groups of a user <br/>
 `id -gn <username>` or `id -g` to find the current group of a user <br/>
 `chown <username>:<usergroup> list.html` to change file ownership <br/>
+`chmod -R 755 <directory>` change the permissions of all files below a directory <br/>
 
 ### Memory/Compute
 `free -h` find the amount of memory/memory usage <br/>
