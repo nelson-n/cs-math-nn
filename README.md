@@ -132,6 +132,7 @@ Languages currently covered:
 
 #### :bangbang: to-do
 * Learn: differential equations, partial differential equations. Work on these problems in Julia or Python.
+* Learn: Markov chains, Brownian motion, geometric Brownian motion.
 * Review multivariable calculus, gradient descent, formalize pre-existing notes and upload them.
 
 ## Neural Networks
@@ -201,6 +202,7 @@ Proposed CS curriculum that inspired many of the low-level CS lessons on compute
 
 * Finish `/Math` linear algebra fundamentals notes.
 * Work on `/Math` calculus fundamentals notes and `/Statistics` statistics fundamentals notes. 
+* Work on `/Math` notes on Markov Chains and Brownian motion.
 * Neural Network work.
     * Look at Karpathy lectures.
     * Look at tinygrad tutorial, play with tinygrad.

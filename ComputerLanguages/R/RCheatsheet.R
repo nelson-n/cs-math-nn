@@ -40,6 +40,10 @@ rm(list = setdiff(ls(), "x"))
 # Byte compile code for speed increase.
 functionX_compiled <- compiler::cmpfun(functionX)
 
+# Prompt user for input from the command line.
+cat("Enter a value for x: ")
+x <- readLines(con = "stdin", n = 1)
+
 #===============================================================================
 # Objects
 #===============================================================================
