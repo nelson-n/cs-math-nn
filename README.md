@@ -34,7 +34,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/TimeComplexityCheatsheet.md)
 * [Data Structures Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md)
 * [Programming Paradigms Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/ProgrammingParadigms.md)
-* [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java)
+* [Binary Trees Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java)
 * [Math Symbols Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathSymbolsCheatsheet.md)
 * [Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md)
 
@@ -49,7 +49,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 * This preface gives an overview of the complete compute stack: the refining of sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build transistors, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. This preface gives an overview of concepts that will be covered in detail in later sections of `cs-math-nn`.
 
 #### :bangbang: to-do
-* Add notes on FPGAs, how FPGAs are built from transistors, notes on how ICs are a collection of transistors in a reliable package, notes on LUTs (lookup tables).
+* In atoms2bits add notes on FPGAs, how FPGAs are built from transistors, notes on how ICs are a collection of transistors in a reliable package, notes on LUTs (lookup tables).
 
 ## Hardware / Processors
 
@@ -127,7 +127,9 @@ Languages currently covered:
 
 `/Math`
 
-* [Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb) on the fundamentals of linear algebra
+* Topics in linear algebra: [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb) 
+* Topics in calculus: [Calculus Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Calculus.ipynb) 
+* Assorted topics in math: [Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb) 
 * Implements Singular Value Decomposition (SVD) and Principal Component Analysis (PCA) from theory. Uses SVD and PCA to compress images and find the properties of transformed Gaussian data.
 
 #### :bangbang: to-do
@@ -156,8 +158,6 @@ Languages currently covered:
     * Sensitivity measures and derivations.
     * Yield curve estimation.
 
-#### :bangbang: to-do
-
 ## Additional Topics
 
 ### Networking / Internet
@@ -171,11 +171,7 @@ Languages currently covered:
 
 ### Parallel Computing 
 
-#### :bangbang: to-do
-
 ### Databases
-
-#### :bangbang: to-do
 
 ### Cryptography
 
