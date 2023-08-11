@@ -2,7 +2,7 @@
 # Computer Science - Math - Neural Networks 
 <a href='https://github.com/nelson-n/cs-math-nn/blob/main/Preface/Assets/RepoLogo.png'><img src='/Preface/Assets/RepoLogo.png' align="right" height="160" /></a>
 
-This curriculum is my personal approach to learning topics in computer science, mathematics, and neural networks from first principles. This repository is not necessarily a full curriculum, but rather a reflection of my interests, needs, and gaps in my knowledge. However, my goal is to build a curriculum that covers the whole compute stack from transistors and assembly to the math underpinning neural networks. As such, the lessons I compile below should form a solid computer science, math, and deep learning curriculum.
+This curriculum is my personal approach to learning topics in computer science, mathematics, and neural networks (+ quant finance, just for fun) from first principles. This repository is not necessarily a full curriculum, but rather a reflection of my interests, needs, and gaps in my knowledge. However, my goal is to build a curriculum that covers the whole compute stack from transistors and assembly to the math underpinning neural networks. As such, the lessons I compile below should form a solid computer science, math, and deep learning curriculum.
 
 ## Sections
 
@@ -13,13 +13,13 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Statistics](#statistics)
 * [Mathematics](#mathematics)
 * [Neural Networks](#neural-networks)
+* [Quantitative Finance](#quantitative-finance)
 * [Additional Topics](#additional-topics)
     * [Networking / Internet](#networking--internet)
     * [Parallel Computing](#parallel-computing)
     * [Databases](#databases)
     * [Cryptography](#cryptography) 
     * [Information Theory / Entropy](#information-theory--entropy)
-    * [Quantitative Finance](#quantitative-finance)
 * [Assorted](#assorted)
 
 ## Language Cheatsheets
@@ -40,7 +40,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 ## Subject Notes
 * [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb)
-* [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/AdditionalTopics/QuantFinance/QuantFinance.ipynb)
+* [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb)
 
 ## Preface: Atoms to Bits 
 
@@ -148,6 +148,16 @@ Languages currently covered:
 * Build the following models from scratch in NumPy: Feedforward neural network -> recurrent neural network -> convolution neural network -> ResNet -> Transformer -> Diffusion Model, all from scratch. 
     * Verify the correct order of the models so that all paradigmatic neural network models are built in-order.
 
+## Quantitative Finance
+
+`/QuantitativeFinance`
+
+* General notes on quantitative finance including:
+    * Sensitivity measures and derivations.
+    * Yield curve estimation.
+
+#### :bangbang: to-do
+
 ## Additional Topics
 
 ### Networking / Internet
@@ -173,10 +183,6 @@ Languages currently covered:
 * Write a hashing function from scratch. Use the hashing function to build a hash table function. 
 * Upload pre-existing crptography notes.
 * Write a script to generate public/private key pairs using SHA256 or another hashing function.
-
-### Quantitative Finance
-
-* Notes and exercises in quantitative finance. 
 
 ### Information Theory / Entropy
 
