@@ -134,6 +134,7 @@ Languages currently covered:
 
 #### :bangbang: to-do
 * Learn: differential equations, partial differential equations. Work on these problems in Julia or Python.
+    * Use 3B1B videos for this.
 * Learn: Markov chains, Brownian motion, geometric Brownian motion.
 * Review multivariable calculus, gradient descent, formalize pre-existing notes and upload them.
 
