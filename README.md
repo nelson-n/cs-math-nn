@@ -47,7 +47,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/Assorted/atoms2bits.pdf`
 
-* This preface ([atoms2bits]()) gives an overview of the complete compute stack: the refining of sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build transistors, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. This preface gives an overview of concepts that will be covered in detail in later sections of `cs-math-nn`.
+* This preface ([atoms2bits](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/atoms2bits.pdf)) gives an overview of the complete compute stack: the refining of sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build transistors, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. This preface gives an overview of concepts that will be covered in detail in later sections of `cs-math-nn`.
 
 #### :bangbang: to-do
 * In atoms2bits add notes on FPGAs, how FPGAs are built from transistors, notes on how ICs are a collection of transistors in a reliable package, notes on LUTs (lookup tables).
