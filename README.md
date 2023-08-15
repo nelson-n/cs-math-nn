@@ -204,9 +204,10 @@ Proposed CS curriculum that inspired many of the low-level CS lessons on compute
 
 ## To-Do List
 
-* Finish `/Math` linear algebra fundamentals notes.
 * Work on `/Math` calculus fundamentals notes and `/Statistics` statistics fundamentals notes. 
 * Add `/QuantitativeFinance` notes on Nelson-Siegel, Black-Scholes, and a Normal Jump Diffusion Model (GBM that allows for Poisson jumps in asset prices, see Merton 1976).
+* Add a quick study of BLAS and LAPACK routines.
+    * https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/#BLAS-functions
 * Neural Network work.
     * Look at Karpathy lectures.
     * Look at tinygrad tutorial, play with tinygrad.
