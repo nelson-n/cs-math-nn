@@ -100,12 +100,10 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 * [Programming Paradigms Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/ProgrammingParadigms.md) covering compiled vs. interpreted languages, imperative, declarative, functional, and object-oriented programming paradigms.
 * Notes on:
-    * Popular books such as *Fluent Python*, *Advanced R*, and *Java: A Beginner's Guide*.
-Languages currently covered:
-* Python - [Python Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/FluentPython.py)
-* Java - [Java Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaNotes.java)
-* R - [R Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/R/AdvancedR.R)
-* Julia - [Julia Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Julia/JuliaNotes.jl)
+    * Python - [Python Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/FluentPython.py)
+    * Java - [Java Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaNotes.java)
+    * R - [R Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/R/AdvancedR.R)
+    * Julia - [Julia Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Julia/JuliaNotes.jl)
 
 #### :bangbang: to-do
 * Add notes on C, C++, potentially Go or Rust.
@@ -132,7 +130,7 @@ Languages currently covered:
 * Notes on:
     * Topics in linear algebra: [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb) 
     * Topics in calculus: [Calculus Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Calculus.ipynb) 
-    * Assorted topics in math: [Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb) 
+    * Assorted topics in mathematics: [Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb) 
 * Exercises:
     * Implementation of Singular Value Decomposition (SVD) and Principal Component Analysis (PCA) from theory. Uses SVD and PCA to compress images and find the properties of transformed Gaussian data.
 
@@ -141,7 +139,7 @@ Languages currently covered:
 `/NeuralNetworks`
 
 * Exercises:
-    * Implementation of the following neural network architectures from scratch using NumPy. Then trains and tests the neural networks out-of-sample.
+    * Implementation of the following neural network architectures from scratch using NumPy. Neural networks are then trained and tested out-of-sample.
         * Feedforward Neural Network
         * Recurrent Neural Network
     * Solving simple neural network problems relating to finding optimas, gradient descent, et cetera.
@@ -155,8 +153,10 @@ Languages currently covered:
 `/QuantitativeFinance`
 
 * Notes on:
-    * General notes on quantitative finance including:
+    * General notes on quantitative finance: [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb)
         * Sensitivity measures and derivations.
+        * Bond measures.
+        * General definitions.
         * Yield curve estimation.
 
 ## Additional Topics
@@ -166,7 +166,7 @@ Languages currently covered:
 `/NetworkingInternet`
 
 * Notes on:
-    * Computer networking and how the internet protocol stack works.
+    * Computer networking and how the internet protocol stack works: [Network Internet Notes](https://github.com/nelson-n/cs-math-nn/blob/main/AdditionalTopics/NetworkInternet/internet.pdf)
 
 #### :bangbang: to-do
 * Manually create and send TCP/IP packets: [tutorial](https://inc0x0.com/tcp-ip-packets-introduction/tcp-ip-packets-3-manually-create-and-send-raw-tcp-ip-packets/)
@@ -186,21 +186,8 @@ Languages currently covered:
 
 ## Assorted
 
-`/Assorted/GitCheatsheet.md`
-
 * [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/GitCheatsheet.md) of useful commands for working with Git and GitHub.
-
-`/Assorted/EquationsCheetsheet.md` 
-
 * [Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md) of math, stats, and neural network equations implemented in LaTeX.
-
-## Acknowledgements
-
-[Self-learning-Computer-Science - PKUFlyingPig](https://github.com/PKUFlyingPig/Self-learning-Computer-Science/blob/main/README.md)
-Open-source CS curriculum that inspired the structure and content of this curriculum.
-
-[From the Transistor to the Web Browser - George Hotz](https://github.com/geohot/fromthetransistor)
-Proposed CS curriculum that inspired many of the low-level CS lessons on computer hardware, chips, and compilers that are in this curriculum.
 
 ## To-Do List
 
@@ -208,13 +195,13 @@ Proposed CS curriculum that inspired many of the low-level CS lessons on compute
 * Work on `/Math` notes on differential equations, partial differential equations.
     * Use 3B1B videos.
 * Add `/QuantitativeFinance` notes on Merton (1974), Nelson-Siegel, Black-Scholes, and a Normal Jump Diffusion Model (GBM that allows for Poisson jumps in asset prices, see Merton 1976).
-* Add a quick study of BLAS and LAPACK routines.
-    * https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/#BLAS-functions
 * Neural Network work.
     * Look at Karpathy lectures.
     * Look at tinygrad tutorial, play with tinygrad.
     * Build paradigmatic models in sequential order up to the Transformer model.
     * Read *Attention Is All You Need* paper.
+* Add a quick study of BLAS and LAPACK routines.
+    * https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/#BLAS-functions
 * Work on *Fluent Python* notes.
 * Add LaTeX equations to pre-existing math/stats/neural network exercises and `/Assorted/EquationsCheetsheet.md` based off of this [tutorial](https://blmoistawinde.github.io/ml_equations_latex/#negative-loglikelihood).
 * Work on poker exercises.
