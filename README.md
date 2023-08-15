@@ -80,14 +80,16 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/DataStructuresAlgorithms`
 
 * Notes and exercises on data structures and algorithms implemented in Java and Python.
-* Notes on:
+* [Data Structures Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md) covering dependencies, primitive types, basic types, and the fundamental data structures and sorting/searching algorithms.
+* [Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/TimeComplexityCheatsheet.md) covering the time complexity of common data structures and algorithms.
+* [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java) covering binary tree search, recursion, and implementation.
+* [Detailed notes](https://github.com/nelson-n/cs-math-nn/tree/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes) on:
     - Linked lists, queues, stacks, and sets.
     - Sorting and searching algorithms.
     - Hash tables, trees, heaps, and priority queues.
     - Graphs and graph algorithms.
-    - [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java) covering binary tree search, recursion, and implementation.
 * Exercises:
-    - Comparison of the speed of recursion in Python, R, Java, C, and C++.
+    - [Comparison](https://github.com/nelson-n/cs-math-nn/tree/main/DataStructuresAlgorithms/DataStructuresAlgorithmsExercises/CompareRecursion) of the speed of recursion in Python, R, Java, C, and C++.
 
 #### :bangbang: to-do
 * Learn the low-level data structures behind the base data types in Python such as: list, array, tuple, et cetera. Build versions of these data types in C++ and then port to Python with a package like `pybind11`.
