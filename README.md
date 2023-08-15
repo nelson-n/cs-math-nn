@@ -1,6 +1,6 @@
 
 # Computer Science - Math - Neural Networks 
-<a href='https://github.com/nelson-n/cs-math-nn/blob/main/Preface/Assets/RepoLogo.png'><img src='/Preface/Assets/RepoLogo.png' align="right" height="160" /></a>
+<a href='https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Assets/RepoLogo.png'><img src='/Assorted/Assets/RepoLogo.png' align="right" height="160" /></a>
 
 This curriculum is my personal approach to learning topics in computer science, mathematics, and neural networks (+ quant finance, just for fun) from first principles. This repository is not necessarily a full curriculum, but rather a reflection of my interests, needs, and gaps in my knowledge. However, my goal is to build a curriculum that covers the whole compute stack from transistors and assembly to the math underpinning neural networks. As such, the lessons I compile below should form a solid computer science, math, and deep learning curriculum.
 
@@ -30,6 +30,11 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [R Plots and Tables Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/R/PlotsTables.R)
 * [Java Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaCheatsheet.java)
 
+## Subject Notes
+* [General Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb)
+* [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb)
+* [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb)
+
 ## General Cheatsheets
 * [Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/TimeComplexityCheatsheet.md)
 * [Data Structures Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md)
@@ -38,16 +43,11 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Math Symbols Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathSymbolsCheatsheet.md)
 * [Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md)
 
-## Subject Notes
-* [General Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb)
-* [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb)
-* [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb)
-
 ## Preface: Atoms to Bits 
 
-`/Preface/atoms2bits.pdf`
+`/Assorted/atoms2bits.pdf`
 
-* This preface gives an overview of the complete compute stack: the refining of sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build transistors, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. This preface gives an overview of concepts that will be covered in detail in later sections of `cs-math-nn`.
+* This preface ([atoms2bits]()) gives an overview of the complete compute stack: the refining of sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build transistors, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. This preface gives an overview of concepts that will be covered in detail in later sections of `cs-math-nn`.
 
 #### :bangbang: to-do
 * In atoms2bits add notes on FPGAs, how FPGAs are built from transistors, notes on how ICs are a collection of transistors in a reliable package, notes on LUTs (lookup tables).
@@ -80,7 +80,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/DataStructuresAlgorithms`
 
 * Notes and exercises on data structures and algorithms implemented in Java and Python.
-* Notes On:
+* Notes on:
     - Linked lists, queues, stacks, and sets.
     - Sorting and searching algorithms.
     - Hash tables, trees, heaps, and priority queues.
@@ -205,7 +205,7 @@ Proposed CS curriculum that inspired many of the low-level CS lessons on compute
 ## To-Do List
 
 * Work on `/Math` calculus fundamentals notes and `/Statistics` statistics fundamentals notes. 
-* Add `/QuantitativeFinance` notes on Nelson-Siegel, Black-Scholes, and a Normal Jump Diffusion Model (GBM that allows for Poisson jumps in asset prices, see Merton 1976).
+* Add `/QuantitativeFinance` notes on Merton (1974), Nelson-Siegel, Black-Scholes, and a Normal Jump Diffusion Model (GBM that allows for Poisson jumps in asset prices, see Merton 1976).
 * Add a quick study of BLAS and LAPACK routines.
     * https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/#BLAS-functions
 * Neural Network work.
