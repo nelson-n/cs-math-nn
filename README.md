@@ -65,7 +65,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/CompilersOperatingSystems`
 
-* Notes on Unix/Linux and a [Unix Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/CompilersOperatingSystems/Unix/UnixCheatsheet.md) of useful commands.
+* [Unix Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/CompilersOperatingSystems/Unix/UnixCheatsheet.md) of useful commands.
 
 #### :bangbang: to-do
 * Create a set of general notes on linux/unix, combine with notes in unix.pdf in local. Add notes on the basic linux filesystem format from [here](https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained).
@@ -79,17 +79,16 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/DataStructuresAlgorithms`
 
-* Notes and exercises on data structures and algorithms implemented in Java and Python.
 * [Data Structures Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md) covering dependencies, primitive types, basic types, and the fundamental data structures and sorting/searching algorithms.
 * [Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/TimeComplexityCheatsheet.md) covering the time complexity of common data structures and algorithms.
 * [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java) covering binary tree search, recursion, and implementation.
-* [Detailed notes](https://github.com/nelson-n/cs-math-nn/tree/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes) on:
+* Notes on:
     - Linked lists, queues, stacks, and sets.
     - Sorting and searching algorithms.
     - Hash tables, trees, heaps, and priority queues.
     - Graphs and graph algorithms.
 * Exercises:
-    - [Comparison](https://github.com/nelson-n/cs-math-nn/tree/main/DataStructuresAlgorithms/DataStructuresAlgorithmsExercises/CompareRecursion) of the speed of recursion in Python, R, Java, C, and C++.
+    - Comparison of the speed of recursion in Python, R, Java, C, and C++.
 
 #### :bangbang: to-do
 * Learn the low-level data structures behind the base data types in Python such as: list, array, tuple, et cetera. Build versions of these data types in C++ and then port to Python with a package like `pybind11`.
@@ -99,9 +98,9 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/ComputerLanguages`
 
-* Notes, exercises, and cheatsheets on both high level and low level programming languages.
-* Notes from popular books such as *Fluent Python*, *Advanced R*, and *Java: A Beginner's Guide*.
-
+* [Programming Paradigms Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/ProgrammingParadigms.md) covering compiled vs. interpreted languages, imperative, declarative, functional, and object-oriented programming paradigms.
+* Notes on:
+    * Popular books such as *Fluent Python*, *Advanced R*, and *Java: A Beginner's Guide*.
 Languages currently covered:
 * Python - [Python Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/FluentPython.py)
 * Java - [Java Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaNotes.java)
@@ -118,37 +117,34 @@ Languages currently covered:
 
 `/Statistics`
 
-* Implements Maximum Likelihood Estimation (MLE) from scratch, then benchmarks against a canonical optimization function.
-* Implements the Metropolis-Hastings method from scratch.
-* Estimates Ordinary Least Squares (OLS) regression coefficients using Stochastic Gradient Descent (SGD) and tests the accuracy of estimated coefficients out-of-sample.
+* Exercises:
+    * Implementation of Maximum Likelihood Estimation (MLE) from scratch that benchmarks against a canonical optimization function.
+    * Implementation of the Metropolis-Hastings method from scratch.
+    * Estimation of Ordinary Least Squares (OLS) regression coefficients using Stochastic Gradient Descent (SGD).
 
 #### :bangbang: to-do
 * Poker exercises: implement a card deck class with operations such as draw X cards, calculate probabilites of different hands given different stages of a game, implement riffle shuffle, et cetera.
-* Do some statistics work in Julia.
 
 ## Mathematics
 
 `/Math`
 
-* Topics in linear algebra: [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb) 
-* Topics in calculus: [Calculus Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Calculus.ipynb) 
-* Assorted topics in math: [Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb) 
-* Implements Singular Value Decomposition (SVD) and Principal Component Analysis (PCA) from theory. Uses SVD and PCA to compress images and find the properties of transformed Gaussian data.
-
-#### :bangbang: to-do
-* Learn: differential equations, partial differential equations. Work on these problems in Julia or Python.
-    * Use 3B1B videos for this.
-* Learn: Markov chains, Brownian motion, geometric Brownian motion.
-* Review multivariable calculus, gradient descent, formalize pre-existing notes and upload them.
+* Notes on:
+    * Topics in linear algebra: [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb) 
+    * Topics in calculus: [Calculus Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Calculus.ipynb) 
+    * Assorted topics in math: [Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb) 
+* Exercises:
+    * Implementation of Singular Value Decomposition (SVD) and Principal Component Analysis (PCA) from theory. Uses SVD and PCA to compress images and find the properties of transformed Gaussian data.
 
 ## Neural Networks
 
 `/NeuralNetworks`
 
-* Implements the following neural network architectures from scratch using NumPy and then trains and tests the neural networks out-of-sample.
-    * Feedforward Neural Network
-    * Recurrent Neural Network
-* Solves simple neural network problems relating to finding optimas, gradient descent, et cetera.
+* Exercises:
+    * Implementation of the following neural network architectures from scratch using NumPy. Then trains and tests the neural networks out-of-sample.
+        * Feedforward Neural Network
+        * Recurrent Neural Network
+    * Solving simple neural network problems relating to finding optimas, gradient descent, et cetera.
 
 #### :bangbang: to-do
 * Build the following models from scratch in NumPy: Feedforward neural network -> recurrent neural network -> convolution neural network -> ResNet -> Transformer -> Diffusion Model, all from scratch. 
@@ -158,9 +154,10 @@ Languages currently covered:
 
 `/QuantitativeFinance`
 
-* General notes on quantitative finance including:
-    * Sensitivity measures and derivations.
-    * Yield curve estimation.
+* Notes on:
+    * General notes on quantitative finance including:
+        * Sensitivity measures and derivations.
+        * Yield curve estimation.
 
 ## Additional Topics
 
@@ -168,7 +165,8 @@ Languages currently covered:
 
 `/NetworkingInternet`
 
-* Notes on computer networking and how the internet protocol stack works.
+* Notes on:
+    * Computer networking and how the internet protocol stack works.
 
 #### :bangbang: to-do
 * Manually create and send TCP/IP packets: [tutorial](https://inc0x0.com/tcp-ip-packets-introduction/tcp-ip-packets-3-manually-create-and-send-raw-tcp-ip-packets/)
@@ -207,6 +205,8 @@ Proposed CS curriculum that inspired many of the low-level CS lessons on compute
 ## To-Do List
 
 * Work on `/Math` calculus fundamentals notes and `/Statistics` statistics fundamentals notes. 
+* Work on `/Math` notes on differential equations, partial differential equations.
+    * Use 3B1B videos.
 * Add `/QuantitativeFinance` notes on Merton (1974), Nelson-Siegel, Black-Scholes, and a Normal Jump Diffusion Model (GBM that allows for Poisson jumps in asset prices, see Merton 1976).
 * Add a quick study of BLAS and LAPACK routines.
     * https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/#BLAS-functions
