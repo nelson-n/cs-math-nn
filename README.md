@@ -39,6 +39,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md)
 
 ## Subject Notes
+* [General Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb)
 * [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb)
 * [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb)
 
@@ -205,7 +206,7 @@ Proposed CS curriculum that inspired many of the low-level CS lessons on compute
 
 * Finish `/Math` linear algebra fundamentals notes.
 * Work on `/Math` calculus fundamentals notes and `/Statistics` statistics fundamentals notes. 
-* Work on `/Math` notes on Markov Chains and Brownian motion.
+* Add `/QuantitativeFinance` notes on Nelson-Siegel, Black-Scholes, and a Normal Jump Diffusion Model (GBM that allows for Poisson jumps in asset prices, see Merton 1976).
 * Neural Network work.
     * Look at Karpathy lectures.
     * Look at tinygrad tutorial, play with tinygrad.

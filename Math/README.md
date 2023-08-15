@@ -13,7 +13,10 @@
 
 `MathNotes.ipynb`
 * Notes on assorted topics in math covering:
-    * Brownian motion.
+    * Random Walk Processes
+    * Brownian Motion
+    * Geometric Brownian Motion
+    * Itô's Lemma
 
 `/SVD_PCA/SVD_PCA.py`
 
