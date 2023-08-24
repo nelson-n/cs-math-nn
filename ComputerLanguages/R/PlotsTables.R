@@ -211,6 +211,9 @@ theme(axis.title.x = ggtext::element_markdown())
 # Automatically set scales based on how many tick marks want.
 scale_x_continuous(breaks = scales::pretty_breaks(n = 5))
 
+# Left-adjust caption text.
+theme(plot.caption = element_text(hjust = 0))
+
 # Create interactive charts and scaling with plotly.
 library(plotly)
 ggplotly(ggplot())
