@@ -221,6 +221,33 @@ plot1 | plot2
 plot1 / plot2
 plot1 | plot2 + plot_layout(guides = "collect") # Removes redundant legends.
 
+# facet_wrap Pagination Solution
+
+# GroupNames = Column used to group data.
+# PlotName = Name for the output plot PDFs.
+# PlotNrow, PlotNcol = Number of plots to place on each PDF page.
+GroupNames <- unique(df$GroupName)
+PlotName <- "MyPlot"
+PlotNrow <- 4
+PlotNcol <- 3
+
+for (i in 1:ceiling(length(GroupNames) / (PlotNrow * PlotNcol))) {
+
+    plot <- ggplot() + 
+        # << ggplot code here >> +
+        # << ggplot code here >> +
+        # << ggplot code here >> +
+        ggforce:facet_wrap_paginate(~GroupNames, scaled = "free", nrow = PlotNrow, ncol = PlotNcol, page = i)
+
+    ggsave(
+        filename = paste0(PlotName, "_P", i, ".pdf"),
+        plot = plot,
+        device = "pdf",
+        width = 8.5, height = 11, units = "in",
+        path = OutputDir
+    )
+}
+
 #-------------------------------------------------------------------------------
 # Stock ggplot Lineplot Example
 #-------------------------------------------------------------------------------
