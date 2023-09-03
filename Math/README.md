@@ -1,5 +1,16 @@
 # Math
 
+`FundamentalMathNotes.ipynb`
+* Notes on fundamental concepts in mathematics and statistics.
+    * Combinatorics/Permutations
+
+`MathNotes.ipynb`
+* Notes on assorted topics in math covering:
+    * Random Walk Processes
+    * Brownian Motion
+    * Geometric Brownian Motion
+    * Itô's Lemma
+
 `LinearAlgebra.ipynb`
 * Notes on linear algebra covering:
     * Linear transformations.
@@ -11,13 +22,6 @@
 
 `Calculus.ipynb`
 * Notes on calculus covering:
-
-`MathNotes.ipynb`
-* Notes on assorted topics in math covering:
-    * Random Walk Processes
-    * Brownian Motion
-    * Geometric Brownian Motion
-    * Itô's Lemma
 
 `/SVD_PCA/SVD_PCA.py`
 

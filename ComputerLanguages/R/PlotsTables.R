@@ -240,7 +240,7 @@ for (i in 1:ceiling(length(GroupNames) / (PlotNrow * PlotNcol))) {
         # << ggplot code here >> +
         # << ggplot code here >> +
         # << ggplot code here >> +
-        ggforce:facet_wrap_paginate(~GroupNames, scaled = "free", nrow = PlotNrow, ncol = PlotNcol, page = i)
+        ggforce::facet_wrap_paginate(~GroupNames, scales = "free", nrow = PlotNrow, ncol = PlotNcol, page = i)
 
     ggsave(
         filename = paste0(PlotName, "_P", i, ".pdf"),
