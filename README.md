@@ -35,6 +35,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Fundamental Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/FundamentalMathNotes.ipynb)
 * [General Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb)
 * [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb)
+* [Statistics Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Statistics.ipynb) 
 * [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb)
 
 ## General Cheatsheets
@@ -143,6 +144,9 @@ This curriculum is my personal approach to learning topics in computer science, 
 ## Neural Networks
 
 `/NeuralNetworks`
+
+* Notes on:
+    * Machine Learning Principles: [Machine Learning Notes](https://github.com/nelson-n/cs-math-nn/blob/main/NeuralNetworks/MachineLearningNotes.ipynb) 
 
 * Exercises:
     * Implementation of the following neural network architectures from scratch using NumPy. Neural networks are then trained and tested out-of-sample.

@@ -1,5 +1,15 @@
 # Neural Networks
 
+`MachineLearningNotes.ipynb`
+
+Notes on the principles of machine learning with an emphasis on theory. Covers:
+* Mistake-Bounded Learning
+* Decision Trees
+* Potential Functions and Random Forests
+* Generalizations (Error Estimation)
+* PAC Learning
+* Cross-Validation
+
 `/NNProblems.py`
 
 Solves small problems related to neural networks such as finding optimums and performing gradient descent.
