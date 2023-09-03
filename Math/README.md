@@ -3,6 +3,7 @@
 `FundamentalMathNotes.ipynb`
 * Notes on fundamental concepts in mathematics and statistics.
     * Combinatorics/Permutations
+    * Statistics Basics
 
 `MathNotes.ipynb`
 * Notes on assorted topics in math covering:

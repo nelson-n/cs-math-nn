@@ -117,6 +117,9 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/Statistics`
 
+* Notes on:
+    * Topics in statistics: [Statistics Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Statistics.ipynb) 
+
 * Exercises:
     * Implementation of Maximum Likelihood Estimation (MLE) from scratch that benchmarks against a canonical optimization function.
     * Implementation of the Metropolis-Hastings method from scratch.
