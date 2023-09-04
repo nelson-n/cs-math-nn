@@ -1,8 +1,12 @@
 
+<!--- --------------------------------------------------------------------- --->
+
 # Computer Science - Math - Neural Networks 
 <a href='https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Assets/RepoLogo.png'><img src='/Assorted/Assets/RepoLogo.png' align="right" height="160" /></a>
 
 This curriculum is my personal approach to learning topics in computer science, mathematics, and neural networks (+ quant finance, just for fun) from first principles. This repository is not necessarily a full curriculum, but rather a reflection of my interests, needs, and gaps in my knowledge. However, my goal is to build a curriculum that covers the whole compute stack from transistors and assembly to the math underpinning neural networks. As such, the lessons I compile below should form a solid computer science, math, and deep learning curriculum.
+
+<!--- --------------------------------------------------------------------- --->
 
 ## Sections
 
@@ -12,14 +16,11 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Computer Languages](#computer-languages)
 * [Statistics](#statistics)
 * [Mathematics](#mathematics)
+* [Machine Learning](#machine-learning)
 * [Neural Networks](#neural-networks)
 * [Quantitative Finance](#quantitative-finance)
 * [Additional Topics](#additional-topics)
-    * [Networking / Internet](#networking--internet)
-    * [Parallel Computing](#parallel-computing)
-    * [Databases](#databases)
-    * [Cryptography](#cryptography) 
-    * [Information Theory / Entropy](#information-theory--entropy)
+    * [Networking / Internet](#networking--internet) | [Parallel Computing](#parallel-computing) | [Databases](#databases) | [Cryptography](#cryptography) | [Information Theory / Entropy](#information-theory--entropy)
 * [Assorted](#assorted)
 
 ## Language Cheatsheets
@@ -37,6 +38,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb)
 * [Statistics Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Statistics.ipynb) 
 * [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb)
+* [Machine Learning Principles](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/MachineLearningPrinciples.ipynb)
 
 ## General Cheatsheets
 * [Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/TimeComplexityCheatsheet.md)
@@ -45,6 +47,8 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Binary Trees Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java)
 * [Math Symbols Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathSymbolsCheatsheet.md)
 * [Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md)
+
+<!--- --------------------------------------------------------------------- --->
 
 ## Preface: Atoms to Bits 
 
@@ -55,6 +59,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 #### :bangbang: to-do
 * In atoms2bits add notes on FPGAs, how FPGAs are built from transistors, notes on how ICs are a collection of transistors in a reliable package, notes on LUTs (lookup tables).
 
+<!--- --------------------------------------------------------------------- --->
 ## Hardware / Processors
 
 #### :bangbang: to-do
@@ -64,6 +69,7 @@ This curriculum is my personal approach to learning topics in computer science, 
     * Additional: Write basic arithmetic instructions, branch instructions, and memory instructions. Allow for instruction out-of-order, basic parallelism, use dependency graphs for instructions. Set up a memory hierarchy with Registers, L1 cache, L2 cache, L3 cache, and DRAM.
 * Extra-curricular: Build a UART in Verilog, GPU basics.
 
+<!--- --------------------------------------------------------------------- --->
 ## Compilers / Operating Systems
 
 `/CompilersOperatingSystems`
@@ -78,6 +84,8 @@ This curriculum is my personal approach to learning topics in computer science, 
 * Build a UNIX-ish operating system in C or C++ with simple abilities like open, read, write, close, init, cat, ls, rm.
 * Build a filesystem like FAT in C or C++.
 
+<!--- --------------------------------------------------------------------- --->
+
 ## Data Structures / Algorithms
 
 `/DataStructuresAlgorithms`
@@ -85,11 +93,13 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Data Structures Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md) covering dependencies, primitive types, basic types, and the fundamental data structures and sorting/searching algorithms.
 * [Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/TimeComplexityCheatsheet.md) covering the time complexity of common data structures and algorithms.
 * [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java) covering binary tree search, recursion, and implementation.
+
 * Notes on:
     - Linked lists, queues, stacks, and sets.
     - Sorting and searching algorithms.
     - Hash tables, trees, heaps, and priority queues.
     - Graphs and graph algorithms.
+
 * Exercises:
     - Comparison of the speed of recursion in Python, R, Java, C, and C++.
 
@@ -97,22 +107,29 @@ This curriculum is my personal approach to learning topics in computer science, 
 * Learn the low-level data structures behind the base data types in Python such as: list, array, tuple, et cetera. Build versions of these data types in C++ and then port to Python with a package like `pybind11`.
 * Add a lesson on the properties of different number systems: hexadecimal system, 32-bit numbers, 128-bit numbers, how with a 32-bit number system you can generate the numbers 0-65535, etc.
 
+<!--- --------------------------------------------------------------------- --->
+
 ## Computer Languages
 
 `/ComputerLanguages`
 
 * [Programming Paradigms Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/ProgrammingParadigms.md) covering compiled vs. interpreted languages, imperative, declarative, functional, and object-oriented programming paradigms.
+
 * Notes on:
     * Python - [Python Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/FluentPython.py)
     * Java - [Java Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaNotes.java)
     * R - [R Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/R/AdvancedR.R)
     * Julia - [Julia Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Julia/JuliaNotes.jl)
 
+* Exercises:
+
 #### :bangbang: to-do
 * Add notes on C, C++, potentially Go or Rust.
 * Replicate lower level Python functions such as len(), dictionary, hash table, a sorting algorithm, slicing, indexing, set inclusion, et cetera in C++ to learn how these functions work. Then port these functions to Python with `pybind11`. Interface these functions with the data structures built from scratch in the data structures lesson.
 * Overview of object-oriented-programming (OOP).
 * Build a dictionary method using C++ and an R dictionary interface. Then publish an R dictionary class to CRAN.
+
+<!--- --------------------------------------------------------------------- --->
 
 ## Statistics
 
@@ -129,6 +146,8 @@ This curriculum is my personal approach to learning topics in computer science, 
 #### :bangbang: to-do
 * Poker exercises: implement a card deck class with operations such as draw X cards, calculate probabilites of different hands given different stages of a game, implement riffle shuffle, et cetera.
 
+<!--- --------------------------------------------------------------------- --->
+
 ## Mathematics
 
 `/Math`
@@ -138,15 +157,29 @@ This curriculum is my personal approach to learning topics in computer science, 
     * Topics in calculus: [Calculus Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Calculus.ipynb) 
     * Fundamental math and statistics equations/concepts: [Fundamental Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/FundamentalMathNotes.ipynb) 
     * Assorted topics in mathematics: [Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb) 
+
 * Exercises:
     * Implementation of Singular Value Decomposition (SVD) and Principal Component Analysis (PCA) from theory. Uses SVD and PCA to compress images and find the properties of transformed Gaussian data.
+
+<!--- --------------------------------------------------------------------- --->
+
+## Machine Learning
+
+`/MachineLearning`
+
+* Notes on:
+    * Condensed Machine Learning Notes: [Machine Learning Principles](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/MachineLearningPrinciples.ipynb)
+    * Overall Machine Learning Notes: [Machine Learning Notes](https://github.com/nelson-n/cs-math-nn/blob/main/NeuralNetworks/MachineLearningNotes.ipynb) 
+
+* Exercises:
+
+<!--- --------------------------------------------------------------------- --->
 
 ## Neural Networks
 
 `/NeuralNetworks`
 
 * Notes on:
-    * Machine Learning Principles: [Machine Learning Notes](https://github.com/nelson-n/cs-math-nn/blob/main/NeuralNetworks/MachineLearningNotes.ipynb) 
 
 * Exercises:
     * Implementation of the following neural network architectures from scratch using NumPy. Neural networks are then trained and tested out-of-sample.
@@ -157,6 +190,8 @@ This curriculum is my personal approach to learning topics in computer science, 
 #### :bangbang: to-do
 * Build the following models from scratch in NumPy: Feedforward neural network -> recurrent neural network -> convolution neural network -> ResNet -> Transformer -> Diffusion Model, all from scratch. 
     * Verify the correct order of the models so that all paradigmatic neural network models are built in-order.
+
+<!--- --------------------------------------------------------------------- --->
 
 ## Quantitative Finance
 
@@ -169,8 +204,11 @@ This curriculum is my personal approach to learning topics in computer science, 
         * General definitions.
         * Yield curve estimation.
 
+<!--- --------------------------------------------------------------------- --->
+
 ## Additional Topics
 
+<!--- --------------------------------------------------------------------- --->
 ### Networking / Internet
 
 `/NetworkingInternet`
@@ -181,9 +219,18 @@ This curriculum is my personal approach to learning topics in computer science, 
 #### :bangbang: to-do
 * Manually create and send TCP/IP packets: [tutorial](https://inc0x0.com/tcp-ip-packets-introduction/tcp-ip-packets-3-manually-create-and-send-raw-tcp-ip-packets/)
 
+<!--- --------------------------------------------------------------------- --->
+---
+
 ### Parallel Computing 
 
+<!--- --------------------------------------------------------------------- --->
+---
+
 ### Databases
+
+<!--- --------------------------------------------------------------------- --->
+---
 
 ### Cryptography
 
@@ -192,13 +239,19 @@ This curriculum is my personal approach to learning topics in computer science, 
 * Upload pre-existing crptography notes.
 * Write a script to generate public/private key pairs using SHA256 or another hashing function.
 
+<!--- --------------------------------------------------------------------- --->
+---
+
 ### Information Theory / Entropy
+
+<!--- --------------------------------------------------------------------- --->
 
 ## Assorted
 
 * [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/GitCheatsheet.md) of useful commands for working with Git and GitHub.
 * [Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md) of math, stats, and neural network equations implemented in LaTeX.
 
+<!--- --------------------------------------------------------------------- --->
 ## To-Do List
 
 * Work on `/Math` calculus fundamentals notes and `/Statistics` statistics fundamentals notes. 
@@ -217,3 +270,6 @@ This curriculum is my personal approach to learning topics in computer science, 
 * Add LaTeX equations to pre-existing math/stats/neural network exercises and `/Assorted/EquationsCheetsheet.md` based off of this [tutorial](https://blmoistawinde.github.io/ml_equations_latex/#negative-loglikelihood).
 * Work on poker exercises.
 * Build a hashing function (SHA256) from scratch, then use it to build a hash table class from scratch.
+
+---
+<!--- --------------------------------------------------------------------- --->

@@ -1,5 +1,7 @@
 # DataStructuresAlgorithms
 
+## Notes
+
 `/DataStructuresCheatsheet.md`
 
 Cheatsheet containing notes on the most commonly used data structures and algorithms.
@@ -17,7 +19,7 @@ Cheatsheet containing notes on how to build and query binary trees via recursion
 - Removing leaves from a tree.
 - Pre-order, in-order, and post-order traversal.
 - Binary tree implementation.
-## /DataStructuresAlgorithmsNotes
+### /DataStructuresAlgorithmsNotes
 
 *Notes on fundamental data structures and algorithms.*
 
@@ -93,7 +95,9 @@ Notes covering various graph traversal algorithms and their implementation. Cove
 - Shortest paths (Djikstra's Algorithm).
 - Traveling salesperson problem.
 
-## DataStructuresAlgorithmsExercises 
+## Exercises
+
+### DataStructuresAlgorithmsExercises 
 
 *Exercises that test various data structures and algorithms concepts.*
 

@@ -1,8 +1,12 @@
 # Statistics
 
+## Notes
+
 `Statistics.ipynb`
 * Notes on topics in statistics covering:
     * ...
+
+## Exercises
 
 `MLE.R`
 

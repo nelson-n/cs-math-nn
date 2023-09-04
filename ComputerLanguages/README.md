@@ -1,5 +1,7 @@
 # ComputerLanguages
 
+## Notes
+
 `/ProgrammingParadigms.md`
 
 Cheatsheet containing notes on different programming paradigms (imperative, functional, object-oriented, etc) and survey of the paradigms used by popular programming languages.
@@ -74,3 +76,5 @@ Notes on the book *Advanced R* by Hadley Wickham. This book focuses on advanced 
 `/JuliaNotes.jl`
 
 Notes on the basics of the Julia programming language covering fundamentals, unique Julia features, and efficiency in Julia.
+
+## Exercises

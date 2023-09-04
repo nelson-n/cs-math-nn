@@ -13,10 +13,3 @@ Notes that give a high-level overview of how the internet works. Contains inform
 * How HTTP and HTTPS prococol is used to solicit information (such as the packets for a webpage) from another computer.
 * How Transport Layer Security (TLS) is used to encrypt packets that are being passed between IP addresses.
 * The differences between IPv4 and IPv6.
-
-## Quant Finance
-
-`QuantFinance.md`
-
-Notes on finance and quantitative finance covering:
-* ...

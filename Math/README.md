@@ -1,5 +1,7 @@
 # Math
 
+## Notes
+
 `FundamentalMathNotes.ipynb`
 * Notes on fundamental concepts in mathematics and statistics.
     * Combinatorics/Permutations
@@ -23,6 +25,8 @@
 
 `Calculus.ipynb`
 * Notes on calculus covering:
+
+## Exercises
 
 `/SVD_PCA/SVD_PCA.py`
 
