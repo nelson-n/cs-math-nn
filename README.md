@@ -115,13 +115,13 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 * [Programming Paradigms Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/ProgrammingParadigms.md) covering compiled vs. interpreted languages, imperative, declarative, functional, and object-oriented programming paradigms.
 
-* Notes on:
+* **Notes on**:
     * Python - [Python Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/FluentPython.py)
     * Java - [Java Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaNotes.java)
     * R - [R Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/R/AdvancedR.R)
     * Julia - [Julia Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Julia/JuliaNotes.jl)
 
-* Exercises:
+* **Exercises**:
 
 #### :bangbang: to-do
 * Add notes on C, C++, potentially Go or Rust.
@@ -135,10 +135,10 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/Statistics`
 
-* Notes on:
+* **Notes on**:
     * Topics in statistics: [Statistics Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Statistics.ipynb) 
 
-* Exercises:
+* **Exercises**:
     * Implementation of Maximum Likelihood Estimation (MLE) from scratch that benchmarks against a canonical optimization function.
     * Implementation of the Metropolis-Hastings method from scratch.
     * Estimation of Ordinary Least Squares (OLS) regression coefficients using Stochastic Gradient Descent (SGD).
@@ -167,11 +167,11 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/MachineLearning`
 
-* Notes on:
+* **Notes on**:
     * Condensed Machine Learning Notes: [Machine Learning Principles](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/MachineLearningPrinciples.ipynb)
     * Overall Machine Learning Notes: [Machine Learning Notes](https://github.com/nelson-n/cs-math-nn/blob/main/NeuralNetworks/MachineLearningNotes.ipynb) 
 
-* Exercises:
+* **Exercises**:
 
 <!--- --------------------------------------------------------------------- --->
 
@@ -179,9 +179,9 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/NeuralNetworks`
 
-* Notes on:
+* **Notes on**:
 
-* Exercises:
+* **Exercises**:
     * Implementation of the following neural network architectures from scratch using NumPy. Neural networks are then trained and tested out-of-sample.
         * Feedforward Neural Network
         * Recurrent Neural Network
@@ -197,7 +197,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/QuantitativeFinance`
 
-* Notes on:
+* **Notes on**:
     * General notes on quantitative finance: [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb)
         * Sensitivity measures and derivations.
         * Bond measures.
@@ -213,7 +213,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/NetworkingInternet`
 
-* Notes on:
+* **Notes on**:
     * Computer networking and how the internet protocol stack works: [Network Internet Notes](https://github.com/nelson-n/cs-math-nn/blob/main/AdditionalTopics/NetworkInternet/internet.pdf)
 
 #### :bangbang: to-do

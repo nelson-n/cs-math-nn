@@ -28,6 +28,10 @@ add = lambda x, y: x + y
 import math
 math.factorial(3)
 
+# Print the entirety of a dataframe.
+with pd.option_context('display.max_rows', None, 'display.max_columns', None): 
+    print(df)
+
 #------------------------------------------------------------------------------
 # Class Construction
 #------------------------------------------------------------------------------
