@@ -94,13 +94,13 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/TimeComplexityCheatsheet.md) covering the time complexity of common data structures and algorithms.
 * [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java) covering binary tree search, recursion, and implementation.
 
-* Notes on:
+* **Notes on**:
     - Linked lists, queues, stacks, and sets.
     - Sorting and searching algorithms.
     - Hash tables, trees, heaps, and priority queues.
     - Graphs and graph algorithms.
 
-* Exercises:
+* **Exercises**:
     - Comparison of the speed of recursion in Python, R, Java, C, and C++.
 
 #### :bangbang: to-do
@@ -220,17 +220,14 @@ This curriculum is my personal approach to learning topics in computer science, 
 * Manually create and send TCP/IP packets: [tutorial](https://inc0x0.com/tcp-ip-packets-introduction/tcp-ip-packets-3-manually-create-and-send-raw-tcp-ip-packets/)
 
 <!--- --------------------------------------------------------------------- --->
----
 
 ### Parallel Computing 
 
 <!--- --------------------------------------------------------------------- --->
----
 
 ### Databases
 
 <!--- --------------------------------------------------------------------- --->
----
 
 ### Cryptography
 
@@ -240,7 +237,6 @@ This curriculum is my personal approach to learning topics in computer science, 
 * Write a script to generate public/private key pairs using SHA256 or another hashing function.
 
 <!--- --------------------------------------------------------------------- --->
----
 
 ### Information Theory / Entropy
 
@@ -271,5 +267,4 @@ This curriculum is my personal approach to learning topics in computer science, 
 * Work on poker exercises.
 * Build a hashing function (SHA256) from scratch, then use it to build a hash table class from scratch.
 
----
 <!--- --------------------------------------------------------------------- --->
