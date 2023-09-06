@@ -13,6 +13,10 @@ $\displaystyle\sum_{i=1}^n a_i$ : Sum of terms $a_1, a_2, \ldots, a_n$.
 
 $\displaystyle\prod_{i=1}^n a_i$ : Product of terms $a_1, a_2, \ldots, a_n$.
 
+$exp(x)$ : Exponential function, $exp(x) = e^x$.
+
+$inf(x)$ : Infimum, the greatest lower bound of a set, if $A = \{2, 4, 6\}$ then $inf(A) = 2$.
+
 <br>
 
 ### Set Theory

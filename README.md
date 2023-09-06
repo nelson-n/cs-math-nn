@@ -35,6 +35,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 ## Subject Notes
 * [Fundamental Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/FundamentalMathNotes.ipynb)
 * [General Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb)
+* [Calculus Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Calculus.ipynb)
 * [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb)
 * [Statistics Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Statistics.ipynb) 
 * [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb)
@@ -249,7 +250,10 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 <!--- --------------------------------------------------------------------- --->
 ## To-Do List
-
+* Add notes to `Statistics` on Poisson processes, Cox Process / Doubly Stochastic Poisson Process.
+* Add notes to `QuantitativeFinance` notes on Cox-Ingersoll-Ross process which is commonly used in term-structure modelling, add notes on Affine Term Structure Models.
+    * Add notes on the difference between risk-free measures Q and physical measures P.
+    * Reference ReducedFormModel.pdf for help.
 * Work on `/Math` calculus fundamentals notes and `/Statistics` statistics fundamentals notes. 
     * Notes on the Taylor Series.
 * Work on `/Math` notes on differential equations, partial differential equations.

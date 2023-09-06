@@ -25,6 +25,8 @@
 
 `Calculus.ipynb`
 * Notes on calculus covering:
+    * General Definitions
+    * Calculus Notation
 
 ## Exercises
 
