@@ -4,7 +4,11 @@
 
 `Statistics.ipynb`
 * Notes on topics in statistics covering:
-    * ...
+    * Theorems
+    * Interpretations of Linear Equations
+
+`Regression.ipynb`
+* Notes on regression covering:
 
 ## Exercises
 
@@ -19,7 +23,3 @@ Likelihood Equation: $L(x) = {\displaystyle \prod_{i=1}^{i=n} \frac{1}{\sqrt{2\p
 `MetropolisHastings.py`
 
 Implements the Metropolis-Hastings method for obtaining a sequence of random samples from a distribution that is difficult to sample from (for example if you have observed some data that may be difficilt to observe and you want to know what parameters have given rise to this data). First implements the Metropolis-Hastings method using the canonical package PyMC3, then implements it from scratch.
-
-`OLS_logit_SGD.py`
-
-Estimates ordinary least squares (OLS) regression coefficients and logit coefficients using stochastic gradient descent (SGD). Then tests the accuracy of estimated coefficients out-of-sample.
