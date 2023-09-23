@@ -5,10 +5,11 @@
 `Statistics.ipynb`
 * Notes on topics in statistics covering:
     * Theorems
-    * Interpretations of Linear Equations
+    * Interpretations of Linear Regression
 
 `Regression.ipynb`
 * Notes on regression covering:
+    * Interpretations of Linear Regression
 
 ## Exercises
 
