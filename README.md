@@ -170,8 +170,8 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/MachineLearning`
 
 * **Notes on**:
-    * Condensed Machine Learning Notes: [Machine Learning Principles](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/MachineLearningPrinciples.ipynb)
-    * Overall Machine Learning Notes: [Machine Learning Notes](https://github.com/nelson-n/cs-math-nn/blob/main/NeuralNetworks/MachineLearningNotes.ipynb) 
+    * Machine Learning Principles: [Machine Learning Principles](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/MachineLearningPrinciples.ipynb)
+    * Machine Learning Code: [Machine Learning Code](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/MachineLearningCode.ipynb)
 
 * **Exercises**:
 
