@@ -10,6 +10,9 @@
 `Regression.ipynb`
 * Notes on regression covering:
     * Interpretations of Linear Regression
+    * Application of Gradient Descent to Linear Regression
+    * Estimating Linear Regression using Stochastic Gradient Descent
+    * Estimating Logistic Regression using Stochastic Gradient Descent
 
 ## Exercises
 
