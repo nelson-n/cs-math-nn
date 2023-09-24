@@ -15,9 +15,12 @@
     * Logistic Regression
     * Estimating Logistic Regression using Stochastic Gradient Descent
 
-'SVD_PCA.ipynb'
+`SVD_PCA.ipynb`
 * Notes on singular value decomposition (SVD) and principal component analysis (PCA):
-    * 
+    * Singular Value Decomposition (SVD)
+    * SVD Coding Exercises
+    * Principal Component Analysis (PCA)
+    * PCA Coding Exercises
 
 ## Exercises
 
