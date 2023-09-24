@@ -12,7 +12,12 @@
     * Interpretations of Linear Regression
     * Application of Gradient Descent to Linear Regression
     * Estimating Linear Regression using Stochastic Gradient Descent
+    * Logistic Regression
     * Estimating Logistic Regression using Stochastic Gradient Descent
+
+'SVD_PCA.ipynb'
+* Notes on singular value decomposition (SVD) and principal component analysis (PCA):
+    * 
 
 ## Exercises
 

@@ -29,7 +29,3 @@
     * Calculus Notation
 
 ## Exercises
-
-`/SVD_PCA/SVD_PCA.py`
-
-Tests Singular Value Decomposition (SVD) theory on a model matrix. Applies SVD to an image compression application. Tests Principal Component Analysis (PCA) theory on a model matrix. Tests the ability of PCA to find the properties of a matrix generated from Gaussian properties. Applies SVD to the MNIST dataset.
