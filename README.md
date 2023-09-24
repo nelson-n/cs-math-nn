@@ -138,11 +138,12 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 * **Notes on**:
     * Topics in statistics: [Statistics Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Statistics.ipynb) 
+    * Notes on regression: [Regression Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Statistics/Regression.ipynb)
+    * Notes on SVD and PCA: [SVD and PCA Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Statistics/SVD_PCA.ipynb)
 
 * **Exercises**:
     * Implementation of Maximum Likelihood Estimation (MLE) from scratch that benchmarks against a canonical optimization function.
     * Implementation of the Metropolis-Hastings method from scratch.
-    * Estimation of Ordinary Least Squares (OLS) regression coefficients using Stochastic Gradient Descent (SGD).
 
 #### :bangbang: to-do
 * Poker exercises: implement a card deck class with operations such as draw X cards, calculate probabilites of different hands given different stages of a game, implement riffle shuffle, et cetera.
