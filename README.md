@@ -93,17 +93,15 @@ This curriculum is my personal approach to learning topics in computer science, 
     * [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java): Covers binary tree search, recursion, and implementation.
 
 * **Notes on**:
-    - Data Structures and Algorithms Fundamentals: [DSA Fundamentals](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/DataStructuresAlgorithmsFundamentals.java)
-    - Linked Lists: [Linked Lists](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/LinkedLists.java)
-    - Sorting and Searching Algorithms: [Sorting and Searching](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/SortingSearching.java) 
-    - Stacks, Queues, and Sets: [Stacks Queues Sets](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/StacksQueuesSets.java)
-    - Hash Tables: [Hash Tables](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/HashTables.java)
-    - Sorting and searching algorithms.
-    - Tree Structures: [Binary Trees](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/Trees.java)
-    - Hash tables, trees, heaps, and priority queues.
-    - Heaps and Priority Queues: [Heaps Priority Queues](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/HeapsPriorityQueues.java)
-    - Graph Structures: [Graphs](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/Graphs.java)
-    - Graph Algorithms:[Graph Algorithms](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/GraphAlgorithms.java)
+    * [DSA Fundamentals](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/DataStructuresAlgorithmsFundamentals.java): Data Structures and Algorithms Fundamentals.
+    * [Linked Lists](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/LinkedLists.java): Linked lists.
+    * [Sorting and Searching](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/SortingSearching.java): Sorting and searching algorithms. 
+    * [Stacks Queues Sets](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/StacksQueuesSets.java): Stacks, queues, and sets.
+    * [Hash Tables](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/HashTables.java): Hash tables.
+    * [Trees](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/Trees.java): Tree structures.
+    * [Heaps Priority Queues](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/HeapsPriorityQueues.java): Heaps and priority queues.
+    * [Graphs](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/Graphs.java): Graph structures.
+    * [Graph Algorithms](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/GraphAlgorithms.java): Graph algorithms.
 
 * **Exercises**:
     - Comparison of the speed of recursion in Python, R, Java, C, and C++.
@@ -158,13 +156,13 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/Math`
 
-* Notes on:
+* **Notes on**:
     * Topics in linear algebra: [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb) 
     * Topics in calculus: [Calculus Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Calculus.ipynb) 
     * Fundamental math and statistics equations/concepts: [Fundamental Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/FundamentalMathNotes.ipynb) 
     * Assorted topics in mathematics: [Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb) 
 
-* Exercises:
+* **Exercises**:
     * Implementation of Singular Value Decomposition (SVD) and Principal Component Analysis (PCA) from theory. Uses SVD and PCA to compress images and find the properties of transformed Gaussian data.
 
 <!--- --------------------------------------------------------------------- --->
