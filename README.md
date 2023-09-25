@@ -71,7 +71,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/CompilersOperatingSystems`
 
 * **Cheatsheets**:
-    * [Unix Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/CompilersOperatingSystems/Unix/UnixCheatsheet.md) - covers useful unix commands.
+    * [Unix Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/CompilersOperatingSystems/Unix/UnixCheatsheet.md): Covers useful Unix commands.
 
 #### :bangbang: to-do
 * Create a set of general notes on linux/unix, combine with notes in unix.pdf in local. Add notes on the basic linux filesystem format from [here](https://www.linuxfoundation.org/blog/blog/classic-sysadmin-the-linux-filesystem-explained).
@@ -88,9 +88,9 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/DataStructuresAlgorithms`
 
 * **Cheatsheets**:
-    * [Data Structures Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md) - covers dependencies, primitive types, basic types, and the fundamental data structures and sorting/searching algorithms.
-    * [Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/TimeComplexityCheatsheet.md) - covers the time complexity of common data structures and algorithms.
-    * [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java) - covers binary tree search, recursion, and implementation.
+    * [Data Structures Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md): Covers dependencies, primitive types, basic types, and the fundamental data structures and sorting/searching algorithms.
+    * [Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/TimeComplexityCheatsheet.md): Covers the time complexity of common data structures and algorithms.
+    * [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java): Covers binary tree search, recursion, and implementation.
 
 * **Notes on**:
     - Linked lists, queues, stacks, and sets.
@@ -112,7 +112,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/ComputerLanguages`
 
 * **Cheatsheets**:
-    * [Programming Paradigms Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/ProgrammingParadigms.md) - covers compiled vs. interpreted languages, imperative, declarative, functional, and object-oriented programming paradigms.
+    * [Programming Paradigms Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/ProgrammingParadigms.md): Covers compiled vs. interpreted languages, imperative, declarative, functional, and object-oriented programming paradigms.
 
 * **Notes on**:
     * Python - [Python Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/FluentPython.py)
