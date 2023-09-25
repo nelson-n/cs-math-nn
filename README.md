@@ -93,7 +93,7 @@ This curriculum is my personal approach to learning topics in computer science, 
     * [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java): Covers binary tree search, recursion, and implementation.
 
 * **Notes on**:
-    * [DSA Fundamentals](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/DataStructuresAlgorithmsFundamentals.java): Data Structures and Algorithms Fundamentals.
+    * [DSA Fundamentals](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/DataStructuresAlgorithmsFundamentals.java): Data structures and algorithms fundamentals.
     * [Linked Lists](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/LinkedLists.java): Linked lists.
     * [Sorting and Searching](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/SortingSearching.java): Sorting and searching algorithms. 
     * [Stacks Queues Sets](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/StacksQueuesSets.java): Stacks, queues, and sets.
@@ -104,7 +104,7 @@ This curriculum is my personal approach to learning topics in computer science, 
     * [Graph Algorithms](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/GraphAlgorithms.java): Graph algorithms.
 
 * **Exercises**:
-    - Comparison of the speed of recursion in Python, R, Java, C, and C++.
+    * Comparison of the speed of recursion in Python, R, Java, C, and C++.
 
 #### :bangbang: to-do
 * Learn the low-level data structures behind the base data types in Python such as: list, array, tuple, et cetera. Build versions of these data types in C++ and then port to Python with a package like `pybind11`.
@@ -120,11 +120,11 @@ This curriculum is my personal approach to learning topics in computer science, 
     * [Programming Paradigms Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/ProgrammingParadigms.md): Covers compiled vs. interpreted languages, imperative, declarative, functional, and object-oriented programming paradigms.
 
 * **Notes on**:
-    * Python: [Python Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/FluentPython.py)
-    * Java: [Java Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaNotes.java)
-    * R: [R Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/R/AdvancedR.R)
-    * Julia: [Julia Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Julia/JuliaNotes.jl)
-    * SQL: [SQL Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/SQL/SQLCheatsheet.md)
+    * [Python Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/FluentPython.py): Python
+    * [Java Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaNotes.java): Java
+    * [R Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/R/AdvancedR.R): R
+    * [Julia Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Julia/JuliaNotes.jl): Julia 
+    * [SQL Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/SQL/SQLCheatsheet.md): SQL
 
 #### :bangbang: to-do
 * Add notes on C, C++, potentially Go or Rust.
@@ -139,9 +139,9 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/Statistics`
 
 * **Notes on**:
-    * Topics in statistics: [Statistics Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Statistics.ipynb) 
-    * Notes on regression: [Regression Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Statistics/Regression.ipynb)
-    * Notes on SVD and PCA: [SVD and PCA Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Statistics/SVD_PCA.ipynb)
+    * [Statistics Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Statistics.ipynb): Topics in statistics.
+    * [Regression Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Statistics/Regression.ipynb): Notes on regression.
+    * [SVD and PCA Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Statistics/SVD_PCA.ipynb): Notes on Singular Value Decomposition (SVD) and Principal Component Analysis (PCA).
 
 * **Exercises**:
     * Implementation of Maximum Likelihood Estimation (MLE) from scratch that benchmarks against a canonical optimization function.
@@ -157,13 +157,9 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/Math`
 
 * **Notes on**:
-    * Topics in linear algebra: [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb) 
-    * Topics in calculus: [Calculus Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Calculus.ipynb) 
-    * Fundamental math and statistics equations/concepts: [Fundamental Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/FundamentalMathNotes.ipynb) 
-    * Assorted topics in mathematics: [Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb) 
-
-* **Exercises**:
-    * Implementation of Singular Value Decomposition (SVD) and Principal Component Analysis (PCA) from theory. Uses SVD and PCA to compress images and find the properties of transformed Gaussian data.
+    * [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb): Topics in linear algebra. 
+    * [Calculus Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Calculus.ipynb): Topics in calculus. 
+    * [Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb): Assorted topics in mathematics.
 
 <!--- --------------------------------------------------------------------- --->
 
@@ -172,8 +168,8 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/MachineLearning`
 
 * **Notes on**:
-    * Machine Learning Principles: [Machine Learning Principles](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/MachineLearningPrinciples.ipynb)
-    * Machine Learning Code: [Machine Learning Code](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/MachineLearningCode.ipynb)
+    * [Machine Learning Principles](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/MachineLearningPrinciples.ipynb): Machine learning principles.
+    * [Machine Learning Code](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/MachineLearningCode.ipynb): Machine learning code.
 
 <!--- --------------------------------------------------------------------- --->
 
@@ -198,7 +194,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/QuantitativeFinance`
 
 * **Notes on**:
-    * General notes on quantitative finance: [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb)
+    * [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb): Notes on quantitative finance.
         * Sensitivity measures and derivations.
         * Bond measures.
         * General definitions.
