@@ -93,10 +93,17 @@ This curriculum is my personal approach to learning topics in computer science, 
     * [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java): Covers binary tree search, recursion, and implementation.
 
 * **Notes on**:
-    - Linked lists, queues, stacks, and sets.
+    - Data Structures and Algorithms Fundamentals: [DSA Fundamentals](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/DataStructuresAlgorithmsFundamentals.java)
+    - Linked Lists: [Linked Lists](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/LinkedLists.java)
+    - Sorting and Searching Algorithms: [Sorting and Searching](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/SortingSearching.java) 
+    - Stacks, Queues, and Sets: [Stacks Queues Sets](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/StacksQueuesSets.java)
+    - Hash Tables: [Hash Tables](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/HashTables.java)
     - Sorting and searching algorithms.
+    - Tree Structures: [Binary Trees](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/Trees.java)
     - Hash tables, trees, heaps, and priority queues.
-    - Graphs and graph algorithms.
+    - Heaps and Priority Queues: [Heaps Priority Queues](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/HeapsPriorityQueues.java)
+    - Graph Structures: [Graphs](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/Graphs.java)
+    - Graph Algorithms:[Graph Algorithms](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/GraphAlgorithms.java)
 
 * **Exercises**:
     - Comparison of the speed of recursion in Python, R, Java, C, and C++.
@@ -115,11 +122,11 @@ This curriculum is my personal approach to learning topics in computer science, 
     * [Programming Paradigms Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/ProgrammingParadigms.md): Covers compiled vs. interpreted languages, imperative, declarative, functional, and object-oriented programming paradigms.
 
 * **Notes on**:
-    * Python - [Python Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/FluentPython.py)
-    * Java - [Java Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaNotes.java)
-    * R - [R Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/R/AdvancedR.R)
-    * Julia - [Julia Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Julia/JuliaNotes.jl)
-    * SQL - [SQL Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/SQL/SQLCheatsheet.md)
+    * Python: [Python Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Python/FluentPython.py)
+    * Java: [Java Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaNotes.java)
+    * R: [R Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/R/AdvancedR.R)
+    * Julia: [Julia Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Julia/JuliaNotes.jl)
+    * SQL: [SQL Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/SQL/SQLCheatsheet.md)
 
 #### :bangbang: to-do
 * Add notes on C, C++, potentially Go or Rust.

@@ -8,7 +8,7 @@
 /*
 
 Comparison Sorts
-- Rely on comparing elements to place them in the corre*t order.
+- Rely on comparing elements to place them in the correct order.
 - Requires a comparison function to compare elements.
 - Fastest possible time: O(n log n)
 
