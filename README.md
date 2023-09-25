@@ -42,9 +42,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 ## General Cheatsheets
 * [Data Structures and Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md)
-* [Programming Paradigms Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/ProgrammingParadigms.md)
 * [Math Symbols Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathSymbolsCheatsheet.md)
-* [Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md)
 
 <!--- --------------------------------------------------------------------- --->
 
@@ -245,7 +243,6 @@ This curriculum is my personal approach to learning topics in computer science, 
 ## Assorted
 
 * [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/GitCheatsheet.md) of useful commands for working with Git and GitHub.
-* [Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md) of math, stats, and neural network equations implemented in LaTeX.
 
 <!--- --------------------------------------------------------------------- --->
 ## To-Do List
