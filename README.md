@@ -70,6 +70,8 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/CompilersOperatingSystems`
 
+* **Cheatsheets**:
+
 * [Unix Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/CompilersOperatingSystems/Unix/UnixCheatsheet.md) of useful commands.
 
 #### :bangbang: to-do
@@ -85,6 +87,8 @@ This curriculum is my personal approach to learning topics in computer science, 
 ## Data Structures / Algorithms
 
 `/DataStructuresAlgorithms`
+
+* **Cheatsheets**:
 
 * [Data Structures Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md) covering dependencies, primitive types, basic types, and the fundamental data structures and sorting/searching algorithms.
 * [Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/TimeComplexityCheatsheet.md) covering the time complexity of common data structures and algorithms.
@@ -109,6 +113,8 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/ComputerLanguages`
 
+* **Cheatsheets**:
+
 * [Programming Paradigms Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/ProgrammingParadigms.md) covering compiled vs. interpreted languages, imperative, declarative, functional, and object-oriented programming paradigms.
 
 * **Notes on**:
@@ -117,8 +123,6 @@ This curriculum is my personal approach to learning topics in computer science, 
     * R - [R Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/R/AdvancedR.R)
     * Julia - [Julia Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Julia/JuliaNotes.jl)
     * SQL - [SQL Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/SQL/SQLCheatsheet.md)
-
-* **Exercises**:
 
 #### :bangbang: to-do
 * Add notes on C, C++, potentially Go or Rust.
@@ -169,15 +173,11 @@ This curriculum is my personal approach to learning topics in computer science, 
     * Machine Learning Principles: [Machine Learning Principles](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/MachineLearningPrinciples.ipynb)
     * Machine Learning Code: [Machine Learning Code](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/MachineLearningCode.ipynb)
 
-* **Exercises**:
-
 <!--- --------------------------------------------------------------------- --->
 
 ## Neural Networks
 
 `/NeuralNetworks`
-
-* **Notes on**:
 
 * **Exercises**:
     * Implementation of the following neural network architectures from scratch using NumPy. Neural networks are then trained and tested out-of-sample.
