@@ -6,14 +6,19 @@
 `MachineLearningPrinciples.ipynb`
 
 Notes on the principles of machine learning with an emphasis on theory. Covers:
-
-`MachineLearningNotes.ipynb`
+* General Definitions
 * Mistake-Bounded Learning
-* Decision Trees
-* Potential Functions and Random Forests
-* Generalizations (Error Estimation)
+* Decision Trees and Potential Functions
 * PAC Learning
-* Cross-Validation
+* Cross Validation
+* Perceptron Learning
+* Kernel Functions
+* Linear Regression
+* Gradient Descent
+* Boosting
+* Logistic Regression
+* Singular Value Decomposition (SVD)
+* Principal Component Analysis (PCA)
 
 `MachineLearningCode.ipynb`
 
