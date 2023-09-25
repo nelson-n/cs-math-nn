@@ -4,11 +4,25 @@
 
 `/DataStructuresCheatsheet.md`
 
-Cheatsheet containing notes on the most commonly used data structures and algorithms.
-
-`/TimeComplexityCheatsheet.md`
-
-Cheatsheet containing notes on the Big O notation of commonly used data structures and algorithms.
+Notes on time complexity and commonly used data structures and algorithms, covers:
+* Data Structures Cheatsheet
+    * Data Structures Dependency List
+    * Primitive Types
+    * Non-Primitive (Basic) Types
+    * Linked Lists
+    * Stacks, Queues, Sets
+    * Hash Tables
+    * Binary Trees
+    * Heaps, Priority Queues
+    * Graphs
+    * Sorting
+    * Searching
+* Time Complexity Cheatsheet
+    * Data Structures
+    * Computation
+    * Searching
+    * Sorting
+    * Traversal
 
 `/BinaryTreeCheatsheet.java`
 

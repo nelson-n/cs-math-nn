@@ -4,7 +4,7 @@
 # Computer Science - Math - Neural Networks 
 <a href='https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Assets/RepoLogo.png'><img src='/Assorted/Assets/RepoLogo.png' align="right" height="160" /></a>
 
-This curriculum is my personal approach to learning topics in computer science, mathematics, and neural networks (+ quant finance) from first principles. This repository is not necessarily a full curriculum, but rather a reflection of my interests, needs, and gaps in my knowledge. However, my goal is to build a curriculum that covers the whole compute stack from transistors and assembly to the math underpinning neural networks. As such, the lessons I compile below should form a solid computer science, math, and deep learning curriculum.
+This curriculum is my personal approach to learning topics in computer science, mathematics, and neural networks (+ quant finance) from first principles. This repository is not necessarily a full curriculum, but rather a reflection of my interests, needs, and gaps in my knowledge. However, my goal is to cover the whole compute stack from transistors and assembly to the math underpinning neural networks. As such, the notes and exercises compiled below should form a solid computer science, math, and deep learning curriculum.
 
 <!--- --------------------------------------------------------------------- --->
 
@@ -33,19 +33,16 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [SQL Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/SQL/SQLCheatsheet.md)
 
 ## Subject Notes
-* [Fundamental Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/FundamentalMathNotes.ipynb)
-* [General Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb)
+* [Mathematics Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb)
 * [Calculus Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Calculus.ipynb)
 * [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb)
 * [Statistics Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Statistics/Statistics.ipynb) 
 * [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb)
-* [Machine Learning Principles](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/MachineLearningPrinciples.ipynb)
+* [Machine Learning Notes](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/MachineLearningPrinciples.ipynb)
 
 ## General Cheatsheets
-* [Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/TimeComplexityCheatsheet.md)
-* [Data Structures Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md)
+* [Data Structures and Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md)
 * [Programming Paradigms Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/ProgrammingParadigms.md)
-* [Binary Trees Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java)
 * [Math Symbols Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathSymbolsCheatsheet.md)
 * [Equations Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/EquationsCheatsheet.md)
 
@@ -121,6 +118,7 @@ This curriculum is my personal approach to learning topics in computer science, 
     * Java - [Java Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Java/JavaNotes.java)
     * R - [R Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/R/AdvancedR.R)
     * Julia - [Julia Notes](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/Julia/JuliaNotes.jl)
+    * SQL - [SQL Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/SQL/SQLCheatsheet.md)
 
 * **Exercises**:
 

@@ -77,4 +77,10 @@ Notes on the book *Advanced R* by Hadley Wickham. This book focuses on advanced 
 
 Notes on the basics of the Julia programming language covering fundamentals, unique Julia features, and efficiency in Julia.
 
+## /SQL
+
+`/SQLCheatsheet.md`
+
+Cheatsheet with SQL query templates.
+
 ## Exercises
