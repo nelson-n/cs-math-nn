@@ -14,12 +14,20 @@
 
 `LinearAlgebra.ipynb`
 * Notes on linear algebra covering:
-    * Linear transformations.
-    * Vector space, span, basis, rank, column space, null space, etc.
-    * Dot product and cross product.
-    * Matrix multiplication.
-    * Systems of linear equations.
-    * Eigenvalues and eigenvectors.
+    * Linear Algebra Notation
+    * Central Theory of Linear Algebra
+    * Vector Basics
+    * Matrix Basics
+    * Linear Transformations
+    * Span and Linear Independence
+    * Dot Product
+    * Cross Product
+    * Determinants
+    * Matrix Multiplication
+    * Systems of Linear Equations
+    * Eigenvalues, Eigenvectors
+    * Covariance Matrix
+    * Spectral Theorem
 
 `Calculus.ipynb`
 * Notes on calculus covering:

@@ -88,7 +88,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/DataStructuresAlgorithms`
 
 * **Cheatsheets**:
-    * [Data Structures and Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md): Covers dependencies, primitive types, basic types, fundamental data structures, sorting/searching algorithms, and the time complexity of common algorithms.
+    * [Data Structures and Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md): Covers dependencies, primitive types, basic types, fundamental data structures, sorting/searching algorithms, and time complexities of common algorithms.
     * [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java): Covers binary tree search, recursion, and implementation.
 
 * **Notes on**:
@@ -239,8 +239,8 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 ## Assorted
 
-**Cheatsheets**:
-    * [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/GitCheatsheet.md) of useful commands for working with Git and GitHub.
+* **Cheatsheets**:
+    * [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/GitCheatsheet.md): Covers useful commands for working with Git and GitHub.
 
 <!--- --------------------------------------------------------------------- --->
 ## To-Do List
