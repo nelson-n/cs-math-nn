@@ -14,8 +14,8 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Compilers / Operating Systems](#compilers--operating-systems)
 * [Data Structures / Algorithms](#data-structures--algorithms)
 * [Computer Languages](#computer-languages)
-* [Statistics](#statistics)
 * [Mathematics](#mathematics)
+* [Statistics](#statistics)
 * [Machine Learning](#machine-learning)
 * [Neural Networks](#neural-networks)
 * [Quantitative Finance](#quantitative-finance)
@@ -37,8 +37,8 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Calculus Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Calculus.ipynb)
 * [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb)
 * [Statistics Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Statistics/Statistics.ipynb) 
-* [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb)
 * [Machine Learning Notes](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/MachineLearningPrinciples.ipynb)
+* [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb)
 
 ## General Cheatsheets
 * [Data Structures and Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md)
@@ -50,7 +50,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 `/Assorted/atoms2bits.pdf`
 
-* This preface ([atoms2bits](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/atoms2bits.pdf)) gives an overview of the complete compute stack: the refining of sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build transistors, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. This preface gives an overview of concepts that will be covered in detail in later sections of `cs-math-nn`.
+* This preface ([atoms2bits](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/atoms2bits.pdf)) gives an overview of the complete compute stack: the refining of sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build transistors, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. 
 
 #### :bangbang: to-do
 * In atoms2bits add notes on FPGAs, how FPGAs are built from transistors, notes on how ICs are a collection of transistors in a reliable package, notes on LUTs (lookup tables).
@@ -88,17 +88,16 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/DataStructuresAlgorithms`
 
 * **Cheatsheets**:
-    * [Data Structures Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md): Covers dependencies, primitive types, basic types, and the fundamental data structures and sorting/searching algorithms.
-    * [Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/TimeComplexityCheatsheet.md): Covers the time complexity of common data structures and algorithms.
+    * [Data Structures and Time Complexity Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresCheatsheet.md): Covers dependencies, primitive types, basic types, fundamental data structures, sorting/searching algorithms, and the time complexity of common algorithms.
     * [Binary Tree Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/BinaryTreeCheatsheet.java): Covers binary tree search, recursion, and implementation.
 
 * **Notes on**:
     * [DSA Fundamentals](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/DataStructuresAlgorithmsFundamentals.java): Data structures and algorithms fundamentals.
-    * [Linked Lists](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/LinkedLists.java): Linked lists.
+    * [Linked Lists](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/LinkedLists.java): Linked lists, doubly linked lists, and circular linked lists.
     * [Sorting and Searching](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/SortingSearching.java): Sorting and searching algorithms. 
     * [Stacks Queues Sets](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/StacksQueuesSets.java): Stacks, queues, and sets.
-    * [Hash Tables](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/HashTables.java): Hash tables.
-    * [Trees](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/Trees.java): Tree structures.
+    * [Hash Tables](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/HashTables.java): Hash tables and hash algorithms.
+    * [Trees](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/Trees.java): Tree structures, properties, and algorithms.
     * [Heaps Priority Queues](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/HeapsPriorityQueues.java): Heaps and priority queues.
     * [Graphs](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/Graphs.java): Graph structures.
     * [Graph Algorithms](https://github.com/nelson-n/cs-math-nn/blob/main/DataStructuresAlgorithms/DataStructuresAlgorithmsNotes/GraphAlgorithms.java): Graph algorithms.
@@ -134,14 +133,25 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 <!--- --------------------------------------------------------------------- --->
 
+## Mathematics
+
+`/Math`
+
+* **Notes on**:
+    * [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb): General concepts of linear algebra. 
+    * [Calculus Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Calculus.ipynb): General concepts of calculus. 
+    * [Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb): Assorted topics in mathematics.
+
+<!--- --------------------------------------------------------------------- --->
+
 ## Statistics
 
 `/Statistics`
 
 * **Notes on**:
-    * [Statistics Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Statistics.ipynb): Topics in statistics.
-    * [Regression Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Statistics/Regression.ipynb): Notes on regression.
-    * [SVD and PCA Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Statistics/SVD_PCA.ipynb): Notes on Singular Value Decomposition (SVD) and Principal Component Analysis (PCA).
+    * [Statistics Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Statistics/Statistics.ipynb): General topics in statistics.
+    * [Regression Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Statistics/Regression.ipynb): Notes on regression, methods of estimation, and linear regression interpretations.
+    * [SVD and PCA Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Statistics/SVD_PCA.ipynb): Notes on Singular Value Decomposition and Principal Component Analysis.
 
 * **Exercises**:
     * Implementation of Maximum Likelihood Estimation (MLE) from scratch that benchmarks against a canonical optimization function.
@@ -149,17 +159,6 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 #### :bangbang: to-do
 * Poker exercises: implement a card deck class with operations such as draw X cards, calculate probabilites of different hands given different stages of a game, implement riffle shuffle, et cetera.
-
-<!--- --------------------------------------------------------------------- --->
-
-## Mathematics
-
-`/Math`
-
-* **Notes on**:
-    * [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb): Topics in linear algebra. 
-    * [Calculus Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Calculus.ipynb): Topics in calculus. 
-    * [Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb): Assorted topics in mathematics.
 
 <!--- --------------------------------------------------------------------- --->
 
@@ -194,7 +193,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/QuantitativeFinance`
 
 * **Notes on**:
-    * [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb): Notes on quantitative finance.
+    * [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb): Notes on assorted topics in quantitative finance.
         * Sensitivity measures and derivations.
         * Bond measures.
         * General definitions.
@@ -210,7 +209,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/NetworkingInternet`
 
 * **Notes on**:
-    * Computer networking and how the internet protocol stack works: [Network Internet Notes](https://github.com/nelson-n/cs-math-nn/blob/main/AdditionalTopics/NetworkInternet/internet.pdf)
+    * [Network / Internet Notes](https://github.com/nelson-n/cs-math-nn/blob/main/AdditionalTopics/NetworkInternet/internet.pdf): Notes on computer networking and how the internet protocol stack works. 
 
 #### :bangbang: to-do
 * Manually create and send TCP/IP packets: [tutorial](https://inc0x0.com/tcp-ip-packets-introduction/tcp-ip-packets-3-manually-create-and-send-raw-tcp-ip-packets/)
@@ -240,7 +239,8 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 ## Assorted
 
-* [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/GitCheatsheet.md) of useful commands for working with Git and GitHub.
+**Cheatsheets**:
+    * [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/GitCheatsheet.md) of useful commands for working with Git and GitHub.
 
 <!--- --------------------------------------------------------------------- --->
 ## To-Do List
