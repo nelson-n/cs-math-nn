@@ -241,6 +241,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 * **Cheatsheets**:
     * [Git Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/GitCheatsheet.md): Covers useful commands for working with Git and GitHub.
+    * [Latex Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/LatexCheatsheet.md): Covers useful commands and packages for working in LaTeX.
 
 <!--- --------------------------------------------------------------------- --->
 ## To-Do List
