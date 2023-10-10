@@ -19,9 +19,13 @@ the `.aux` file, and finally run `latex` one last time to update the `.pdf` file
 `.bib` file with the references and citations in it. The `.bib` file must be
 referenced in the `.tex` file with the command `\bibliography{<filename>}`.
 
+---
+
 ### General Commands
 * `\bibliography{<filename>}` - add a `.bib` file to the document.
 * `\bibliographystyle{<style>}` - add a bibliography style to the document.
+
+---
 
 ### Packages
 
@@ -31,3 +35,36 @@ referenced in the `.tex` file with the command `\bibliography{<filename>}`.
 * `\cite` - cite a reference in-text with brackets around the entire citation.
 * `\citet` - cite a reference in-text with brackets around the year only.
 
+---
+
+### Figures
+* Example for embedding a figure in text.
+    * To reference the figure in text use: `Figure \ref{fig:Figure1} displays ...`
+
+```latex
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{<filename/figure.png>}
+    \caption{<caption>}
+    \label{fig:Figure1}
+\end{figure}
+```
+
+---
+
+### Bibliography
+* Journal entries in .bib file should follow the form:
+
+```latex
+@article{DoeSmithPaper,
+    author = {Doe, John and Smith, Jane},
+    title = {Paper Title},
+    journal = {Journal Name},
+    year = {2020},
+    volume = {1},
+    pages = {1--10}
+}
+```
+
+* The bibliography is embedded at the end of the document with the command: `\bibliography{<filename.bib>}`
+* Additionally, a bibliography style can be added with the command: `\bibliographystyle{apalike}`
