@@ -19,6 +19,8 @@ Notes on the principles of machine learning with an emphasis on theory. Covers:
 * Logistic Regression
 * Singular Value Decomposition (SVD)
 * Principal Component Analysis (PCA)
+* Maximum Likelihood Estimation (MLE)
+* Bayesian Inference
 
 `MachineLearningCode.ipynb`
 
