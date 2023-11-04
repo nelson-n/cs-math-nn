@@ -53,15 +53,13 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 * This preface ([atoms2bits](https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/atoms2bits.pdf)) gives an overview of the complete compute stack: the refining of sand into silicon ingots, the doping of silicon to create differences in valence shell electrons, how doped silicon is used to build transistors, how transistors form logic gates, CPU architecture and operation, memory caches, instruction set architecture, operating systems, and higher level languages. 
 
-#### :bangbang: to-do
-* In atoms2bits add notes on FPGAs, how FPGAs are built from transistors, notes on how ICs are a collection of transistors in a reliable package, notes on LUTs (lookup tables).
-
 <!--- --------------------------------------------------------------------- --->
 
 ## Hardware / Processors
 
 #### :bangbang: to-do
 * Implement AND, NAND, XOR, and other logic gates from scratch, use these logic gates to build functional units such as a 1-bit adder, multiplexer, sequential logic, SRAM, etc. Use logic gates to create simple implementations of various memory units: L1 cache, DRAM, etc. The functional units built in this section will be used later when building a model instruction set.
+    * Encode logic gates in a LUT (lookup table).
 * Build a simple ARM7 CPU in Verilog or with another infrastructure.
     * Start by building a pipeline with simple start, decode, fetch, and exectute commands. Then build a simple register/memory unit to push and pull data, a simple ALU (arithmetic logic unit) that can perform basic arithmetic and logic operations, and a simple CU (control unit) for finding instructions and directing operations. These should be built on top of the functional units constructed in the hardware lesson. 
     * Additional: Write basic arithmetic instructions, branch instructions, and memory instructions. Allow for instruction out-of-order, basic parallelism, use dependency graphs for instructions. Set up a memory hierarchy with Registers, L1 cache, L2 cache, L3 cache, and DRAM.
@@ -129,7 +127,7 @@ This curriculum is my personal approach to learning topics in computer science, 
     * [SQL Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/ComputerLanguages/SQL/SQLCheatsheet.md): SQL
 
 #### :bangbang: to-do
-* Add notes on C, C++, potentially Go or Rust.
+* Add notes on C, C++, Go, Rust.
 * Replicate lower level Python functions such as len(), dictionary, hash table, a sorting algorithm, slicing, indexing, set inclusion, et cetera in C++ to learn how these functions work. Then port these functions to Python with `pybind11`. Interface these functions with the data structures built from scratch in the data structures lesson.
 * Overview of object-oriented-programming (OOP).
 * Build a dictionary method using C++ and an R dictionary interface. Then publish an R dictionary class to CRAN.
