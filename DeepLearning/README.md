@@ -18,7 +18,7 @@ Solves small problems related to neural networks such as finding optimums and pe
 
 Implements a vanilla feedforward neural network from scratch using NumPy. The neural network is then tested and trained on the MNIST handwritten digits dataset.
 
-### /RecurrentNN
+#### /RecurrentNN
 
 `/RecurrentNN.py`
 
@@ -32,9 +32,9 @@ Reads .txt files, tokenizes the text, and constructs word index arrays. Used to 
 
 Trains a character level recurrent neural network on the text from Leo Tolstoy's War and Peace.
 
-### /data
+#### /data
 
-#### /MNIST
+`/MNIST`
 
 * Dataset containing 28x28 grayscale handwritten digits and accompanying labels seperated into a training and test set. 
 
