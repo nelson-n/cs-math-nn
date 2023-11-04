@@ -5,7 +5,7 @@
 
 `/internet.pdf`
 
-Notes that give a high-level overview of how the internet works. Contains information on:
+Notes that give a high-level overview of how the internet works. Covers:
 * The TCP/IP protocol stack, how your computer converts incoming packets to a rendered webpage.
 * How packets (such as a Google search) are routed between ISPs, NSPs, MAEs to the backbone of the internet in order to find the destination IP address and Port.
     * How routing tables are used to find the quickest route to a destination IP address.
