@@ -1,10 +1,10 @@
 
 <!--- --------------------------------------------------------------------- --->
 
-# Computer Science - Math - Neural Networks 
+# Computer Science - Math - Deep Learning
 <a href='https://github.com/nelson-n/cs-math-nn/blob/main/Assorted/Assets/RepoLogo.png'><img src='/Assorted/Assets/RepoLogo.png' align="right" height="160" /></a>
 
-This curriculum is my personal approach to learning topics in computer science, mathematics, and neural networks (+ quant finance) from first principles. This repository is not necessarily a full curriculum, but rather a reflection of my interests, needs, and gaps in my knowledge. However, my goal is to cover the whole compute stack from transistors and assembly to the math underpinning neural networks. As such, the notes and exercises compiled below should form a solid computer science, math, and deep learning curriculum.
+This curriculum is my personal approach to learning topics in computer science, mathematics, and deep learning (+ quant finance) from first principles. This repository is not necessarily a full curriculum, but rather a reflection of my interests, needs, and gaps in my knowledge. However, my goal is to cover the whole compute stack from transistors and assembly to the math underpinning transformer models. As such, the notes and exercises compiled below should form a solid computer science, math, and deep learning curriculum.
 
 <!--- --------------------------------------------------------------------- --->
 
