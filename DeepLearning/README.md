@@ -1,8 +1,12 @@
+
 # Deep Learning
 
 ## Notes
 
-``
+`/DeepLearningPrinciples.ipynb`
+
+Notes on the principles of deep learning with an emphasis on theory. Covers:
+* Kernel Methods and Neural Networks
 
 ## Exercises
 

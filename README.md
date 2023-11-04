@@ -17,7 +17,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Mathematics](#mathematics)
 * [Statistics](#statistics)
 * [Machine Learning](#machine-learning)
-* [Neural Networks](#neural-networks)
+* [Deep Learning](#deep-learning)
 * [Quantitative Finance](#quantitative-finance)
 * [Additional Topics](#additional-topics)
     * [Networking / Internet](#networking--internet) | [Parallel Computing](#parallel-computing) | [Databases](#databases) | [Cryptography](#cryptography) | [Information Theory / Entropy](#information-theory--entropy)
@@ -38,6 +38,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb)
 * [Statistics Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Statistics/Statistics.ipynb) 
 * [Machine Learning Notes](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/MachineLearningPrinciples.ipynb)
+* [Deep Learning Notes](https://github.com/nelson-n/cs-math-nn/blob/main/DeepLearning/DeepLearningPrinciples.ipynb)
 * [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb)
 
 ## General Cheatsheets
@@ -56,6 +57,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 * In atoms2bits add notes on FPGAs, how FPGAs are built from transistors, notes on how ICs are a collection of transistors in a reliable package, notes on LUTs (lookup tables).
 
 <!--- --------------------------------------------------------------------- --->
+
 ## Hardware / Processors
 
 #### :bangbang: to-do
@@ -66,6 +68,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 * Extra-curricular: Build a UART in Verilog, GPU basics.
 
 <!--- --------------------------------------------------------------------- --->
+
 ## Compilers / Operating Systems
 
 `/CompilersOperatingSystems`
@@ -141,6 +144,7 @@ This curriculum is my personal approach to learning topics in computer science, 
     * [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb): General concepts of linear algebra. 
     * [Calculus Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Calculus.ipynb): General concepts of calculus. 
     * [Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb): Assorted topics in mathematics.
+    * [Math Symbols Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathSymbolsCheatsheet.md)
 
 <!--- --------------------------------------------------------------------- --->
 
@@ -172,9 +176,12 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 <!--- --------------------------------------------------------------------- --->
 
-## Neural Networks
+## Deep Learning
 
 `/NeuralNetworks`
+
+* **Notes on**:
+    * [Deep Learning Principles](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/DeepLearningPrinciples.ipynb): Deep learning principles.
 
 * **Exercises**:
     * Implementation of the following neural network architectures from scratch using NumPy. Neural networks are then trained and tested out-of-sample.
