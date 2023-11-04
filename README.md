@@ -181,7 +181,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 `/NeuralNetworks`
 
 * **Notes on**:
-    * [Deep Learning Principles](https://github.com/nelson-n/cs-math-nn/blob/main/MachineLearning/DeepLearningPrinciples.ipynb): Deep learning principles.
+    * [Deep Learning Principles](https://github.com/nelson-n/cs-math-nn/blob/main/DeepLearning/DeepLearningPrinciples.ipynb): Deep learning principles.
 
 * **Exercises**:
     * Implementation of the following neural network architectures from scratch using NumPy. Neural networks are then trained and tested out-of-sample.
