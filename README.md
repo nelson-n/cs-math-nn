@@ -142,7 +142,7 @@ This curriculum is my personal approach to learning topics in computer science, 
     * [Linear Algebra Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/LinearAlgebra.ipynb): General concepts of linear algebra. 
     * [Calculus Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Calculus.ipynb): General concepts of calculus. 
     * [Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb): Assorted topics in mathematics.
-    * [Math Symbols Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathSymbolsCheatsheet.md)
+    * [Math Symbols Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathSymbolsCheatsheet.md): Commonly used math symbols.
 
 <!--- --------------------------------------------------------------------- --->
 
@@ -189,7 +189,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 #### :bangbang: to-do
 * Build the following models from scratch in NumPy: Feedforward neural network -> recurrent neural network -> convolution neural network -> ResNet -> Transformer -> Diffusion Model, all from scratch. 
-    * Verify the correct order of the models so that all paradigmatic neural network models are built in-order.
+    * Verify the correct order of the models so that all paradigmatic deep learning models are built in-order.
 
 <!--- --------------------------------------------------------------------- --->
 
