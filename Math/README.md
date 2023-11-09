@@ -33,5 +33,8 @@
 * Notes on calculus covering:
     * General Definitions
     * Calculus Notation
+    * Derivative Rules
+    * Common Derivatives
+    * Taylor Series
 
 ## Exercises

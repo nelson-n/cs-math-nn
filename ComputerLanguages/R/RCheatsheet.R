@@ -30,6 +30,19 @@ as.Date(Date, format = "%m/%d/%Y")
 # Round all numeric columns in a data frame.
 mutate_if(is.numeric, round, digits = 1)
 
+# Mass colname assignment in dplyr.
+`colnames<-`(c("Name1", "Name2", "Name3", "Name4"))
+
+# Interpret string literals w/ embedded curly braces.
+library(glue)
+name <- "Fred"
+glue('My name is {name}.')
+
+# Interpret string literals using for-loop and dplyr.
+for (i in 1:5) {
+   df <- df %>% mutate("ColumnName_{i}" := Values * i)
+}
+
 #===============================================================================
 # General
 #===============================================================================

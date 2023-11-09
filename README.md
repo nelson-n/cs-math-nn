@@ -255,7 +255,6 @@ This curriculum is my personal approach to learning topics in computer science, 
     * Add notes on the difference between risk-free measures Q and physical measures P.
     * Reference ReducedFormModel.pdf for help.
 * Work on `/Math` calculus fundamentals notes and `/Statistics` statistics fundamentals notes. 
-    * Notes on the Taylor Series.
 * Work on `/Math` notes on differential equations, partial differential equations.
     * Use 3B1B videos.
 * Add `/QuantitativeFinance` notes on Merton (1974), Nelson-Siegel, Black-Scholes, and a Normal Jump Diffusion Model (GBM that allows for Poisson jumps in asset prices, see Merton 1976).
