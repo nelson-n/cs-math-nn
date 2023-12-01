@@ -1681,6 +1681,60 @@ def f3():
 # Chapter 8: Object References, Mutability, and Recycling
 #==============================================================================
 
-# Left off on p. 219
+# In CPython the command id() returns the memory address of an object.
+
+# By default Python makes shallow copies, so altering one of the copies will
+# alter all of the shallow copies.
+l1 = [1, 2, 3]
+l2 = l1
+l1.append(4)
+print(l2)
+l2.append(5)
+print(l1)
+
+# The copy module allows for deep copies.
+import copy
+
+l1 = [1, 2, 3]
+l2 = copy.deepcopy(l1)
+l1.append(4)
+print(l2)
+
+# The del statement deletes names (references to objects), not objects themselves.
+# However, an object may be garbage collected as a result of the del command
+# if the name/variable deleted is the last reference to the object.
+
+# Python assignment rules:
+# - Simple assignment does not create copies.
+# - Augmented assignment with += creates new objects if the lefthand variable
+# is bound to an immutable object, but modifies in place if the lefthand
+# object is mutable.
+
+
+#==============================================================================
+# Chapter 9: A Pythonic Object
+#==============================================================================
+
+# There are two alternative methods to __str__ and __repr__ for returning an 
+# alternative representation of objects. 
+# __bytes__ returns a representation of an object as a byte string.
+# __format__ displays an object using a special formatting code.
+
+x = 5
+bytes(x)
+format(x)
+
+y = [1, 4]
+bytes(y)
+format(y)
+
+#==============================================================================
+# Chapter 10: Sequence Hacking, Hashing, and Slicing
+#==============================================================================
+
+
+# Left Off P. 275 / 301
+
+
 
 
