@@ -107,6 +107,7 @@ This curriculum is my personal approach to learning topics in computer science, 
     * Comparison of the speed of recursion in Python, R, Java, C, and C++.
 
 #### :bangbang: to-do
+* Build a simple grid search algorithm, then build a Bayesian grid search algorithm, demo using Bayesian grid search for hyperparameter tuning.
 * Learn the low-level data structures behind the base data types in Python such as: list, array, tuple, et cetera. Build versions of these data types in C++ and then port to Python with a package like `pybind11`.
 * Add a lesson on the properties of different number systems: hexadecimal system, 32-bit numbers, 128-bit numbers, how with a 32-bit number system you can generate the numbers 0-65535, etc.
 
@@ -188,7 +189,8 @@ This curriculum is my personal approach to learning topics in computer science, 
     * Solving simple neural network problems relating to finding optimas, gradient descent, et cetera.
 
 #### :bangbang: to-do
-* Build the following models from scratch in NumPy: Feedforward neural network -> recurrent neural network -> convolution neural network -> ResNet -> Transformer -> Diffusion Model, all from scratch. 
+* Build the following models from scratch: 
+    * Feedforward Neural Network > Recurrent Neural Network > Convolution Neural Network > ResNet > Transformer Model > Diffusion Model
     * Verify the correct order of the models so that all paradigmatic deep learning models are built in-order.
 
 <!--- --------------------------------------------------------------------- --->
