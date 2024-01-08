@@ -3,6 +3,7 @@
 #### Initializing a Repository
 `git init` create new git repository  <br/>
 `git remote add origin https://github.com/user/repo.git` connect local repository to a remote repository <br/>
+`git remote remove origin` remove connection to a remote repository <br/>
 `git remote -v` verify remote repository link <br/>
 `git remote show <remote>` inspect information about a remote repository <br/>
 `git clone /path/to/repository` clone local repository <br/>
@@ -23,6 +24,7 @@
 `git push origin <tagname>` push tag to remote server, must be explicitly pushed <br/>
 
 #### Branch Operations
+`git branch -a` display all local and remote branches <br/>
 `git -b feature_x` create new branch named feature x <br/>
 `git checkout <branch name>` switch branch <br/>
 `git branch -d <branch name>` delete branch <br/>
