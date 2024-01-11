@@ -32,6 +32,10 @@ Exploration of various concepts in the Python language. Currently covers:
 
 General script for comparing the speed of various Python functions and methods. This script is used to explore how and why certain implementations are faster than others.
 
+`/Scratch.py`
+
+Script for demoing new Python concepts and ideas.
+
 ## /Java
 
 `/JavaCheatsheet.java`
