@@ -24,9 +24,11 @@
 `git push origin <tagname>` push tag to remote server, must be explicitly pushed <br/>
 
 #### Branch Operations
+`git branch` display the branch you are currently on <br/>
 `git branch -a` display all local and remote branches <br/>
 `git -b feature_x` create new branch named feature x <br/>
-`git checkout <branch name>` switch branch <br/>
+`git checkout origin/<branch name>` switch branch <br/>
+`git checkout 99f7ffea` checkout a specific commit <br/>
 `git branch -d <branch name>` delete branch <br/>
 `git push origin <branch>` push branch to remote repository <br/>
 `git pull` update local repository to the newest commit, fetches and merges remote changes <br/>
