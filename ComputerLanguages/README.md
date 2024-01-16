@@ -27,6 +27,7 @@ Notes on the book *Fluent Python* by Luciano Ramalho. This 700 page book provide
 Exploration of various concepts in the Python language. Currently covers:
 * Disassembling Python code into CPython bytecode using the dis module, exploring various bytecode operations. 
 * Testing contiguous memory in arrays by indexing using memory addresses.
+* Exploration of JIT compiling in Python. 
 
 `/TimeComparison.py`
 

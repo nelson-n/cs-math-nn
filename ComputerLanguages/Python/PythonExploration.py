@@ -164,13 +164,118 @@ description = {
 description
 
 #===============================================================================
-#
+# JIT in Python 
 #===============================================================================
 
+# JIT = compilation occurs on demand when the code is run instead of compiled beforehand.
+# - The compiler emits machine code, in contrast to an ahead-of-time compiler
+# such as the GNU C compiler or Java compiler which emits machine code and distributes
+# it as a binary executable.
 
+# Python code is compiled to bytecode which has the following properties:
+# - Bytecode requires a bytecode interpreter loop to be executed by the CPU.
+# - Bytecode is high level and can equate to 1000s of machine instructions.
+# - Bytecode is type agnostic and platform agnostic.
 
+# Consider a simple Python function f():
+def func():
+    a = 1
+    return a 
 
+# This function compiles to 5 bytecode instructions:
+import dis
+dis.dis(func)
 
+# These 5 bytecode instructions are interpreted when the function is called
+# by a massive loop written in C.
 
+# Print the opname and argval for each instruction.
+for instruction in dis.get_instructions(func):
+    print(instruction.opname, instruction.argval)
+
+# The following is a crude Python evaluation loop, similar to the one in C.
+def interpret(func):
+    stack = []
+    variables = {}
+    for instruction in dis.get_instructions(func):
+        if instruction.opname == "LOAD_CONST": # LOAD_CONST = push the argval onto the stack, pushes 1 onto the stack.
+            stack.append(instruction.argval) 
+        elif instruction.opname == "LOAD_FAST": # LOAD_FAST = push the value of the local variable onto the stack, pushes "a" onto the stack in the variable tuple.
+            stack.append(variables[instruction.argval])
+        elif instruction.opname == "STORE_FAST": # STORE_FAST = pops the top of the stack (1) and stores it in the variable tuple, pops 1 off the stack and stores it with "a".
+            variables[instruction.argval] = stack.pop()
+        elif instruction.opname == "RETURN_VALUE": # RETURN_VALUE = pops the top of the stack (tuple with "a" and 1) and returns it.
+            return stack.pop()
+
+# Run demo Python interpreter.
+print(interpret(func))
+
+# This big switch/if-else statement is a simplified version of how the CPython interpreter loop works.
+
+# Everytime you want to run the function, func it has to loop through each instruction and compare the 
+# bytecode name (called the opcode) with each if-statement. Both this comparison and the loop itself add 
+# an overhead to the execution. That overhead seems redundant if you run the function 10,000 times and the 
+# bytecodes never change (because they are immutable). It would be more efficient to instead generate the code 
+# in a sequence instead of a evaluating this loop every time you call the function - this is what JIT does.
+
+# This version of JIT, proposed for Python 3.13 is called copy-any-patch JIT.
+
+# The interpreter loop above did two things, it interpreted (looked up the bytecode)
+# and then executed it (ran the instructions).
+
+# A copy-and-patch JIT copies the instructions for each command and fills in the blanks (patches)
+# the bytecode with the correct values. 
+
+def copy_and_patch_interpret(func):
+    code = 'def f():\n'
+    code += '  stack = []\n'
+    code += '  variables = {}\n'
+    for instruction in dis.get_instructions(func):
+        if instruction.opname == "LOAD_CONST":
+            code += f'  stack.append({instruction.argval})\n'
+        elif instruction.opname == "LOAD_FAST":
+            code += f'  stack.append(variables["{instruction.argval}"])\n'
+        elif instruction.opname == "STORE_FAST":
+            code += f'  variables["{instruction.argval}"] = stack.pop()\n'
+        elif instruction.opname == "RETURN_VALUE":
+            code += '  return stack.pop()\n'
+    code += 'f()'
+    return code
+
+# This metaprogramming produces the following code:
+copy_and_patch_interpret(func)
+
+def f():
+  stack = []
+  variables = {}
+  stack.append(1)
+  variables["a"] = stack.pop()
+  stack.append(None)
+  return stack.pop()
+
+# This is sequential and does not require a loop to be evaluated. We can store
+# the function output as a string and evaluate it without running through
+# the interpreter loop over and over. In this sense we are compiling just 
+# a portion of the whole program.
+compiled_function = compile(copy_and_patch_interpret(func), filename="<string>", mode="exec")
+
+print(exec(compiled_function))
+print(exec(compiled_function))
+print(exec(compiled_function))
+
+# This technique of writing out the instructions for each bytecode and patching the values has
+# upsides and downsides compared to a “full” JIT compiler. A full JIT compiler would normally
+# compile high-level bytecodes like LOAD_FAST into lower level instructions in an IL (Intermediate Language).
+# Because every CPU architecture has different instructions and features, it would be monumentally-complicated
+# to write a compiler that converts high-level code directly to machine code and supports 32-bit and 64-bit CPUs,
+# as well as Apple’s ARM architecture as well as all the other flavours of ARM. Instead most JIT’s compile first
+# to an IL that is a generic machine-code-like instruction set. Those instructions are things like
+# “PUSH A 64-bit integer”, “POP a 64-bit float”, “MULTIPLY the values on the stack”. The JIT can then compile
+# IL into machine-code at runtime by emitting CPU-specific instructions and storing them in memory
+# to be later executed (similar to how we did in our example).
+
+# Summary: JIT takes little chunks of codes such as functions inside a Python program and compiles them
+# so that if they are run over-and-over again they do not need to be interpreted each time by a large
+# interpreter loop that takes in bytecode instructions and converts them to machine code. 
 
 
