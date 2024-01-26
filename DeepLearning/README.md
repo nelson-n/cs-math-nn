@@ -8,6 +8,16 @@
 Notes on the principles of deep learning with an emphasis on theory. Covers:
 * Kernel Methods and Neural Networks
 
+`/DeepLearningCode/DeepLearningCode.ipynb`
+
+Notes and implementations of deep learning algorithms. Covers:
+* Tensors
+* TensorBoard
+* Linear Classification
+* Linear Multi-Class Classification
+
+
+
 ## Exercises
 
 `/NNProblems.py`
