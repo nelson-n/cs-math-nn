@@ -128,6 +128,53 @@ class MultilayerClassifier(torch.nn.Module):
 
 
 
+#-------------------------------------------------------------------------------
+# Simple Convolutional Neural Network
+#-------------------------------------------------------------------------------
+
+class CNN(torch.nn.Module):
+    def __init__(self):
+        super().__init__()
+
+        # Convolution layers.
+        self.conv1 = torch.nn.Conv2d(in_channels=3, out_channels=16, kernel_size=7, stride=1, padding=1)
+        self.conv2 = torch.nn.Conv2d(in_channels=16, out_channels=32, kernel_size=3, stride=1, padding=1)
+        self.conv3 = torch.nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, stride=1, padding=1)
+
+        # Dropout layers.
+        self.dropout = torch.nn.Dropout2d(p=0.25)
+
+        # Activation layers.
+        self.relu = torch.nn.ReLU()
+
+        # Linear layer to be applied after convolution layers.
+        # Output after convolutions w/ 4 convolutions of stride 2 is: 48 channels * 64/(2^4) * 64/(2^4)
+        self.fc = torch.nn.Linear(230400, 6)
+
+    def forward(self, x):
+
+        # Convolution layers.
+        x = self.conv1(x)
+        x = self.relu(x)
+        x = self.dropout(x)
+        x = self.conv2(x)
+        x = self.relu(x)
+        x = self.dropout(x)
+        x = self.conv3(x)
+        x = self.relu(x)
+        x = self.dropout(x)
+
+        # Flatten tensor to 1d.
+        x = x.view(x.size(0), -1)
+
+        # Linear layer.
+        x = self.fc(x)
+
+        return x
+
+
+
+
 
 
 
