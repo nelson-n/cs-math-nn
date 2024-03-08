@@ -201,10 +201,15 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 * **Notes on**:
     * [Quantitative Finance Notes](https://github.com/nelson-n/cs-math-nn/blob/main/QuantitativeFinance/QuantFinance.ipynb): Notes on assorted topics in quantitative finance.
-        * Sensitivity measures and derivations.
-        * Bond measures.
-        * General definitions.
-        * Yield curve estimation.
+        * Valuation Measures
+        * Sensitivity Measures (Interest Rate Risk)
+        * Credit Analysis (Credit Risk)
+        * Yield Curves
+        * Fixed Income Security Types
+        * Bond Measure Definitions
+        * General Definitions
+        * Assorted
+        * Finance Papers
 
 <!--- --------------------------------------------------------------------- --->
 
