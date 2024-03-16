@@ -57,6 +57,7 @@
 `df -h` see storage across the entire filesystem <br/>
 `df -Ph . | tail -1 | awk '{print $4}'` see storage available to the current directory <br/>
 `du -h` find the amount of disk space used in the current directory <br/>
+`du -sh *` find how much disk space each folder in a directory is using <br/>
 
 ### Networking
 `ssh -p 22 username@server` SSH to another server using a specific port <br/>
