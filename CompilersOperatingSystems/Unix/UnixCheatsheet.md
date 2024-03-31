@@ -71,3 +71,27 @@
 `networkQuality` run an internet speed test <br/>
 `sysctl -a | grep machdep.cpu` on macos find the number of cores/threads available <br/>
 
+### Environments
+
+**Conda**
+`conda create -n <env name>` create conda environment <br/>
+`conda activate <env name>` activate conda environment <br/>
+`conda deactivate` deactivate conda environment <br/>
+`conda info --envs` list all conda environments <br/>
+`conda remove -n <env name> --all` remove conda environment <br/>
+`conda list` list all packages in the current conda environment <br/>
+`conda list -n <env name>` list all packages in a specific conda environment <br/>
+`conda install <package>` install a package in the current conda environment <br/>
+`conda remove <package>` remove a package in the current conda environment <br/>
+`conda env export > environment.yml` export conda environment to a file <br/>
+`conda env create -f environment.yml` create conda environment from a file <br/>
+
+**Virtual Environment (pip)**
+`python3.9 -m venv <env name>` create a virtual environment <br/>
+`source <env name>/bin/activate` activate a virtual environment <br/>
+`deactivate` deactivate a virtual environment <br/>
+`pip install <package>` install a package in the current virtual environment <br/>
+`pip install -r requirements.txt` install all packages in a requirements file <br/>
+`pip freeze > requirements.txt` export all packages in the current virtual environment to a file <br/>
+`rm -rf <env name>` remove a virtual environment <br/>
+
