@@ -73,7 +73,7 @@
 
 ### Environments
 
-**Conda**
+**Conda** <br/>
 `conda create -n <env name>` create conda environment <br/>
 `conda activate <env name>` activate conda environment <br/>
 `conda deactivate` deactivate conda environment <br/>
@@ -86,7 +86,7 @@
 `conda env export > environment.yml` export conda environment to a file <br/>
 `conda env create -f environment.yml` create conda environment from a file <br/>
 
-**Virtual Environment (pip)**
+**Virtual Environment (pip)** <br/>
 `python3.9 -m venv <env name>` create a virtual environment <br/>
 `source <env name>/bin/activate` activate a virtual environment <br/>
 `deactivate` deactivate a virtual environment <br/>
