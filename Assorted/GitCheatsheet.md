@@ -25,9 +25,11 @@
 
 #### Branch Operations
 `git branch` display the branch you are currently on <br/>
-`git branch -a` display all local and remote branches <br/>
+`git branch -a -v` display all local and remote branches <br/>
+`git tag` list existing tags <br/>
 `git -b feature_x` create new branch named feature x <br/>
 `git checkout origin/<branch name>` switch branch <br/>
+`git checkout <tag name>` checkout a specific tag <br/>
 `git checkout 99f7ffea` checkout a specific commit <br/>
 `git branch -d <branch name>` delete branch <br/>
 `git push origin <branch>` push branch to remote repository <br/>
