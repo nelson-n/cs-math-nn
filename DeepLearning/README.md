@@ -6,7 +6,19 @@
 `/DeepLearningPrinciples.ipynb`
 
 Notes on the principles of deep learning with an emphasis on theory. Covers:
-* Kernel Methods and Neural Networks
+* Network Design Principles
+* Kernel Methods
+* Neural Networks
+* Linear Algebra and Probability for Deep Learning
+* Linear Classification / Linear Regression Models
+* Computational Graphs
+* Stochastic Gradient Descent (SGD)
+* Activation Functions
+* Convolutions
+* Optimization & Normalization
+* Residual Networks
+* Training Optimization
+* Reinforcement Learning
 
 `/DeepLearningCode/DeepLearningCode.ipynb`
 
@@ -14,9 +26,28 @@ Notes and implementations of deep learning algorithms. Covers:
 * Tensors
 * TensorBoard
 * Linear Classification
-* Linear Multi-Class Classification
+* Gradient Descent
+* Computational Graphs
+* Gradient Descent on a Computational Graph
+* Deep Networks in PyTorch
+* Convolution Neural Networks in PyTorch
+* Weights Initialization
+* Normalization in PyTorch
+* Learning Rate Schedules
+* PreTrained Architectures
+* Deep Network with Agent Action
+* Imitation Learning
+* DAgger Algorithm
 
+`/TorchNotes.py`
 
+Notes on PyTorch and PyTorch implementations. Covers:
+* Tensor Transformations
+* Activation Functions
+* Loss Functions
+* Optimizers
+* Neural Network Models
+* Training Loops
 
 ## Exercises
 
