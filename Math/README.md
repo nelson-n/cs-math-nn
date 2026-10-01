@@ -38,3 +38,18 @@
     * Taylor Series
 
 ## Exercises
+
+`/Lean/SimpleDemo.lean`
+
+The simplest possible Lean 4 proof: 2 + 2 = 4 by `rfl`. Check it with `lean SimpleDemo.lean`; no output means the proof is correct.
+
+`/Lean/LeanDemo.lean`
+
+Introductory demo of the Lean 4 theorem prover using only Lean core (no Mathlib). Check it with `lean LeanDemo.lean`, or open it in VS Code with the lean4 extension. Covers:
+* Evaluating expressions and checking types (#eval, #check).
+* Defining functions by pattern matching and recursion.
+* Proofs by computation (rfl, decide).
+* Propositional logic in term mode and tactic mode.
+* Existential statements.
+* Proofs by induction.
+* Exercises left as `sorry`.

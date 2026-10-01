@@ -145,6 +145,10 @@ This curriculum is my personal approach to learning topics in computer science, 
     * [Math Notes](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathNotes.ipynb): Assorted topics in mathematics.
     * [Math Symbols Cheatsheet](https://github.com/nelson-n/cs-math-nn/blob/main/Math/MathSymbolsCheatsheet.md): Commonly used math symbols.
 
+* **Exercises**:
+    * [Simple Lean Demo](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Lean/SimpleDemo.lean): Minimal Lean 4 proof that 2 + 2 = 4.
+    * [Lean Demo](https://github.com/nelson-n/cs-math-nn/blob/main/Math/Lean/LeanDemo.lean): Introduction to proving theorems in the Lean 4 proof assistant.
+
 <!--- --------------------------------------------------------------------- --->
 
 ## Statistics
