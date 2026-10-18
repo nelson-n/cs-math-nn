@@ -27,7 +27,7 @@ Top-level folders follow the README section order, going roughly up the stack:
 | `MachineLearning/` | `MachineLearningPrinciples.ipynb` (theory, mostly embedded images of handwritten/slide notes), `MachineLearningCode.ipynb` (sklearn-style implementations), and `NoteFiles/ML*.png` |
 | `DeepLearning/` | `DeepLearningPrinciples.ipynb` (theory + `NoteFiles/DL*.png`), `DeepLearningCode/DeepLearningCode.ipynb` (PyTorch plus TensorBoard `log/`), `TorchNotes.py`, from-scratch NumPy nets in `FeedforwardNN/` and `RecurrentNN/`, `NNProblems.py`, and `data/` (MNIST `.gz`, `WarAndPeace.txt`) |
 | `QuantitativeFinance/` | `QuantFinance.ipynb` (valuation, duration and convexity, credit, yield curves, papers, and most recently balance sheet notes) plus `NoteFiles/` |
-| `AdditionalTopics/` | `NetworkInternet/internet.pdf` only. Parallel computing, databases, crypto, and info theory are README placeholders. |
+| `AdditionalTopics/` | `NetworkInternet/` (`internet.pdf`, `HTTPNotes.md`) and `APIs/` (`APINotes.md`, `DemoAPI.py`, a stdlib-only REST server). Parallel computing, databases, crypto, and info theory are README placeholders. |
 
 Every top-level folder has its own `README.md` describing each file's contents. The root `README.md` is the curriculum index. It has links to every notes file, a per-section `:bangbang: to-do` list, and a global To-Do List at the bottom.
 

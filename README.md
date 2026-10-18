@@ -20,7 +20,7 @@ This curriculum is my personal approach to learning topics in computer science, 
 * [Deep Learning](#deep-learning)
 * [Quantitative Finance](#quantitative-finance)
 * [Additional Topics](#additional-topics)
-    * [Networking / Internet](#networking--internet) | [Parallel Computing](#parallel-computing) | [Databases](#databases) | [Cryptography](#cryptography) | [Information Theory / Entropy](#information-theory--entropy)
+    * [Networking / Internet](#networking--internet) | [APIs](#apis) | [Parallel Computing](#parallel-computing) | [Databases](#databases) | [Cryptography](#cryptography) | [Information Theory / Entropy](#information-theory--entropy)
 * [Assorted](#assorted)
 
 ## Language Cheatsheets
@@ -227,9 +227,21 @@ This curriculum is my personal approach to learning topics in computer science, 
 
 * **Notes on**:
     * [Network / Internet Notes](https://github.com/nelson-n/cs-math-nn/blob/main/AdditionalTopics/NetworkInternet/internet.pdf): Notes on computer networking and how the internet protocol stack works. 
+    * [HTTP Notes](https://github.com/nelson-n/cs-math-nn/blob/main/AdditionalTopics/NetworkInternet/HTTPNotes.md): Notes on the HTTP protocol: requests and responses, methods, status codes, headers, cookies, caching, and HTTPS.
 
 #### :bangbang: to-do
 * Manually create and send TCP/IP packets: [tutorial](https://inc0x0.com/tcp-ip-packets-introduction/tcp-ip-packets-3-manually-create-and-send-raw-tcp-ip-packets/)
+
+<!--- --------------------------------------------------------------------- --->
+
+### APIs
+
+`/APIs`
+
+* **Notes on**:
+    * [API Notes](https://github.com/nelson-n/cs-math-nn/blob/main/AdditionalTopics/APIs/APINotes.md): Notes on APIs in general (library, OS, and web APIs) and how to design them.
+* **Exercises**:
+    * [Demo API](https://github.com/nelson-n/cs-math-nn/blob/main/AdditionalTopics/APIs/DemoAPI.py): Minimal REST API for a notes resource written with the Python standard library.
 
 <!--- --------------------------------------------------------------------- --->
 
